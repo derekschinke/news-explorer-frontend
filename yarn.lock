@@ -2599,8 +2599,8 @@ __metadata:
   linkType: hard
 
 "@types/webpack@npm:^4.41.8":
-  version: 4.41.27
-  resolution: "@types/webpack@npm:4.41.27"
+  version: 4.41.28
+  resolution: "@types/webpack@npm:4.41.28"
   dependencies:
     "@types/anymatch": "*"
     "@types/node": "*"
@@ -2608,7 +2608,7 @@ __metadata:
     "@types/uglify-js": "*"
     "@types/webpack-sources": "*"
     source-map: ^0.6.0
-  checksum: e502f308846bae6d2e94df083022be1bf151f7e6be73738854d6c7cf7fb581218712114717190b91f6d16a827f6d977bf9c04deda2e8a81203ad2a712cc9121f
+  checksum: d9a99bb2a3c958d4a797734cba89ac489256cfb7fede7b8970b55291bca936c448851297ebaddb5b871e48fc028fa83e31856ec5f57695e9cbbd2ceda72fc499
   languageName: node
   linkType: hard
 
@@ -4346,9 +4346,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30000981, caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001125, caniuse-lite@npm:^1.0.30001219":
-  version: 1.0.30001221
-  resolution: "caniuse-lite@npm:1.0.30001221"
-  checksum: 0ea5b56fe790d6982679ad641068780619e8be4d1c48a3fc1d8e60df4d86cfd5c1a1d2fb26dee77b8cde1fae4d2f797721f43662b7c0596ac53c44e801c66c09
+  version: 1.0.30001222
+  resolution: "caniuse-lite@npm:1.0.30001222"
+  checksum: 14a725756db4751131b0e8ff83ae7ddccd779e294fefe7a49a2b1065b57be75e7df83b6752127766874229f6e490ac3974932e6bccfd047f9ab6c422e60d13bd
   languageName: node
   linkType: hard
 
@@ -4894,19 +4894,19 @@ __metadata:
   linkType: hard
 
 "core-js-compat@npm:^3.6.2, core-js-compat@npm:^3.9.0, core-js-compat@npm:^3.9.1":
-  version: 3.11.2
-  resolution: "core-js-compat@npm:3.11.2"
+  version: 3.11.3
+  resolution: "core-js-compat@npm:3.11.3"
   dependencies:
     browserslist: ^4.16.6
     semver: 7.0.0
-  checksum: 4895aef85f790eaf2548b7b365b80b463199c5e32b77e5d40fc8acd02a799e3a660062d72a7c5db26530ba90df31028a5bf36e337ca7a82c13c106b454bccbdd
+  checksum: 0493c84e9a9b897b03cab3c349b008ecf512c5d15207ddd56aa50e1c2579a44d9c81841333c5525c997a7eaee2b57a645fd7bfd47346bdca021be98c6807cb24
   languageName: node
   linkType: hard
 
 "core-js-pure@npm:^3.0.0":
-  version: 3.11.2
-  resolution: "core-js-pure@npm:3.11.2"
-  checksum: c78576b44422422ad2a360a08b944f83b9b67ebf6768c6b1e57fb370e57ed08716ceb74661bab9c50d09ef64e4000aa4b4720533366945f29d5cd03360321f0e
+  version: 3.11.3
+  resolution: "core-js-pure@npm:3.11.3"
+  checksum: 91f51f0b381b8bc25dda3cad048e29597842dbfd10a61c5735d8398ca7f27876639a7cf4c0e5b2c4ad1fdee5ffdf35e62d00a57525fe9f4947dfd8ea1d53508a
   languageName: node
   linkType: hard
 
@@ -4918,9 +4918,9 @@ __metadata:
   linkType: hard
 
 "core-js@npm:^3.6.5":
-  version: 3.11.2
-  resolution: "core-js@npm:3.11.2"
-  checksum: fa7730643928cc284e934df203ad3807cb770fd63d7e23fd21e81ffcd60ce475b3943c41b5ebd49344199523c004310d5ed2e5c72b6057d23aa0854899a4682c
+  version: 3.11.3
+  resolution: "core-js@npm:3.11.3"
+  checksum: 64f7f5d68478cb22cb78e4ebbeaa7ebba4331185d028880c58782f681503e6c56a157958095a322535203831ffaab92f23aff07707db79d405d807a938cdf730
   languageName: node
   linkType: hard
 
@@ -5360,9 +5360,9 @@ __metadata:
   linkType: hard
 
 "damerau-levenshtein@npm:^1.0.6":
-  version: 1.0.6
-  resolution: "damerau-levenshtein@npm:1.0.6"
-  checksum: 4746e69c33e83038cac1f26100be6eb6a1cc1e52bdbf6d1c14a91aa0323cac35aea7e4f2bedf53e39db80c08853c88ec64b0e8b1622f05c80281636d4da7d139
+  version: 1.0.7
+  resolution: "damerau-levenshtein@npm:1.0.7"
+  checksum: ec8161cb381523e0db9b5c9b64863736da3197808b6fdc4a3a2ca764c0b4357e9232a4c5592220fb18755a91240b8fee7b13ab1b269fbbdc5f68c36f0053aceb
   languageName: node
   linkType: hard
 
@@ -5842,9 +5842,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.564, electron-to-chromium@npm:^1.3.723":
-  version: 1.3.726
-  resolution: "electron-to-chromium@npm:1.3.726"
-  checksum: 5bc7c2cee075a6078dcf6e80aac76c916057bcd56fdcdff6be7b70a91915dcd8ed11cad1d3b998a749ad8f7dce17d7a578c2b538451e504d7d3371bb7ffea3a9
+  version: 1.3.727
+  resolution: "electron-to-chromium@npm:1.3.727"
+  checksum: 27e725e497475e998ca597e196e6895a55a24b0ce4c489cac4dfa24f1ff38b8fa54fbdb219d79e562783c8f20615705f1c857ccab91883c2818d6d908054bd37
   languageName: node
   linkType: hard
 
@@ -12288,13 +12288,13 @@ fsevents@^1.2.7:
   linkType: hard
 
 "postcss@npm:^8.1.0":
-  version: 8.2.13
-  resolution: "postcss@npm:8.2.13"
+  version: 8.2.14
+  resolution: "postcss@npm:8.2.14"
   dependencies:
     colorette: ^1.2.2
     nanoid: ^3.1.22
     source-map: ^0.6.1
-  checksum: 1f4a4d85c220d90d11486d0a21a0549dff91e52b8857957c797feb408b31f929b142d0b7ab029ec81bb5a48b0e8605ba716d674571fa98962737c90164d64648
+  checksum: 201bf1b7d5b3b7f2ca1c648801bff31416a9ee6e086fcaab0654f93e25d93a9ccc0dce579957461bda1f7b44116a3fc9c7cc2fb91b4e6544251e72827e231bae
   languageName: node
   linkType: hard
 
@@ -15532,13 +15532,13 @@ resolve@^2.0.0-next.3:
   linkType: hard
 
 "v8-to-istanbul@npm:^7.0.0":
-  version: 7.1.1
-  resolution: "v8-to-istanbul@npm:7.1.1"
+  version: 7.1.2
+  resolution: "v8-to-istanbul@npm:7.1.2"
   dependencies:
     "@types/istanbul-lib-coverage": ^2.0.1
     convert-source-map: ^1.6.0
     source-map: ^0.7.3
-  checksum: bf9f3488f722e7405c4d8b5001c1de2d8f8f7fbffe4a361708737e55d4294380f9b00e819cad360482afa3289016ed94fc3440baf600cc2341b5e0d2f908b4cb
+  checksum: e52b48764f55aed62ff87f2b5f710c874f992cd1313eac8f438bf65aeeb0689153d85bb76e39514fd90ba3521d6ebea929a8ae1339b6d7b0cf18fb0ed13d8b40
   languageName: node
   linkType: hard
 
