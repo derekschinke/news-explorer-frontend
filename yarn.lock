@@ -1679,6 +1679,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@csstools/normalize.css@npm:^11.0.1":
+  version: 11.0.1
+  resolution: "@csstools/normalize.css@npm:11.0.1"
+  checksum: 8647dff15b24c54a207f8f30c3446dca7eecf5583ce893c1d23031ca1239a21f3dbf1cd2c6c06a5339ebaa6ebc8fa0253a448618ccc1895c012b372ed2a0b242
+  languageName: node
+  linkType: hard
+
 "@eslint/eslintrc@npm:^0.4.0":
   version: 0.4.0
   resolution: "@eslint/eslintrc@npm:0.4.0"
@@ -10416,6 +10423,7 @@ fsevents@^1.2.7:
   version: 0.0.0-use.local
   resolution: "news-explorer-frontend@workspace:."
   dependencies:
+    "@csstools/normalize.css": ^11.0.1
     "@testing-library/dom": ^7.30.4
     "@testing-library/jest-dom": ^5.12.0
     "@testing-library/react": ^11.2.6
