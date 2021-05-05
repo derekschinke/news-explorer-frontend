@@ -8800,7 +8800,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["deep-equal", "npm:1.1.1"],
             ["is-arguments", "npm:1.1.0"],
-            ["is-date-object", "npm:1.0.2"],
+            ["is-date-object", "npm:1.0.3"],
             ["is-regex", "npm:1.1.2"],
             ["object-is", "npm:1.1.5"],
             ["object-keys", "npm:1.1.1"],
@@ -9450,7 +9450,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["es-to-primitive", "npm:1.2.1"],
             ["is-callable", "npm:1.2.3"],
-            ["is-date-object", "npm:1.0.2"],
+            ["is-date-object", "npm:1.0.3"],
             ["is-symbol", "npm:1.0.3"]
           ],
           "linkType": "HARD",
@@ -12090,10 +12090,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["is-date-object", [
-        ["npm:1.0.2", {
-          "packageLocation": "./.yarn/cache/is-date-object-npm-1.0.2-461fbe93c0-ac859426e5.zip/node_modules/is-date-object/",
+        ["npm:1.0.3", {
+          "packageLocation": "./.yarn/cache/is-date-object-npm-1.0.3-e6989a7da9-7ed29f8426.zip/node_modules/is-date-object/",
           "packageDependencies": [
-            ["is-date-object", "npm:1.0.2"]
+            ["is-date-object", "npm:1.0.3"]
           ],
           "linkType": "HARD",
         }]

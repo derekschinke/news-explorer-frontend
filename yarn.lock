@@ -8270,9 +8270,9 @@ fsevents@^1.2.7:
   linkType: hard
 
 "is-date-object@npm:^1.0.1":
-  version: 1.0.2
-  resolution: "is-date-object@npm:1.0.2"
-  checksum: ac859426e5df031abd9d1eeed32a41cc0de06e47227bd972b8bc716460a9404654b3dba78f41e8171ccf535c4bfa6d72a8d1d15a0873f9646698af415e92c2fb
+  version: 1.0.3
+  resolution: "is-date-object@npm:1.0.3"
+  checksum: 7ed29f84269ee70a873fe29a5449252843e30ab239faa360b448d3e51b3ab7ba57885ac8d5f9aba93d5d6b0d4972528da0ba524df9d585501027603f4014e3b4
   languageName: node
   linkType: hard
 
