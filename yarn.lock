@@ -2164,7 +2164,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^7.28.1":
+"@testing-library/dom@npm:^7.28.1, @testing-library/dom@npm:^7.30.4":
   version: 7.30.4
   resolution: "@testing-library/dom@npm:7.30.4"
   dependencies:
@@ -9898,6 +9898,7 @@ fsevents@^1.2.7:
   version: 0.0.0-use.local
   resolution: "news-explorer-frontend@workspace:."
   dependencies:
+    "@testing-library/dom": ^7.30.4
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
