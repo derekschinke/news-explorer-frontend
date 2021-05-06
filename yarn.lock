@@ -4346,9 +4346,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30000981, caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001125, caniuse-lite@npm:^1.0.30001219":
-  version: 1.0.30001222
-  resolution: "caniuse-lite@npm:1.0.30001222"
-  checksum: 14a725756db4751131b0e8ff83ae7ddccd779e294fefe7a49a2b1065b57be75e7df83b6752127766874229f6e490ac3974932e6bccfd047f9ab6c422e60d13bd
+  version: 1.0.30001223
+  resolution: "caniuse-lite@npm:1.0.30001223"
+  checksum: 9fd38da346eae4b34a2cae11e40e1ea097245eb1d64c88ed80e69e488633e2c2d69f3b3c37ca4069f42e3271af623053808f7b44d1b27cab34296079ea009aa4
   languageName: node
   linkType: hard
 
@@ -4894,19 +4894,19 @@ __metadata:
   linkType: hard
 
 "core-js-compat@npm:^3.6.2, core-js-compat@npm:^3.9.0, core-js-compat@npm:^3.9.1":
-  version: 3.11.3
-  resolution: "core-js-compat@npm:3.11.3"
+  version: 3.12.0
+  resolution: "core-js-compat@npm:3.12.0"
   dependencies:
     browserslist: ^4.16.6
     semver: 7.0.0
-  checksum: 0493c84e9a9b897b03cab3c349b008ecf512c5d15207ddd56aa50e1c2579a44d9c81841333c5525c997a7eaee2b57a645fd7bfd47346bdca021be98c6807cb24
+  checksum: 22b29c068b8882c1c5de54624f3761e9c7c11f13a887c6085180345854bfb1d95722b6ce9438276fcf5ef083b5cbb39527f3e8bd1e8c3b37672436b0aeb78ee4
   languageName: node
   linkType: hard
 
 "core-js-pure@npm:^3.0.0":
-  version: 3.11.3
-  resolution: "core-js-pure@npm:3.11.3"
-  checksum: 91f51f0b381b8bc25dda3cad048e29597842dbfd10a61c5735d8398ca7f27876639a7cf4c0e5b2c4ad1fdee5ffdf35e62d00a57525fe9f4947dfd8ea1d53508a
+  version: 3.12.0
+  resolution: "core-js-pure@npm:3.12.0"
+  checksum: 8e57eb16466fc55a36b0aebec7840c979d4d8c78a74c4bd9437a29eb180c2aeb4cad6f9bd1cc62188fbc99bec4c76657506bc7f5977985e8e53018ffb4eff60f
   languageName: node
   linkType: hard
 
@@ -4918,9 +4918,9 @@ __metadata:
   linkType: hard
 
 "core-js@npm:^3.6.5":
-  version: 3.11.3
-  resolution: "core-js@npm:3.11.3"
-  checksum: 64f7f5d68478cb22cb78e4ebbeaa7ebba4331185d028880c58782f681503e6c56a157958095a322535203831ffaab92f23aff07707db79d405d807a938cdf730
+  version: 3.12.0
+  resolution: "core-js@npm:3.12.0"
+  checksum: d66e368bd73c8af15321b92048c7dfca86675c892336bc1b21be5897b3e059ff1918a8d8308789ea2d287dc73463b9d9f50de944c806ecb995c4f1a9de7499a7
   languageName: node
   linkType: hard
 
@@ -15669,9 +15669,9 @@ resolve@^2.0.0-next.3:
   linkType: hard
 
 "web-vitals@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "web-vitals@npm:1.1.1"
-  checksum: d3caabe88577796795bfad3c24c4afe0e0b8a4fc44edd746f211cadd12b068a5cb060713f197785de454b072a29558d945de12272c90111a03f89a1c98553e89
+  version: 1.1.2
+  resolution: "web-vitals@npm:1.1.2"
+  checksum: 92071029089277166e11141b735831d9011e85737d32c1360034676db898ab0ca95f19041ee01904f2189ad6e711b9da6b17567e4831290a429a586c98bc573f
   languageName: node
   linkType: hard
 
