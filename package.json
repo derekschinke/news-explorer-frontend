@@ -39,7 +39,7 @@
     ]
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start BROWSER='firefox developer edition'",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
