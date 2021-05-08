@@ -24,25 +24,6 @@
   padding-top: 30px;
 }
 
-.Header__nav-list {
-  padding: 0;
-  margin: 0;
-}
-
-.Header__nav-link {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  list-style-type: none;
-  padding-top: 30px;
-  padding-right: 10px;
-  padding-bottom: 23px;
-  padding-left: 10px;
-  border-bottom: 3px solid;
-}
-
 .Header__button {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
