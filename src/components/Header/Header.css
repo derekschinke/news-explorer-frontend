@@ -1,6 +1,10 @@
 .Header {
   height: 80px;
   box-shadow: inset 0 -1px 0 #d1d2d6;
+  z-index: 2;
+  position: relative;
+
+  /* background: rgba(196, 196, 196, 0.01); */
 }
 
 .Header__items {
@@ -22,6 +26,7 @@
   line-height: 24px;
   margin: 0;
   padding-top: 30px;
+  color: #fff;
 }
 
 .Header__button {
@@ -39,4 +44,5 @@
   margin-left: 32px;
   padding: 0;
   background: rgba(0, 0, 0, 0);
+  color: #fff;
 }

@@ -1,0 +1,33 @@
+.SearchForm {
+  background-image: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg);
+  background-size: cover;
+  transform: translateY(-80px);
+  z-index: 1;
+}
+
+.SearchForm__items {
+  max-width: 608px;
+  margin: auto;
+}
+
+.SearchForm__header {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 64px;
+  color: #fff;
+  margin: 0 auto;
+  padding-top: 160px;
+}
+
+.SearchForm__subheader {
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin: 0;
+  padding-top: 32px;
+}
