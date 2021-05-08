@@ -3867,7 +3867,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-polyfill-corejs2", "virtual:659c4332562f88dd47b67d50fbc039d1a88d6335de93bffe0045ef3992b9279ca0be7bc4eb8c9c19d77e3061a7592022a08ced6851523994291ff066627c2106#npm:0.2.0"],
             ["babel-plugin-polyfill-corejs3", "virtual:659c4332562f88dd47b67d50fbc039d1a88d6335de93bffe0045ef3992b9279ca0be7bc4eb8c9c19d77e3061a7592022a08ced6851523994291ff066627c2106#npm:0.2.0"],
             ["babel-plugin-polyfill-regenerator", "virtual:659c4332562f88dd47b67d50fbc039d1a88d6335de93bffe0045ef3992b9279ca0be7bc4eb8c9c19d77e3061a7592022a08ced6851523994291ff066627c2106#npm:0.2.0"],
-            ["core-js-compat", "npm:3.12.0"],
+            ["core-js-compat", "npm:3.12.1"],
             ["semver", "npm:6.3.0"]
           ],
           "packagePeers": [
@@ -3946,7 +3946,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-modules", "virtual:06d30a6736866c599ace10a122857ae32a8b56ddad32cc2e236b3251c3d049e4100f86e3fb14a06a9ab592a75348f77fd9765c6f27e66fb3b88e8e1cac96fcdb#npm:0.1.4"],
             ["@babel/types", "npm:7.14.1"],
             ["@types/babel__core", null],
-            ["core-js-compat", "npm:3.12.0"],
+            ["core-js-compat", "npm:3.12.1"],
             ["semver", "npm:5.7.1"]
           ],
           "packagePeers": [
@@ -4103,7 +4103,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@babel-runtime-corejs3-npm-7.14.0-369a72598c-a44a75be45.zip/node_modules/@babel/runtime-corejs3/",
           "packageDependencies": [
             ["@babel/runtime-corejs3", "npm:7.14.0"],
-            ["core-js-pure", "npm:3.12.0"],
+            ["core-js-pure", "npm:3.12.1"],
             ["regenerator-runtime", "npm:0.13.8"]
           ],
           "linkType": "HARD",
@@ -6723,7 +6723,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.14.0"],
             ["@babel/helper-define-polyfill-provider", "virtual:60ccb8f942091314bada8ad3986b5d61f1832ec5069a84bedaf1a47fb9148dd6e019ce2f0a04ee5c9a85659f46d2b3acb407f06f908f91b60dfc489e77cdccb4#npm:0.2.0"],
             ["@types/babel__core", null],
-            ["core-js-compat", "npm:3.12.0"]
+            ["core-js-compat", "npm:3.12.1"]
           ],
           "packagePeers": [
             "@babel/core",
@@ -8198,19 +8198,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:3.12.0", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.12.0-86ddce2306/node_modules/core-js/",
+        ["npm:3.12.1", {
+          "packageLocation": "./.yarn/unplugged/core-js-npm-3.12.1-6d1063bc86/node_modules/core-js/",
           "packageDependencies": [
-            ["core-js", "npm:3.12.0"]
+            ["core-js", "npm:3.12.1"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["core-js-compat", [
-        ["npm:3.12.0", {
-          "packageLocation": "./.yarn/cache/core-js-compat-npm-3.12.0-73a57060fd-22b29c068b.zip/node_modules/core-js-compat/",
+        ["npm:3.12.1", {
+          "packageLocation": "./.yarn/cache/core-js-compat-npm-3.12.1-b22ed3c2b0-a807d70b0a.zip/node_modules/core-js-compat/",
           "packageDependencies": [
-            ["core-js-compat", "npm:3.12.0"],
+            ["core-js-compat", "npm:3.12.1"],
             ["browserslist", "npm:4.16.6"],
             ["semver", "npm:7.0.0"]
           ],
@@ -8218,10 +8218,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["core-js-pure", [
-        ["npm:3.12.0", {
-          "packageLocation": "./.yarn/unplugged/core-js-pure-npm-3.12.0-e6bc034098/node_modules/core-js-pure/",
+        ["npm:3.12.1", {
+          "packageLocation": "./.yarn/unplugged/core-js-pure-npm-3.12.1-ac3be20f93/node_modules/core-js-pure/",
           "packageDependencies": [
-            ["core-js-pure", "npm:3.12.0"]
+            ["core-js-pure", "npm:3.12.1"]
           ],
           "linkType": "HARD",
         }]
@@ -9517,7 +9517,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["es-to-primitive", "npm:1.2.1"],
             ["is-callable", "npm:1.2.3"],
             ["is-date-object", "npm:1.0.4"],
-            ["is-symbol", "npm:1.0.3"]
+            ["is-symbol", "npm:1.0.4"]
           ],
           "linkType": "HARD",
         }]
@@ -12595,10 +12595,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["is-symbol", [
-        ["npm:1.0.3", {
-          "packageLocation": "./.yarn/cache/is-symbol-npm-1.0.3-6bebca15dc-c6d54bd012.zip/node_modules/is-symbol/",
+        ["npm:1.0.4", {
+          "packageLocation": "./.yarn/cache/is-symbol-npm-1.0.4-eb9baac703-92805812ef.zip/node_modules/is-symbol/",
           "packageDependencies": [
-            ["is-symbol", "npm:1.0.3"],
+            ["is-symbol", "npm:1.0.4"],
             ["has-symbols", "npm:1.0.2"]
           ],
           "linkType": "HARD",
@@ -17348,7 +17348,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/react-app-polyfill-npm-2.0.0-6c706ec28e-99e52a6b22.zip/node_modules/react-app-polyfill/",
           "packageDependencies": [
             ["react-app-polyfill", "npm:2.0.0"],
-            ["core-js", "npm:3.12.0"],
+            ["core-js", "npm:3.12.1"],
             ["object-assign", "npm:4.1.1"],
             ["promise", "npm:8.1.0"],
             ["raf", "npm:3.4.1"],
@@ -21280,7 +21280,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-boolean-object", "npm:1.1.1"],
             ["is-number-object", "npm:1.0.5"],
             ["is-string", "npm:1.0.6"],
-            ["is-symbol", "npm:1.0.3"]
+            ["is-symbol", "npm:1.0.4"]
           ],
           "linkType": "HARD",
         }]

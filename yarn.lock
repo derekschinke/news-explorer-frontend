@@ -4947,19 +4947,19 @@ __metadata:
   linkType: hard
 
 "core-js-compat@npm:^3.6.2, core-js-compat@npm:^3.9.0, core-js-compat@npm:^3.9.1":
-  version: 3.12.0
-  resolution: "core-js-compat@npm:3.12.0"
+  version: 3.12.1
+  resolution: "core-js-compat@npm:3.12.1"
   dependencies:
     browserslist: ^4.16.6
     semver: 7.0.0
-  checksum: 22b29c068b8882c1c5de54624f3761e9c7c11f13a887c6085180345854bfb1d95722b6ce9438276fcf5ef083b5cbb39527f3e8bd1e8c3b37672436b0aeb78ee4
+  checksum: a807d70b0a7fc06efe23b2863da008db279a5cefe7a95aebe2c37a3e81419e3bb7da08b85778220e0cecec4e0ec7dcaff196d857659944510c74bfdbde73bdde
   languageName: node
   linkType: hard
 
 "core-js-pure@npm:^3.0.0":
-  version: 3.12.0
-  resolution: "core-js-pure@npm:3.12.0"
-  checksum: 8e57eb16466fc55a36b0aebec7840c979d4d8c78a74c4bd9437a29eb180c2aeb4cad6f9bd1cc62188fbc99bec4c76657506bc7f5977985e8e53018ffb4eff60f
+  version: 3.12.1
+  resolution: "core-js-pure@npm:3.12.1"
+  checksum: 244fcdbb0915dfd8be02d08c766b704d2cfedb0876046ff09a7f504788422c045e51801464d9782cee0be67d807d7e3241417d9076a8cb6222c3c99b8e34e47a
   languageName: node
   linkType: hard
 
@@ -4971,9 +4971,9 @@ __metadata:
   linkType: hard
 
 "core-js@npm:^3.6.5":
-  version: 3.12.0
-  resolution: "core-js@npm:3.12.0"
-  checksum: d66e368bd73c8af15321b92048c7dfca86675c892336bc1b21be5897b3e059ff1918a8d8308789ea2d287dc73463b9d9f50de944c806ecb995c4f1a9de7499a7
+  version: 3.12.1
+  resolution: "core-js@npm:3.12.1"
+  checksum: c112ffaf2f20d9ba849b688c320d1724200d9a7b304125714f25b101a4ae3b55aa07a23f318f1735178077700d42382b71cebd86afa34279f266320db88c9cf6
   languageName: node
   linkType: hard
 
@@ -8726,11 +8726,11 @@ fsevents@^1.2.7:
   linkType: hard
 
 "is-symbol@npm:^1.0.2, is-symbol@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "is-symbol@npm:1.0.3"
+  version: 1.0.4
+  resolution: "is-symbol@npm:1.0.4"
   dependencies:
-    has-symbols: ^1.0.1
-  checksum: c6d54bd01218fa202da8ce91525ca41a907819be5f000df9ab9621467e087eb36f34b2dbfa51a2a699a282e860681ffa6a787d69e944ba99a46d3df553ff2798
+    has-symbols: ^1.0.2
+  checksum: 92805812ef590738d9de49d677cd17dfd486794773fb6fa0032d16452af46e9b91bb43ffe82c983570f015b37136f4b53b28b8523bfb10b0ece7a66c31a54510
   languageName: node
   linkType: hard
 
