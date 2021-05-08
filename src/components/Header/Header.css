@@ -1,0 +1,61 @@
+.Header {
+  height: 80px;
+  box-shadow: inset 0 -1px 0 #d1d2d6;
+}
+
+.Header__items {
+  max-width: 1232px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Header__actions {
+  display: flex;
+}
+
+.Header__logo {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.Header__nav-list {
+  padding: 0;
+  margin: 0;
+}
+
+.Header__nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  list-style-type: none;
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-bottom: 23px;
+  padding-left: 10px;
+  border-bottom: 3px solid;
+}
+
+.Header__button {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  height: 48px;
+  width: 176px;
+  border: 1px solid;
+  box-sizing: border-box;
+  border-radius: 100px;
+  margin-top: 19px;
+  margin-left: 32px;
+  padding: 0;
+  background: rgba(0, 0, 0, 0);
+}

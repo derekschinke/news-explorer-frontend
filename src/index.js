@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import '@csstools/normalize.css';
+import './fonts/fonts.css';
 import './index.css';
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
