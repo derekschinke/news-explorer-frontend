@@ -8858,8 +8858,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["deep-equal", "npm:1.1.1"],
             ["is-arguments", "npm:1.1.0"],
-            ["is-date-object", "npm:1.0.3"],
-            ["is-regex", "npm:1.1.2"],
+            ["is-date-object", "npm:1.0.4"],
+            ["is-regex", "npm:1.1.3"],
             ["object-is", "npm:1.1.5"],
             ["object-keys", "npm:1.1.1"],
             ["regexp.prototype.flags", "npm:1.3.1"]
@@ -9498,7 +9498,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["has-symbols", "npm:1.0.2"],
             ["is-callable", "npm:1.2.3"],
             ["is-negative-zero", "npm:2.0.1"],
-            ["is-regex", "npm:1.1.2"],
+            ["is-regex", "npm:1.1.3"],
             ["is-string", "npm:1.0.6"],
             ["object-inspect", "npm:1.10.3"],
             ["object-keys", "npm:1.1.1"],
@@ -9516,7 +9516,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["es-to-primitive", "npm:1.2.1"],
             ["is-callable", "npm:1.2.3"],
-            ["is-date-object", "npm:1.0.3"],
+            ["is-date-object", "npm:1.0.4"],
             ["is-symbol", "npm:1.0.3"]
           ],
           "linkType": "HARD",
@@ -12248,10 +12248,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["is-date-object", [
-        ["npm:1.0.3", {
-          "packageLocation": "./.yarn/cache/is-date-object-npm-1.0.3-e6989a7da9-7ed29f8426.zip/node_modules/is-date-object/",
+        ["npm:1.0.4", {
+          "packageLocation": "./.yarn/cache/is-date-object-npm-1.0.4-bc85407e70-20ce7b73fd.zip/node_modules/is-date-object/",
           "packageDependencies": [
-            ["is-date-object", "npm:1.0.3"]
+            ["is-date-object", "npm:1.0.4"]
           ],
           "linkType": "HARD",
         }]
@@ -12525,10 +12525,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["is-regex", [
-        ["npm:1.1.2", {
-          "packageLocation": "./.yarn/cache/is-regex-npm-1.1.2-0aaa524607-a1e5a451b6.zip/node_modules/is-regex/",
+        ["npm:1.1.3", {
+          "packageLocation": "./.yarn/cache/is-regex-npm-1.1.3-5a00a17388-19a831a1ba.zip/node_modules/is-regex/",
           "packageDependencies": [
-            ["is-regex", "npm:1.1.2"],
+            ["is-regex", "npm:1.1.3"],
             ["call-bind", "npm:1.0.2"],
             ["has-symbols", "npm:1.0.2"]
           ],

@@ -8424,9 +8424,9 @@ fsevents@^1.2.7:
   linkType: hard
 
 "is-date-object@npm:^1.0.1":
-  version: 1.0.3
-  resolution: "is-date-object@npm:1.0.3"
-  checksum: 7ed29f84269ee70a873fe29a5449252843e30ab239faa360b448d3e51b3ab7ba57885ac8d5f9aba93d5d6b0d4972528da0ba524df9d585501027603f4014e3b4
+  version: 1.0.4
+  resolution: "is-date-object@npm:1.0.4"
+  checksum: 20ce7b73fda926b4dfad2457e0d6fa04bb0a4cf555456d68918e334cbf80ac30523155adac420be0c8a4bc126fafe0874c4cfc0ffe0d97bac6333a8f02de1b94
   languageName: node
   linkType: hard
 
@@ -8667,12 +8667,12 @@ fsevents@^1.2.7:
   linkType: hard
 
 "is-regex@npm:^1.0.4, is-regex@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "is-regex@npm:1.1.2"
+  version: 1.1.3
+  resolution: "is-regex@npm:1.1.3"
   dependencies:
     call-bind: ^1.0.2
-    has-symbols: ^1.0.1
-  checksum: a1e5a451b6b2207c04e2591417499fed013630dbe96c051f0a39a3b266b16ab691c0345128223573f3cd45796e0f561a2241f4a7f1840b06574eebb7100b68aa
+    has-symbols: ^1.0.2
+  checksum: 19a831a1ba88d09bb43ab30194672e6ae1461caff27254d2c160ed63c95015155ad8784e80995e46a637d0880da8f4ed63b5c3242af1b49c0b5c4666a7a2d3d8
   languageName: node
   linkType: hard
 
