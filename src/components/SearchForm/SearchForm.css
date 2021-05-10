@@ -57,6 +57,7 @@
   padding-left: 24px;
   border: 1px solid #d1d2d6;
   box-sizing: border-box;
+  backdrop-filter: blur(8px);
 }
 
 .SearchForm__search-field::placeholder {
