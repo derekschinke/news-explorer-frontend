@@ -23,7 +23,7 @@
 .About__header {
   font-family: 'Roboto Slab', serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 40px;
   line-height: 46px;
   color: #1a1b22;
@@ -33,7 +33,7 @@
 .About__description {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: #1a1b22;
