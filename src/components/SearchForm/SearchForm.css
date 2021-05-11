@@ -1,8 +1,9 @@
 .SearchForm {
-  background-image: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg);
+  background-image: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.webp);
   background-size: cover;
   transform: translateY(-80px);
   z-index: 1;
+  background-position: center;
 }
 
 .SearchForm__background-filter {
