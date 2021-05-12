@@ -11,20 +11,16 @@ function SearchForm() {
             account.
           </p>
           <form className="SearchForm__form">
-            <label>
-              <input
-                className="SearchForm__search-field"
-                type="text"
-                placeholder="Enter topic"
-              />
-            </label>
-            <label>
-              <input
-                className="SearchForm__submit-button"
-                type="submit"
-                value="Search"
-              />
-            </label>
+            <input
+              className="SearchForm__search-field"
+              type="text"
+              placeholder="Enter topic"
+            />
+            <input
+              className="SearchForm__submit-button"
+              type="submit"
+              value="Search"
+            />
           </form>
         </div>
       </div>

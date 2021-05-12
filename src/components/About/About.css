@@ -1,10 +1,13 @@
 .About {
-  display: flex;
-  margin: auto;
-  width: 1232px;
-  padding-top: 0;
   padding-bottom: 16px;
-  transform: translateY(-64px);
+
+  /* transform: translateY(-64px); */
+}
+
+.About__items {
+  display: flex;
+  max-width: 1232px;
+  margin: auto;
 }
 
 .About__image {
