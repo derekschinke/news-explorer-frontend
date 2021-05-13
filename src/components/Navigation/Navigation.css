@@ -10,10 +10,16 @@
   font-size: 18px;
   line-height: 24px;
   list-style-type: none;
-  padding-top: 30px;
-  padding-right: 32px;
-  padding-bottom: 23px;
-  padding-left: 32px;
+  padding: 30px 32px 22px;
   border-bottom: 3px solid;
   color: #fff;
+}
+
+@media screen and (max-width: 1439px) {
+  .Navigation__nav-link {
+    font-size: 16px;
+    padding: 22px 16px 16px;
+    padding-top: 22px;
+    padding-bottom: 16px;
+  }
 }

@@ -41,3 +41,20 @@
   margin: 0;
   margin-top: 24px;
 }
+
+@media screen and (max-width: 1439px) {
+  .About {
+    padding-bottom: 60px;
+
+    /* transform: translateY(-26px); */
+  }
+
+  .About__image {
+    width: 232px;
+    height: 232px;
+  }
+
+  .About__text {
+    padding-top: 0;
+  }
+}

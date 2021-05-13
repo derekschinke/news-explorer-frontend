@@ -8,6 +8,7 @@
 
 .Header__items {
   max-width: 1232px;
+  padding: 0 40px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -34,8 +35,8 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  height: 48px;
   width: 176px;
+  height: 48px;
   border: 1px solid;
   box-sizing: border-box;
   border-radius: 100px;
@@ -44,4 +45,22 @@
   padding: 0;
   background: rgba(0, 0, 0, 0);
   color: #fff;
+}
+
+@media screen and (max-width: 1439px) {
+  .Header {
+    height: 66px;
+  }
+
+  .Header__logo {
+    padding-top: 22px;
+  }
+
+  .Header__button {
+    width: 152px;
+    height: 40px;
+    margin-top: 14px;
+    margin-left: 16px;
+    font-size: 16px;
+  }
 }

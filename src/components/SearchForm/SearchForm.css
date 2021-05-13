@@ -41,7 +41,7 @@
 }
 
 .SearchForm__form {
-  width: 608px;
+  width: 100%;
   height: 64px;
   background: #fff;
   border: 1px solid #d1d2d6;
@@ -99,4 +99,42 @@
 
 .SearchForm__submit-button:active {
   background: #2a65cc;
+}
+
+@media screen and (max-width: 1439px) {
+  .SearchForm {
+    transform: translateY(-66px);
+  }
+
+  .SearchForm__background-filter {
+    padding-bottom: 48px;
+  }
+
+  .SearchForm__items {
+    max-width: 448px;
+  }
+
+  .SearchForm__header {
+    font-size: 36px;
+    line-height: 40px;
+    padding-top: 104px;
+  }
+
+  .SearchForm__subheader {
+    padding-top: 16px;
+  }
+
+  .SearchForm__form {
+    height: 56px;
+    margin-top: 48px;
+  }
+
+  .SearchForm__search-field {
+    width: 228px;
+  }
+
+  .SearchForm__submit-button {
+    width: 160px;
+    height: 56px;
+  }
 }
