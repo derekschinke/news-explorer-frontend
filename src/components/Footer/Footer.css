@@ -2,11 +2,51 @@
   height: 80px;
 }
 
+.Footer__block {
+  max-width: 1232px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .Footer__copyright {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  padding: 0;
+  margin: 0;
   color: #b6bcbf;
+  padding-top: 32px;
+}
+
+.Footer__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-right: 2px;
+  padding-top: 30px;
+}
+
+.Footer__list-item {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1b22;
+  list-style-type: none;
+  padding-left: 28px;
+}
+
+.Footer__link {
+  color: #1a1b22;
+  text-decoration: none;
+}
+
+.Footer__icon {
+  width: 20px;
+  height: 20px;
+  fill: blue;
 }

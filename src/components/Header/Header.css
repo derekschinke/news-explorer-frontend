@@ -13,10 +13,6 @@
   justify-content: space-between;
 }
 
-.Header__actions {
-  display: flex;
-}
-
 .Header__logo {
   font-family: 'Roboto Slab', serif;
   font-style: normal;
@@ -26,6 +22,10 @@
   margin: 0;
   padding-top: 30px;
   color: #fff;
+}
+
+.Header__actions {
+  display: flex;
 }
 
 .Header__button {
