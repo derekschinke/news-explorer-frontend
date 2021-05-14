@@ -42,7 +42,9 @@
 
 @media screen and (max-width: 1439px) {
   .About {
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 61px;
+    max-width: 688px;
   }
 
   .About__image {
@@ -52,5 +54,12 @@
 
   .About__text {
     padding-top: 0;
+    max-width: 424px;
+    margin-left: 32px;
+  }
+
+  .About__header {
+    font-size: 30px;
+    line-height: 40px;
   }
 }

@@ -4,6 +4,7 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
+  padding: 0 40px;
 }
 
 .Footer__copyright {
@@ -34,7 +35,7 @@
   line-height: 24px;
   color: #1a1b22;
   list-style-type: none;
-  padding-left: 28px;
+  padding-left: 26px;
 }
 
 .Footer__link {
@@ -46,4 +47,18 @@
   width: 20px;
   height: 20px;
   fill: blue;
+}
+
+@media screen and (max-width: 1439px) {
+  .Footer {
+    height: 64px;
+  }
+
+  .Footer__copyright {
+    padding-top: 24px;
+  }
+
+  .Footer__list {
+    padding-top: 21px;
+  }
 }
