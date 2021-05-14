@@ -1,8 +1,5 @@
 .Footer {
   height: 80px;
-}
-
-.Footer__block {
   max-width: 1232px;
   margin: auto;
   display: flex;

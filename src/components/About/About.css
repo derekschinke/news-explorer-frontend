@@ -1,8 +1,6 @@
 .About {
+  padding-top: 80px;
   padding-bottom: 80px;
-}
-
-.About__items {
   display: flex;
   max-width: 1232px;
   margin: auto;
@@ -45,8 +43,6 @@
 @media screen and (max-width: 1439px) {
   .About {
     padding-bottom: 60px;
-
-    /* transform: translateY(-26px); */
   }
 
   .About__image {
