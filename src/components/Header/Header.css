@@ -9,21 +9,3 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
-
-/* @media screen and (max-width: 1439px) {
-  .Header {
-    height: 66px;
-  }
-
-  .Header__logo {
-    padding-top: 22px;
-  }
-
-  .Header__button {
-    width: 152px;
-    height: 40px;
-    margin-top: 14px;
-    margin-left: 16px;
-    font-size: 16px;
-  }
-} */

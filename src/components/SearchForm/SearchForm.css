@@ -89,21 +89,14 @@
 
 @media screen and (max-width: 1439px) {
   .SearchForm {
-    transform: translateY(-66px);
-  }
-
-  .SearchForm__background-filter {
+    padding-top: 38px;
     padding-bottom: 48px;
-  }
-
-  .SearchForm__items {
     max-width: 448px;
   }
 
   .SearchForm__header {
     font-size: 36px;
     line-height: 40px;
-    padding-top: 104px;
   }
 
   .SearchForm__subheader {
