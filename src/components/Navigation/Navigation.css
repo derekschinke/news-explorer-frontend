@@ -1,3 +1,51 @@
+.Navigation {
+  height: 80px;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+  position: relative;
+  background: rgba(196, 196, 196, 0.01);
+}
+
+.Navigation__items {
+  max-width: 1232px;
+  padding: 0 40px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Navigation__logo {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 30px;
+  color: #fff;
+}
+
+.Navigation__actions {
+  display: flex;
+}
+
+.Navigation__button {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  width: 176px;
+  height: 48px;
+  border: 1px solid;
+  box-sizing: border-box;
+  border-radius: 100px;
+  margin-top: 19px;
+  margin-left: 32px;
+  padding: 0;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
 .Navigation__nav-list {
   padding: 0;
   margin: 0;

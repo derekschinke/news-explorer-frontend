@@ -1,16 +1,14 @@
 import './Header.css';
 
 import Navigation from '../Navigation/Navigation';
+import SearchForm from '../SearchForm/SearchForm';
 
 function Header() {
   return (
     <header className="Header">
-      <div className="Header__items">
-        <h1 className="Header__logo">NewsExplorer</h1>
-        <div className="Header__actions">
-          <Navigation />
-          <button className="Header__button">Sign in</button>
-        </div>
+      <div className="Header__background-filter">
+        <Navigation />
+        <SearchForm />
       </div>
     </header>
   );
