@@ -9644,7 +9644,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semver", "npm:7.3.5"],
             ["strip-ansi", "npm:6.0.0"],
             ["strip-json-comments", "npm:3.1.1"],
-            ["table", "npm:6.7.0"],
+            ["table", "npm:6.7.1"],
             ["text-table", "npm:0.2.0"],
             ["v8-compile-cache", "npm:2.3.0"]
           ],
@@ -19641,7 +19641,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["style-search", "npm:0.1.0"],
             ["sugarss", "npm:2.0.0"],
             ["svg-tags", "npm:1.0.0"],
-            ["table", "npm:6.7.0"],
+            ["table", "npm:6.7.1"],
             ["v8-compile-cache", "npm:2.3.0"],
             ["write-file-atomic", "npm:3.0.3"]
           ],
@@ -19839,10 +19839,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["table", [
-        ["npm:6.7.0", {
-          "packageLocation": "./.yarn/cache/table-npm-6.7.0-48a4aa68e4-96069a2eae.zip/node_modules/table/",
+        ["npm:6.7.1", {
+          "packageLocation": "./.yarn/cache/table-npm-6.7.1-7d70e55c6d-053b61fa4e.zip/node_modules/table/",
           "packageDependencies": [
-            ["table", "npm:6.7.0"],
+            ["table", "npm:6.7.1"],
             ["ajv", "npm:8.3.0"],
             ["lodash.clonedeep", "npm:4.5.0"],
             ["lodash.truncate", "npm:4.4.2"],
