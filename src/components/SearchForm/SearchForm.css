@@ -1,6 +1,5 @@
 .SearchForm {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 16px;
   max-width: 608px;
   margin: auto;
 }
@@ -42,7 +41,7 @@
 }
 
 .SearchForm__search-field {
-  width: 376px;
+  max-width: 376px;
   height: 22px;
   border: none;
   margin-left: 24px;
@@ -59,6 +58,10 @@
 .SearchForm__search-field::placeholder {
   color: #b6bcbf;
   opacity: 1;
+}
+
+.SearchForm__search-field:focus {
+  outline: none;
 }
 
 .SearchForm__submit-button {
@@ -109,11 +112,36 @@
   }
 
   .SearchForm__search-field {
-    width: 228px;
+    max-width: 228px;
   }
 
   .SearchForm__submit-button {
     width: 160px;
     height: 56px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .SearchForm {
+    padding-top: 30px;
+    padding-bottom: 104px;
+  }
+
+  .SearchForm__form {
+    margin-top: 120px;
+    flex-direction: column;
+  }
+
+  .SearchForm__search-field {
+    margin: 17px 16px 0;
+    margin-top: 17px;
+    max-width: 416px;
+    width: calc(100vw - 64px);
+  }
+
+  .SearchForm__submit-button {
+    margin-top: 33px;
+    max-width: 448px;
+    width: calc(100vw - 32px);
   }
 }

@@ -16,7 +16,7 @@
 .Navigation__logo {
   font-family: 'Roboto Slab', serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   margin: 0;
@@ -85,5 +85,25 @@
     margin-top: 14px;
     margin-left: 16px;
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Navigation {
+    height: 56px;
+  }
+
+  .Navigation__items {
+    padding: 0 16px;
+  }
+
+  .Navigation__logo {
+    padding-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .Navigation__actions {
+    visibility: hidden;
   }
 }
