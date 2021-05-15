@@ -6247,9 +6247,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.22.1, eslint-plugin-import@npm:^2.23.0":
-  version: 2.23.0
-  resolution: "eslint-plugin-import@npm:2.23.0"
+"eslint-plugin-import@npm:^2.22.1, eslint-plugin-import@npm:^2.23.1":
+  version: 2.23.1
+  resolution: "eslint-plugin-import@npm:2.23.1"
   dependencies:
     array-includes: ^3.1.3
     array.prototype.flat: ^1.2.4
@@ -6269,7 +6269,7 @@ __metadata:
     tsconfig-paths: ^3.9.0
   peerDependencies:
     eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0
-  checksum: f517443a7243a4028440be0464795f186fd84ca9d10752f549111cbf7eeeb32d2fc5560560840223de2308004a3c54ea75d5bf31fdcca1874d70109312b47770
+  checksum: 69b2b3f847e130e2198223bf58fb618adefd9fb0f115ea1a4bd3f4fe730f8a3b6c49d5957909376644a02c17e81ac5c9435cefde5945837b2d6dd438de5b3c9e
   languageName: node
   linkType: hard
 
@@ -10668,7 +10668,7 @@ fsevents@^1.2.7:
     eslint-config-prettier: ^8.3.0
     eslint-config-react-app: ^6.0.0
     eslint-plugin-flowtype: ^5.7.2
-    eslint-plugin-import: ^2.23.0
+    eslint-plugin-import: ^2.23.1
     eslint-plugin-jest: ^24.3.6
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-prettier: ^3.4.0
