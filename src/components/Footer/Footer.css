@@ -1,5 +1,4 @@
 .Footer {
-  height: 80px;
   max-width: 1232px;
   margin: auto;
   display: flex;
@@ -17,14 +16,15 @@
   margin: 0;
   color: #b6bcbf;
   padding-top: 32px;
+  white-space: nowrap;
 }
 
 .Footer__list {
-  display: flex;
+  display: grid;
+  grid: 80px / 112px 192px 62px 48px;
+  align-items: center;
   margin: 0;
   padding: 0;
-  padding-right: 2px;
-  padding-top: 30px;
 }
 
 .Footer__list-item {
@@ -35,7 +35,7 @@
   line-height: 24px;
   color: #1a1b22;
   list-style-type: none;
-  padding-left: 26px;
+  text-align: center;
 }
 
 .Footer__link {
@@ -46,19 +46,44 @@
 .Footer__icon {
   width: 20px;
   height: 20px;
-  fill: blue;
 }
 
 @media screen and (max-width: 1439px) {
-  .Footer {
-    height: 64px;
-  }
-
   .Footer__copyright {
     padding-top: 24px;
   }
 
   .Footer__list {
-    padding-top: 21px;
+    grid-template-rows: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Footer {
+    flex-direction: column-reverse;
+    padding: 5px 18px 16px 16px;
+  }
+
+  .Footer__copyright {
+    padding-top: 18px;
+    white-space: normal;
+  }
+
+  .Footer__list {
+    grid: [row0] auto [row1] auto [row2] / [col0] 200px [col1] auto [col2] 48px [col3];
+  }
+
+  .Footer__list-item {
+    line-height: 48px;
+    text-align: left;
+  }
+
+  .Footer__list-item:nth-of-type(2) {
+    grid-column: col0 / col2;
+    grid-row: row1;
+  }
+
+  .Footer__list-item_type_icon {
+    text-align: right;
   }
 }

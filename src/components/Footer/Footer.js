@@ -17,12 +17,12 @@ function Footer() {
               Practicum by Yandex
             </a>
           </li>
-          <li className="Footer__list-item">
+          <li className="Footer__list-item Footer__list-item_type_icon">
             <a href="https://github.com/derekschinke">
               <img className="Footer__icon" src={gitHubLogo} alt=""></img>
             </a>
           </li>
-          <li className="Footer__list-item">
+          <li className="Footer__list-item Footer__list-item_type_icon">
             <a href="https://www.linkedin.com/in/derekschinke">
               <img className="Footer__icon" src={linkedInLogo} alt=""></img>
             </a>

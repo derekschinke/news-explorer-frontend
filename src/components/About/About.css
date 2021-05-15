@@ -50,6 +50,7 @@
   .About__image {
     width: 232px;
     height: 232px;
+    margin-top: 21px;
   }
 
   .About__text {
@@ -68,6 +69,7 @@
   .About {
     flex-direction: column;
     padding-top: 32px;
+    padding-bottom: 128px;
   }
 
   .About__image {

@@ -104,6 +104,6 @@
   }
 
   .Navigation__actions {
-    visibility: hidden;
+    display: none;
   }
 }
