@@ -5952,10 +5952,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:8.3.0", {
-          "packageLocation": "./.yarn/cache/ajv-npm-8.3.0-0782868326-eca6d99d87.zip/node_modules/ajv/",
+        ["npm:8.4.0", {
+          "packageLocation": "./.yarn/cache/ajv-npm-8.4.0-1d671a4d5f-05d5114c05.zip/node_modules/ajv/",
           "packageDependencies": [
-            ["ajv", "npm:8.3.0"],
+            ["ajv", "npm:8.4.0"],
             ["fast-deep-equal", "npm:3.1.3"],
             ["json-schema-traverse", "npm:1.0.0"],
             ["require-from-string", "npm:2.0.2"],
@@ -7252,7 +7252,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["browserslist", "npm:4.14.2"],
             ["caniuse-lite", "npm:1.0.30001228"],
-            ["electron-to-chromium", "npm:1.3.727"],
+            ["electron-to-chromium", "npm:1.3.728"],
             ["escalade", "npm:3.1.1"],
             ["node-releases", "npm:1.1.72"]
           ],
@@ -7264,7 +7264,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["browserslist", "npm:4.16.6"],
             ["caniuse-lite", "npm:1.0.30001228"],
             ["colorette", "npm:1.2.2"],
-            ["electron-to-chromium", "npm:1.3.727"],
+            ["electron-to-chromium", "npm:1.3.728"],
             ["escalade", "npm:3.1.1"],
             ["node-releases", "npm:1.1.72"]
           ],
@@ -9291,10 +9291,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["electron-to-chromium", [
-        ["npm:1.3.727", {
-          "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.3.727-c1cfff7453-27e725e497.zip/node_modules/electron-to-chromium/",
+        ["npm:1.3.728", {
+          "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.3.728-19bf8572c2-cce118349c.zip/node_modules/electron-to-chromium/",
           "packageDependencies": [
-            ["electron-to-chromium", "npm:1.3.727"]
+            ["electron-to-chromium", "npm:1.3.728"]
           ],
           "linkType": "HARD",
         }]
@@ -19856,7 +19856,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/table-npm-6.7.1-7d70e55c6d-053b61fa4e.zip/node_modules/table/",
           "packageDependencies": [
             ["table", "npm:6.7.1"],
-            ["ajv", "npm:8.3.0"],
+            ["ajv", "npm:8.4.0"],
             ["lodash.clonedeep", "npm:4.5.0"],
             ["lodash.truncate", "npm:4.4.2"],
             ["slice-ansi", "npm:4.0.0"],
