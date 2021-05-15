@@ -1,5 +1,6 @@
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import '@csstools/normalize.css';
 import './fonts/fonts.css';
 import './index.css';
@@ -8,7 +9,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <StrictMode>
-    <App />
+    <Router basename="/">
+      <App />
+    </Router>
   </StrictMode>,
   document.getElementById('root')
 );
