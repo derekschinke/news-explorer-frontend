@@ -1,0 +1,20 @@
+.SearchResults {
+  background: #f5f6f7;
+  padding: 80px 0;
+}
+
+.SearchResults__items {
+  max-width: 1232px;
+  margin: auto;
+}
+
+.SearchResults__header {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1a1b22;
+  margin: 0;
+  padding-bottom: 64px;
+}
