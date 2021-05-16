@@ -8,7 +8,7 @@
 .NewsCard__image {
   width: 100%;
   height: 272px;
-  min-height: 272px;
+  background: no-repeat center/cover;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
 }
@@ -18,6 +18,7 @@
 }
 
 .NewsCard__date {
+  height: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -28,6 +29,7 @@
 }
 
 .NewsCard__title {
+  height: 60px;
   font-family: 'Roboto Slab', serif;
   font-style: normal;
   font-weight: 400;
@@ -43,6 +45,7 @@
 }
 
 .NewsCard__text {
+  height: 110px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -58,6 +61,7 @@
 }
 
 .NewsCard__source {
+  height: 20px;
   font-family: 'Roboto Slab', serif;
   font-style: normal;
   font-weight: bold;
