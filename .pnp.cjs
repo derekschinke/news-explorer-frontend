@@ -9008,10 +9008,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["detect-node", [
-        ["npm:2.0.5", {
-          "packageLocation": "./.yarn/cache/detect-node-npm-2.0.5-128b35fd02-1a53096f6c.zip/node_modules/detect-node/",
+        ["npm:2.1.0", {
+          "packageLocation": "./.yarn/cache/detect-node-npm-2.1.0-e8de0e94f7-832184ec45.zip/node_modules/detect-node/",
           "packageDependencies": [
-            ["detect-node", "npm:2.0.5"]
+            ["detect-node", "npm:2.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -19139,7 +19139,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["spdy-transport", "npm:3.0.0"],
             ["debug", "virtual:48933b28331d16c1d73786360e7ba20f54f6df4949c6ab5c13ac4c4353b5c70f2d36a97de9a9c531027ad3588d8fd7f384706f298f0eff0356b58bb9c47f63ec#npm:4.3.2"],
-            ["detect-node", "npm:2.0.5"],
+            ["detect-node", "npm:2.1.0"],
             ["hpack.js", "npm:2.1.6"],
             ["obuf", "npm:1.1.2"],
             ["readable-stream", "npm:3.6.0"],

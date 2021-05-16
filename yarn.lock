@@ -5646,9 +5646,9 @@ __metadata:
   linkType: hard
 
 "detect-node@npm:^2.0.4":
-  version: 2.0.5
-  resolution: "detect-node@npm:2.0.5"
-  checksum: 1a53096f6c3d1c4a82db2e97440d7a38eff7d8e635a5613ac1fff870135b709c5a4e6af789cda17bd6f4b6f036d30a913a0fe2dec125b565f5f7767e3e401c46
+  version: 2.1.0
+  resolution: "detect-node@npm:2.1.0"
+  checksum: 832184ec458353e41533ac9c622f16c19f7c02d8b10c303dfd3a756f56be93e903616c0bb2d4226183c9351c15fc0b3dba41a17a2308262afabcfa3776e6ae6e
   languageName: node
   linkType: hard
 
