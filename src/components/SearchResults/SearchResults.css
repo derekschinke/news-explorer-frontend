@@ -18,3 +18,19 @@
   margin: 0;
   padding-bottom: 64px;
 }
+
+@media screen and (max-width: 1439px) {
+  .SearchResults {
+    padding-top: 40px;
+  }
+
+  .SearchResults__items {
+    max-width: 688px;
+  }
+
+  .SearchResults__header {
+    font-size: 30px;
+    line-height: 34px;
+    padding-bottom: 32px;
+  }
+}

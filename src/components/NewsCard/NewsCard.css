@@ -77,3 +77,35 @@
   -webkit-line-clamp: 1;
   overflow: hidden;
 }
+
+@media screen and (max-width: 1439px) {
+  .NewsCard {
+    width: 220px;
+    height: 420px;
+  }
+
+  .NewsCard__image {
+    height: 150px;
+  }
+
+  .NewsCard__info {
+    padding: 16px 16px 0;
+  }
+
+  .NewsCard__title {
+    height: 72px;
+    font-size: 22px;
+    line-height: 24px;
+    -webkit-line-clamp: 3;
+  }
+
+  .NewsCard__text {
+    height: 88px;
+    padding-top: 10px;
+    -webkit-line-clamp: 4;
+  }
+
+  .NewsCard__source {
+    margin-top: 12px;
+  }
+}

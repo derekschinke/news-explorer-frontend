@@ -7,3 +7,9 @@
   flex-wrap: wrap;
   gap: 16px;
 }
+
+@media screen and (max-width: 1439px) {
+  .NewsCardList {
+    gap: 8px;
+  }
+}
