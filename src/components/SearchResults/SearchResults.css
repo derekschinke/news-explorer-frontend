@@ -6,6 +6,7 @@
 .SearchResults__items {
   max-width: 1232px;
   margin: auto;
+  padding: 0 16px;
 }
 
 .SearchResults__header {
@@ -32,5 +33,25 @@
     font-size: 30px;
     line-height: 34px;
     padding-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .SearchResults {
+    padding-top: 32px;
+  }
+
+  .SearchResults__items {
+    max-width: 586px;
+  }
+
+  .SearchResults__header {
+    padding-bottom: 58px;
+  }
+}
+
+@media screen and (max-width: 617px) {
+  .SearchResults__items {
+    max-width: 288px;
   }
 }

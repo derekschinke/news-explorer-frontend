@@ -109,3 +109,28 @@
     margin-top: 12px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .NewsCard {
+    width: 288px;
+    height: 440px;
+  }
+
+  .NewsCard__image {
+    height: 196px;
+  }
+
+  .NewsCard__title {
+    height: 48px;
+    padding-top: 10px;
+    -webkit-line-clamp: 2;
+  }
+
+  .NewsCard__text {
+    padding-top: 14px;
+  }
+
+  .NewsCard__source {
+    margin-top: 8px;
+  }
+}
