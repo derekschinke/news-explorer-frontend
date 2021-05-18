@@ -1,20 +1,20 @@
-import './NewsCard.css';
+import styles from './NewsCard.module.css';
 
 function NewsCard(props) {
   console.log(props.card.image);
   return (
-    <li className="NewsCard">
+    <li className={styles.block}>
       <div
-        className="NewsCard__image"
+        className={styles.image}
         role="img"
         alt={props.card.title}
         style={{ backgroundImage: `url(${props.card.image})` }}
       />
-      <div className="NewsCard__info">
-        <p className="NewsCard__date">{props.card.date}</p>
-        <h3 className="NewsCard__title">{props.card.title}</h3>
-        <p className="NewsCard__text">{props.card.text}</p>
-        <a className="NewsCard__source" href={props.card.link}>
+      <div className={styles.info}>
+        <p className={styles.date}>{props.card.date}</p>
+        <h3 className={styles.title}>{props.card.title}</h3>
+        <p className={styles.text}>{props.card.text}</p>
+        <a className={styles.source} href={props.card.link}>
           {props.card.source}
         </a>
       </div>

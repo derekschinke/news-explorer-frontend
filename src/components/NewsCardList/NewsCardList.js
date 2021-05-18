@@ -1,4 +1,4 @@
-import './NewsCardList.css';
+import styles from './NewsCardList.module.css';
 import NewsCard from '../NewsCard/NewsCard';
 
 function NewsCardList() {
@@ -56,7 +56,7 @@ function NewsCardList() {
   };
 
   return (
-    <ul className="NewsCardList">
+    <ul className={styles.block}>
       <NewsCard card={card1} />
       <NewsCard card={card2} />
       <NewsCard card={card3} />
