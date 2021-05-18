@@ -1,11 +1,11 @@
 import NewsCardList from '../NewsCardList/NewsCardList';
-import './SearchResults.css';
+import styles from './SearchResults.module.css';
 
 function SearchResults() {
   return (
-    <section className="SearchResults">
-      <div className="SearchResults__items">
-        <h2 className="SearchResults__header">Search results</h2>
+    <section className={styles.block}>
+      <div className={styles.items}>
+        <h2 className={styles.header}>Search results</h2>
         <NewsCardList />
       </div>
     </section>
