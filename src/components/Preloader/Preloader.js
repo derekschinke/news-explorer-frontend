@@ -1,10 +1,10 @@
-import './Preloader.css';
+import styles from './Preloader.module.css';
 
 function Preloader() {
   return (
-    <section class="Preloader">
-      <div class="Preloader__circle"></div>
-      <p className="Preloader__description">Searching for news…</p>
+    <section class={styles.block}>
+      <div class={styles.circle}></div>
+      <p className={styles.description}>Searching for news…</p>
     </section>
   );
 }
