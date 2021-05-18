@@ -1,4 +1,4 @@
-.Footer {
+.block {
   max-width: 1232px;
   margin: auto;
   display: flex;
@@ -6,7 +6,7 @@
   padding: 0 40px;
 }
 
-.Footer__copyright {
+.copyright {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -19,7 +19,7 @@
   white-space: nowrap;
 }
 
-.Footer__list {
+.list {
   display: grid;
   grid: 80px / 112px 192px 62px 48px;
   align-items: center;
@@ -27,7 +27,7 @@
   padding: 0;
 }
 
-.Footer__list-item {
+.listItem {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -38,60 +38,60 @@
   text-align: center;
 }
 
-.Footer__link {
+.link {
   color: #1a1b22;
   text-decoration: none;
 }
 
-.Footer__icon {
+.icon {
   width: 20px;
   height: 20px;
 }
 
-.Footer__icon_github {
+.icon_github {
   color: #191717;
 }
 
-.Footer__icon_linkedin {
+.icon_linkedin {
   color: #000;
 }
 
 @media screen and (max-width: 1439px) {
-  .Footer__copyright {
+  .copyright {
     padding-top: 24px;
   }
 
-  .Footer__list {
+  .list {
     grid-template-rows: 64px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .Footer {
+  .block {
     flex-direction: column-reverse;
     padding: 5px 18px 16px 16px;
   }
 
-  .Footer__copyright {
+  .copyright {
     padding-top: 18px;
     white-space: normal;
   }
 
-  .Footer__list {
+  .list {
     grid: [row0] auto [row1] auto [row2] / [col0] 200px [col1] auto [col2] 48px [col3];
   }
 
-  .Footer__list-item {
+  .list-item {
     line-height: 48px;
     text-align: left;
   }
 
-  .Footer__list-item:nth-of-type(2) {
+  .list-item:nth-of-type(2) {
     grid-column: col0 / col2;
     grid-row: row1;
   }
 
-  .Footer__list-item_type_icon {
+  .listItem_type_icon {
     text-align: right;
   }
 }

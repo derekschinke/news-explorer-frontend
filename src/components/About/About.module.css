@@ -1,4 +1,4 @@
-.About {
+.block {
   padding-top: 80px;
   padding-bottom: 80px;
   display: flex;
@@ -6,20 +6,20 @@
   margin: auto;
 }
 
-.About__image {
+.image {
   width: 464px;
   height: 464px;
   border-radius: 1000px;
   object-fit: cover;
 }
 
-.About__text {
+.text {
   margin-left: 56px;
   padding-top: 51px;
   max-width: 600px;
 }
 
-.About__header {
+.header {
   font-family: 'Roboto Slab', serif;
   font-style: normal;
   font-weight: 400;
@@ -29,7 +29,7 @@
   margin: 0;
 }
 
-.About__description {
+.description {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -41,51 +41,51 @@
 }
 
 @media screen and (max-width: 1439px) {
-  .About {
+  .block {
     padding-top: 40px;
     padding-bottom: 61px;
     max-width: 688px;
   }
 
-  .About__image {
+  .image {
     width: 232px;
     height: 232px;
     margin-top: 21px;
   }
 
-  .About__text {
+  .text {
     padding-top: 0;
     max-width: 424px;
     margin-left: 32px;
   }
 
-  .About__header {
+  .header {
     font-size: 30px;
     line-height: 40px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .About {
+  .block {
     flex-direction: column;
     padding-top: 32px;
     padding-bottom: 128px;
   }
 
-  .About__image {
+  .image {
     width: 272px;
     height: 272px;
     margin: auto;
   }
 
-  .About__text {
+  .text {
     padding-top: 24px;
     max-width: 100vw;
     margin-left: 16px;
     margin-right: 16px;
   }
 
-  .About__description {
+  .description {
     margin-top: 16px;
   }
 }

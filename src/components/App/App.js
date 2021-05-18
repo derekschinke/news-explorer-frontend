@@ -1,5 +1,5 @@
 import { Redirect, Route, Switch } from 'react-router-dom';
-import './App.css';
+import styles from './App.module.css';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
@@ -7,7 +7,7 @@ import SavedNewsHeader from '../SavedNewsHeader/SavedNewsHeader';
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.block}>
       <Switch>
         <Route exact path="/">
           <Header />
