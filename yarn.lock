@@ -3554,9 +3554,9 @@ __metadata:
   linkType: hard
 
 "axe-core@npm:^4.0.2":
-  version: 4.2.0
-  resolution: "axe-core@npm:4.2.0"
-  checksum: 6ec6f3c2f8d613687e783a59758dbf75bf509cb133c4599ac99c6cbffb0e6a6d1e65dbd6db0b9790921443c9cd031fbd33508515438f6695339912482a27be93
+  version: 4.2.1
+  resolution: "axe-core@npm:4.2.1"
+  checksum: 0a9b6104b091836277e0d3a725bf740ab0e90e413d7833dad0d9390b59213cb9456f4a3aaf712d735e63d68963696f3daa39d517cc5f87609424e7ab1c913370
   languageName: node
   linkType: hard
 
@@ -5914,9 +5914,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.564, electron-to-chromium@npm:^1.3.723":
-  version: 1.3.730
-  resolution: "electron-to-chromium@npm:1.3.730"
-  checksum: 69f1d28d46eed1be87b1f5f12d26c7047102439888b7f2d1a71b0c9204b747016eeb9431a457f5b98de99da59b1f6c847bafae88c08dd8a80e7916aa6a9ad87c
+  version: 1.3.731
+  resolution: "electron-to-chromium@npm:1.3.731"
+  checksum: 796bd257d0fe855deee4ee87448668b5f34140e9be4d7796aee0f24dfdba5c41a3c24048662195a23cacd734b811803bdb7a8ee4fc58984597c89bb5d09a42f0
   languageName: node
   linkType: hard
 

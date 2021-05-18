@@ -6483,10 +6483,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["axe-core", [
-        ["npm:4.2.0", {
-          "packageLocation": "./.yarn/cache/axe-core-npm-4.2.0-aac303d4eb-6ec6f3c2f8.zip/node_modules/axe-core/",
+        ["npm:4.2.1", {
+          "packageLocation": "./.yarn/cache/axe-core-npm-4.2.1-4abae8e9ba-0a9b6104b0.zip/node_modules/axe-core/",
           "packageDependencies": [
-            ["axe-core", "npm:4.2.0"]
+            ["axe-core", "npm:4.2.1"]
           ],
           "linkType": "HARD",
         }]
@@ -7265,7 +7265,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["browserslist", "npm:4.14.2"],
             ["caniuse-lite", "npm:1.0.30001228"],
-            ["electron-to-chromium", "npm:1.3.730"],
+            ["electron-to-chromium", "npm:1.3.731"],
             ["escalade", "npm:3.1.1"],
             ["node-releases", "npm:1.1.72"]
           ],
@@ -7277,7 +7277,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["browserslist", "npm:4.16.6"],
             ["caniuse-lite", "npm:1.0.30001228"],
             ["colorette", "npm:1.2.2"],
-            ["electron-to-chromium", "npm:1.3.730"],
+            ["electron-to-chromium", "npm:1.3.731"],
             ["escalade", "npm:3.1.1"],
             ["node-releases", "npm:1.1.72"]
           ],
@@ -9313,10 +9313,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["electron-to-chromium", [
-        ["npm:1.3.730", {
-          "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.3.730-e508e38a6b-69f1d28d46.zip/node_modules/electron-to-chromium/",
+        ["npm:1.3.731", {
+          "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.3.731-ad88a6ff9b-796bd257d0.zip/node_modules/electron-to-chromium/",
           "packageDependencies": [
-            ["electron-to-chromium", "npm:1.3.730"]
+            ["electron-to-chromium", "npm:1.3.731"]
           ],
           "linkType": "HARD",
         }]
@@ -9879,7 +9879,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["aria-query", "npm:4.2.2"],
             ["array-includes", "npm:3.1.3"],
             ["ast-types-flow", "npm:0.0.7"],
-            ["axe-core", "npm:4.2.0"],
+            ["axe-core", "npm:4.2.1"],
             ["axobject-query", "npm:2.2.0"],
             ["damerau-levenshtein", "npm:1.0.7"],
             ["emoji-regex", "npm:9.2.2"],
