@@ -1,17 +1,17 @@
-import './Navigation.css';
+import styles from './Navigation.module.css';
 
 function Navigation() {
   return (
-    <div className="Navigation">
-      <div className="Navigation__items">
-        <h1 className="Navigation__logo">NewsExplorer</h1>
-        <div className="Navigation__actions">
+    <div className={styles.block}>
+      <div className={styles.items}>
+        <h1 className={styles.logo}>NewsExplorer</h1>
+        <div className={styles.actions}>
           <nav>
-            <ul className="Navigation__nav-list">
-              <li className="Navigation__nav-link">Home</li>
+            <ul className={styles.navList}>
+              <li className={styles.navLink}>Home</li>
             </ul>
           </nav>
-          <button className="Navigation__button">Sign in</button>
+          <button className={styles.button}>Sign in</button>
         </div>
       </div>
     </div>

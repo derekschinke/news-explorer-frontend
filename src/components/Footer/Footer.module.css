@@ -81,12 +81,12 @@
     grid: [row0] auto [row1] auto [row2] / [col0] 200px [col1] auto [col2] 48px [col3];
   }
 
-  .list-item {
+  .listItem {
     line-height: 48px;
     text-align: left;
   }
 
-  .list-item:nth-of-type(2) {
+  .listItem:nth-of-type(2) {
     grid-column: col0 / col2;
     grid-row: row1;
   }

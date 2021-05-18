@@ -1,11 +1,11 @@
-.Navigation {
+.block {
   height: 80px;
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
   position: relative;
   background: rgba(196, 196, 196, 0.01);
 }
 
-.Navigation__items {
+.items {
   max-width: 1232px;
   padding: 0 40px;
   margin: auto;
@@ -13,7 +13,7 @@
   justify-content: space-between;
 }
 
-.Navigation__logo {
+.logo {
   font-family: 'Roboto Slab', serif;
   font-style: normal;
   font-weight: 700;
@@ -24,16 +24,16 @@
   color: #fff;
 }
 
-.Navigation__actions {
+.actions {
   display: flex;
 }
 
-.Navigation__nav-list {
+.navList {
   padding: 0;
   margin: 0;
 }
 
-.Navigation__nav-link {
+.navLink {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -45,7 +45,7 @@
   color: #fff;
 }
 
-.Navigation__button {
+.button {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -64,22 +64,22 @@
 }
 
 @media screen and (max-width: 1439px) {
-  .Navigation {
+  .block {
     height: 66px;
   }
 
-  .Navigation__logo {
+  .logo {
     padding-top: 22px;
   }
 
-  .Navigation__nav-link {
+  .navLink {
     font-size: 16px;
     padding: 22px 16px 16px;
     padding-top: 22px;
     padding-bottom: 16px;
   }
 
-  .Navigation__button {
+  .button {
     width: 152px;
     height: 40px;
     margin-top: 14px;
@@ -89,21 +89,21 @@
 }
 
 @media screen and (max-width: 767px) {
-  .Navigation {
+  .block {
     height: 56px;
   }
 
-  .Navigation__items {
+  .items {
     padding: 0 16px;
   }
 
-  .Navigation__logo {
+  .logo {
     padding-top: 16px;
     font-size: 16px;
     line-height: 24px;
   }
 
-  .Navigation__actions {
+  .actions {
     display: none;
   }
 }

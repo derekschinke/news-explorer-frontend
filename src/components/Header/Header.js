@@ -1,12 +1,12 @@
-import './Header.css';
+import styles from './Header.module.css';
 
 import Navigation from '../Navigation/Navigation';
 import SearchForm from '../SearchForm/SearchForm';
 
 function Header() {
   return (
-    <header className="Header" role="img" alt="Person using smartphone">
-      <div className="Header__background-filter">
+    <header className={styles.block} role="img" alt="Person using smartphone">
+      <div className={styles.backgroundFilter}>
         <Navigation />
         <SearchForm />
       </div>
