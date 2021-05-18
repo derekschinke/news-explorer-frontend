@@ -29,7 +29,9 @@ function Footer() {
               />
             </a>
           </li>
-          <li className={(styles.listItem, styles.listItem_type_icon)}>
+          <li
+            className={classnames(styles.listItem, styles.listItem_type_icon)}
+          >
             <a href="https://www.linkedin.com/in/derekschinke">
               <LinkedInLogo
                 className={classnames(styles.icon, styles.icon_linkedin)}
