@@ -1,7 +1,7 @@
 import './Footer.css';
 
-import gitHubLogo from '../../images/logos/github.svg';
-import linkedInLogo from '../../images/logos/linkedin.svg';
+import { ReactComponent as GitHubLogo } from '../../images/logos/github.svg';
+import { ReactComponent as LinkedInLogo } from '../../images/logos/linkedin.svg';
 
 function Footer() {
   return (
@@ -19,12 +19,12 @@ function Footer() {
           </li>
           <li className="Footer__list-item Footer__list-item_type_icon">
             <a href="https://github.com/derekschinke">
-              <img className="Footer__icon" src={gitHubLogo} alt=""></img>
+              <GitHubLogo className="Footer__icon" title="GitHub" />
             </a>
           </li>
           <li className="Footer__list-item Footer__list-item_type_icon">
             <a href="https://www.linkedin.com/in/derekschinke">
-              <img className="Footer__icon" src={linkedInLogo} alt=""></img>
+              <LinkedInLogo className="Footer__icon" title="LinkedIn" />
             </a>
           </li>
         </ul>
