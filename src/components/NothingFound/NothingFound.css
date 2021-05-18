@@ -1,16 +1,16 @@
-.NothingFound {
+.block {
   background-color: #f5f6f7;
   padding: 86px 0 80px;
 }
 
-.NothingFound__image {
+.image {
   width: 96px;
   height: 96px;
   margin: auto;
   background-image: url(../../images/not-found.svg);
 }
 
-.NothingFound__header {
+.header {
   font-family: 'Roboto Slab', serif;
   font-style: normal;
   font-weight: 400;
@@ -22,7 +22,7 @@
   padding-top: 24px;
 }
 
-.NothingFound__description {
+.description {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
