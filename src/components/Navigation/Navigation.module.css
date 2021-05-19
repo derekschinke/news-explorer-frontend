@@ -33,16 +33,21 @@
   margin: 0;
 }
 
+.navListItem {
+  list-style-type: none;
+  padding: 30px 32px 22px;
+  border-bottom: 3px solid;
+  color: #fff;
+}
+
 .navLink {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  list-style-type: none;
-  padding: 30px 32px 22px;
-  border-bottom: 3px solid;
   color: #fff;
+  text-decoration: none;
 }
 
 .button {
@@ -72,11 +77,14 @@
     padding-top: 22px;
   }
 
-  .navLink {
-    font-size: 16px;
+  .navListItem {
     padding: 22px 16px 16px;
     padding-top: 22px;
     padding-bottom: 16px;
+  }
+
+  .navLink {
+    font-size: 16px;
   }
 
   .button {
