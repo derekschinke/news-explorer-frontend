@@ -7533,6 +7533,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"hamburger-react@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "hamburger-react@npm:2.4.1"
+  peerDependencies:
+    react: ^16.8 || ^17
+  checksum: ff800c265690348cbff9a0651afdae59b991f03426fe74c05df9ba44069ec72a8d5165cf4aac09f7a26de80a7069f96e4e8bb052badfc134ab63d4260ffc4940
+  languageName: node
+  linkType: hard
+
 "handle-thing@npm:^2.0.0":
   version: 2.0.1
   resolution: "handle-thing@npm:2.0.1"
@@ -10692,6 +10701,7 @@ fsevents@^1.2.7:
     eslint-plugin-react: ^7.23.2
     eslint-plugin-react-hooks: ^4.2.0
     eslint-plugin-testing-library: ^3.10.2
+    hamburger-react: ^2.4.1
     husky: ^6.0.0
     lint-staged: ^11.0.0
     prettier: ^2.3.0
