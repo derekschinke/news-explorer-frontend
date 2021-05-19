@@ -101,6 +101,10 @@
     height: 56px;
   }
 
+  .block_mobileNavigation {
+    background: #1a1b22;
+  }
+
   .items {
     padding: 0 16px;
   }
