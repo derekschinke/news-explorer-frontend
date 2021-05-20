@@ -17,6 +17,7 @@ function App() {
 
         <Route exact path="/saved-news">
           <SavedNewsHeader />
+          <Footer />
         </Route>
 
         <Redirect from="*" to="/" />

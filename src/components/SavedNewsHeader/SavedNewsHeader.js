@@ -1,5 +1,11 @@
+import Navigation from '../Navigation/Navigation';
+
 function SavedNewsHeader() {
-  return;
+  return (
+    <header>
+      <Navigation />
+    </header>
+  );
 }
 
 export default SavedNewsHeader;
