@@ -17,6 +17,7 @@
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     opacity: 1;
+    padding-bottom: 24px;
   }
 
   .nav_route_savedNews {
@@ -63,8 +64,11 @@
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 22px;
-    margin-bottom: 24px;
     width: calc(100vw - 32px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
   }
 
   .button_route_savedNews {

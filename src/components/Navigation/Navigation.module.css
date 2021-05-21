@@ -38,6 +38,7 @@
 }
 
 .navList {
+  display: flex;
   padding: 0;
   margin: 0;
 }
@@ -45,8 +46,11 @@
 .navListItem {
   list-style-type: none;
   padding: 30px 32px 22px;
-  border-bottom: 3px solid;
   color: #fff;
+}
+
+.navListItem_active {
+  border-bottom: 3px solid;
 }
 
 .navListItem_route_savedNews {
@@ -73,20 +77,30 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  width: 176px;
   height: 48px;
   border: 1px solid;
   box-sizing: border-box;
   border-radius: 100px;
   margin-top: 19px;
   margin-left: 32px;
-  padding: 0;
+  padding-left: 64px;
+  padding-right: 64px;
   background: rgba(0, 0, 0, 0);
   color: #fff;
 }
 
 .button_route_savedNews {
   color: #1a1b22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 15px 0 19px;
+}
+
+.buttonIcon {
+  width: 24px;
+  height: 24px;
 }
 
 @media screen and (max-width: 1439px) {
@@ -109,11 +123,18 @@
   }
 
   .button {
-    width: 152px;
     height: 40px;
     margin-top: 14px;
     margin-left: 16px;
     font-size: 16px;
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  .button_route_savedNews {
+    padding-left: 15px;
+    padding-right: 13px;
+    gap: 13px;
   }
 }
 

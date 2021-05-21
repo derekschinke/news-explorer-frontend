@@ -6,6 +6,8 @@ import { Cross as Hamburger } from 'hamburger-react';
 import classnames from 'classnames';
 import MobileNavigation from '../MobileNavigation/MobileNavigation';
 
+import { ReactComponent as SignOutIcon } from '../../images/buttons/signout.svg';
+
 function Navigation(props) {
   const [isMobileNavigationOpen, setIsMobileNavigationOpen] = useState(false);
 
@@ -15,7 +17,7 @@ function Navigation(props) {
         className={classnames(styles.block, {
           [styles.block_mobileNavigation]: isMobileNavigationOpen,
           [styles.block_mobileNavigation_route_savedNews]:
-            isMobileNavigationOpen & !props.isMain,
+            isMobileNavigationOpen && !props.isMain,
           [styles.block_route_savedNews]: !props.isMain,
         })}
       >
@@ -32,6 +34,7 @@ function Navigation(props) {
               <ul className={styles.navList}>
                 <li
                   className={classnames(styles.navListItem, {
+                    [styles.navListItem_active]: props.isMain,
                     [styles.navListItem_route_savedNews]: !props.isMain,
                   })}
                 >
@@ -44,6 +47,23 @@ function Navigation(props) {
                     Home
                   </Link>
                 </li>
+                {!props.isMain && (
+                  <li
+                    className={classnames(styles.navListItem, {
+                      [styles.navListItem_active]: !props.isMain,
+                      [styles.navListItem_route_savedNews]: !props.isMain,
+                    })}
+                  >
+                    <Link
+                      className={classnames(styles.navLink, {
+                        [styles.navLink_route_savedNews]: !props.isMain,
+                      })}
+                      to="/saved-news"
+                    >
+                      Saved articles
+                    </Link>
+                  </li>
+                )}
               </ul>
             </nav>
             <button
@@ -51,7 +71,8 @@ function Navigation(props) {
                 [styles.button_route_savedNews]: !props.isMain,
               })}
             >
-              Sign in
+              {props.isMain ? 'Sign in' : 'Elise'}{' '}
+              {!props.isMain && <SignOutIcon className={styles.buttonImage} />}
             </button>
           </div>
           <Hamburger
