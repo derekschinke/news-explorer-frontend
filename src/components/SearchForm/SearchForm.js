@@ -1,5 +1,7 @@
 import styles from './SearchForm.module.css';
 
+import classnames from 'classnames';
+
 function SearchForm() {
   return (
     <section className={styles.block}>
@@ -18,7 +20,11 @@ function SearchForm() {
           />
         </label>
         <label>
-          <input className={styles.submitButton} type="submit" value="Search" />
+          <input
+            className={classnames(styles.submitButton, 'clickable')}
+            type="submit"
+            value="Search"
+          />
         </label>
       </form>
     </section>

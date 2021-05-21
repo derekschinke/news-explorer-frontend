@@ -1,4 +1,5 @@
 @import url(./styles/hamburger-react.css);
+@import url(./styles/clickable.css);
 
 body {
   margin: 0;
