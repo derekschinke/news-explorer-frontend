@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 import SavedNewsHeader from '../SavedNewsHeader/SavedNewsHeader';
+import SavedNews from '../SavedNews/SavedNews';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
 
         <Route exact path="/saved-news">
           <SavedNewsHeader />
+          <SavedNews />
           <Footer />
         </Route>
 

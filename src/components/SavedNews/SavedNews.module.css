@@ -1,0 +1,36 @@
+.block {
+  background: #f5f6f7;
+  padding: 62px 0;
+}
+
+.items {
+  max-width: 1232px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+@media screen and (max-width: 1439px) {
+  .block {
+    padding: 32px 0;
+  }
+
+  .items {
+    max-width: 688px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block {
+    padding: 24px 0;
+  }
+
+  .items {
+    max-width: 586px;
+  }
+}
+
+@media screen and (max-width: 617px) {
+  .items {
+    max-width: 288px;
+  }
+}
