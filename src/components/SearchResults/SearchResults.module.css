@@ -20,9 +20,30 @@
   padding-bottom: 64px;
 }
 
+.button {
+  width: 288px;
+  height: 64px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  background: #fff;
+  border-radius: 80px;
+  border: none;
+  display: block;
+  margin: auto;
+  margin-top: 64px;
+}
+
+.button:hover {
+  background: #e8e8e8;
+  opacity: 0.9;
+}
+
 @media screen and (max-width: 1439px) {
   .block {
-    padding-top: 40px;
+    padding: 40px 0;
   }
 
   .items {
@@ -34,11 +55,17 @@
     line-height: 34px;
     padding-bottom: 32px;
   }
+
+  .button {
+    width: 240px;
+    height: 56px;
+    margin-top: 32px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .block {
-    padding-top: 32px;
+    padding: 32px 0;
   }
 
   .items {
@@ -47,6 +74,11 @@
 
   .header {
     padding-bottom: 58px;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 15px;
   }
 }
 
