@@ -25,7 +25,7 @@
 }
 
 .keyword {
-  max-width: 307px;
+  max-width: 115px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -86,7 +86,7 @@
   display: block;
   position: absolute;
   background: #fff;
-  padding: 13px 20px;
+  padding: 13px 18px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -194,13 +194,17 @@
   }
 
   .keyword {
-    max-width: 163px;
+    max-width: 103px;
+    padding: 8px 20px;
   }
 
   .tooltip {
-    padding: 13px 18px;
     top: 8px;
     right: 53px;
+  }
+
+  .tooltip_route_savedNews {
+    right: 69.45px;
   }
 
   .info {
@@ -240,13 +244,16 @@
   }
 
   .keyword {
-    max-width: 211px;
+    padding: 8px 20px;
   }
 
   .tooltip {
-    padding: 13px 20px;
     top: 16px;
     right: 61px;
+  }
+
+  .tooltip_route_savedNews {
+    right: 129.45px;
   }
 
   .title {

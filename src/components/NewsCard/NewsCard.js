@@ -26,7 +26,13 @@ function NewsCard(props) {
             })}
             label=""
           ></button>
-          <div className={styles.tooltip}>Sign in to save articles</div>
+          <div
+            className={classnames(styles.tooltip, {
+              [styles.tooltip_route_savedNews]: !props.isMain,
+            })}
+          >
+            {props.isMain ? 'Sign in to save articles' : 'Remove from saved'}
+          </div>
         </div>
       </div>
       <div className={styles.info}>
