@@ -3,6 +3,11 @@
   height: 576px;
   background: #fff;
   border-radius: 16px;
+  position: relative;
+}
+
+.block:hover {
+  box-shadow: 0 5px 15px rgba(8, 29, 45, 0.1);
 }
 
 .image {
@@ -11,6 +16,66 @@
   background: no-repeat center/cover;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
+}
+
+.bits {
+  padding: 24px 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.keyword {
+  max-width: 213px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 8px 22px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.keyword::first-letter {
+  text-transform: capitalize;
+}
+
+.keyword_hidden {
+  visibility: hidden;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  background: #fff no-repeat center/24px 24px;
+  border-radius: 8px;
+  border: none;
+  display: block;
+  z-index: 1;
+}
+
+.button_save {
+  background-image: url(../../images//buttons/bookmark/normal.svg);
+}
+
+.button_save:hover {
+  background-image: url(../../images/buttons/bookmark/hover.svg);
+}
+
+.button_save_marked {
+  background-image: url(../../images/buttons/bookmark/marked.svg);
+}
+
+.button_delete {
+  background-image: url(../../images/buttons/delete/normal.svg);
+}
+
+.button_delete:hover {
+  background-image: url(../../images/buttons/delete/hover.svg);
 }
 
 .info {
@@ -76,6 +141,16 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
+}
+
+.source::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: ' ';
 }
 
 @media screen and (max-width: 1439px) {

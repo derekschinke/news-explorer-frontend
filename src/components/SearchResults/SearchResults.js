@@ -8,7 +8,7 @@ function SearchResults() {
     <section className={styles.block}>
       <div className={styles.items}>
         <h2 className={styles.header}>Search results</h2>
-        <NewsCardList />
+        <NewsCardList isMain={true} />
         <button className={classnames(styles.button, 'clickable')}>
           Show more
         </button>

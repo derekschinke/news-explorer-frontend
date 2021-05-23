@@ -1,7 +1,8 @@
 import styles from './NewsCard.module.css';
 
+import classnames from 'classnames';
+
 function NewsCard(props) {
-  console.log(props.card.image);
   return (
     <li className={styles.block}>
       <div
@@ -9,7 +10,25 @@ function NewsCard(props) {
         role="img"
         alt={props.card.title}
         style={{ backgroundImage: `url(${props.card.image})` }}
-      />
+      >
+        <div className={styles.bits}>
+          <div
+            className={classnames(styles.keyword, {
+              [styles.keyword_hidden]: props.isMain,
+            })}
+          >
+            {props.card.keyword}
+          </div>
+          <button
+            className={classnames(
+              styles.button,
+              styles.button_delete,
+              'clickable'
+            )}
+            label=""
+          ></button>
+        </div>
+      </div>
       <div className={styles.info}>
         <p className={styles.date}>{props.card.date}</p>
         <h3 className={styles.title}>{props.card.title}</h3>

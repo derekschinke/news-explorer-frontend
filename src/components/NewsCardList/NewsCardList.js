@@ -1,7 +1,7 @@
 import styles from './NewsCardList.module.css';
 import NewsCard from '../NewsCard/NewsCard';
 
-function NewsCardList() {
+function NewsCardList(props) {
   const card1 = {
     keyword: 'nature',
     title: 'Everyone Needs a Special ‘Sit Spot’ in Nature',
@@ -10,7 +10,7 @@ function NewsCardList() {
     source: 'Treehugger',
     link: 'https://www.treehugger.com/special-sit-spot-nature-5085811',
     image:
-      'https://www.treehugger.com/thmb/Y73SmpjOuHIj5zavabMX9MJpsbo=/2000x1333/filters:fill(auto,1)/sittingonatreestump-ac694d0a1e6146d89f913cc631dfa04c.jpg',
+      'https://i.pinimg.com/originals/16/12/32/161232cd2c025753d7b4b3a68744738f.jpg',
   };
   const card2 = {
     keyword: 'nature',
@@ -23,18 +23,18 @@ function NewsCardList() {
       'https://i.natgeofe.com/n/7e82985c-6437-4a33-b28f-4772eed7e310/image-1.jpg',
   };
   const card3 = {
-    keyword: 'nature',
+    keyword: 'yellowstone',
     title: 'Grand Teton Renews Historic Crest Trail',
     text: '“The linking together of the Cascade and Death Canyon trails, at their heads, took place on October 1, 1933, and marked the first step in the realization of a plan whereby the hiker will be enabled to visit that most fascinating region…In traversing this loop, one completely encircles the Three Tetons and adjacent high peaks, viewing them from all sides. In this way one learns to know these peaks with an intimacy impossible to the visitor who contents himself with distant views. No more thrilling mountain trip can be found in all America than that over the newly-completed loop of the Teton Skyline Trail.” –Fritioff Fryxell, 1934. Grand Teton National Park’s first ranger and trail visionary.',
     date: 'October 21, 2020',
     source: 'National Parks Traveler',
     link: 'https://www.nationalparkstraveler.org/2020/10/grand-teton-renews-historic-crest-trail',
     image:
-      'https://www.nationalparkstraveler.org/sites/default/files/styles/panopoly_image_original/public/media/grte-teton_crest_trailnps_960.jpeg',
+      'https://upload.wikimedia.org/wikipedia/commons/d/d0/Barns_grand_tetons.jpg',
   };
 
   const card4 = {
-    keyword: 'nature',
+    keyword: 'parks',
     title: 'Nostalgic Photos of Tourists in U.S. National Parks',
     text: 'In 1976, photographer Roger Minick was teaching a workshop in Yosemite National Park when he became fascinated with an unexpected subject: the American tourist.',
     date: 'April 20, 2018',
@@ -45,23 +45,23 @@ function NewsCardList() {
   };
 
   const card5 = {
-    keyword: 'nature',
+    keyword: 'photography',
     title: 'Scientists Don’t Know Why Polaris Is So Weird ',
     text: 'Humans have long relied on the starry sky to push into new frontiers, sail to the very edge of the world and find their way back home again. Even animals look to the stars to guide them on their epic migrations.',
     date: 'March 16, 2020',
     source: 'Treehugger',
     link: 'https://www.treehugger.com/polaris-north-star-facts-how-big-far-4859425',
     image:
-      'https://www.treehugger.com/thmb/29MSwyudwok2_gh6AZDAwWH17CE=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2020__03__polaris-north-star-facts-b2a823cf25a44ef89260cd09f5c5c845.jpg',
+      'https://www.treehugger.com/thmb/kKFbzGBwGeg-o9bFCZxbe83uNBI=/735x0/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2020__03__polaris-north-star-facts-b2a823cf25a44ef89260cd09f5c5c845.jpg',
   };
 
   return (
     <ul className={styles.block}>
-      <NewsCard card={card1} />
-      <NewsCard card={card2} />
-      <NewsCard card={card3} />
-      <NewsCard card={card4} />
-      <NewsCard card={card5} />
+      <NewsCard card={card1} isMain={props.isMain} />
+      <NewsCard card={card2} isMain={props.isMain} />
+      <NewsCard card={card3} isMain={props.isMain} />
+      <NewsCard card={card4} isMain={props.isMain} />
+      <NewsCard card={card5} isMain={props.isMain} />
     </ul>
   );
 }
