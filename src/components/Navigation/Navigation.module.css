@@ -49,7 +49,7 @@
 
 .navListItem {
   list-style-type: none;
-  padding: 30px 32px 22px;
+  padding: 30px 32px 23px;
   color: #fff;
 }
 
@@ -119,7 +119,7 @@
   .navListItem {
     padding: 22px 16px 16px;
     padding-top: 22px;
-    padding-bottom: 16px;
+    padding-bottom: 17px;
   }
 
   .navLink {
