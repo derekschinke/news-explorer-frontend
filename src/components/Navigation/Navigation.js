@@ -22,12 +22,15 @@ function Navigation(props) {
         })}
       >
         <div className={styles.items}>
-          <h1
-            className={classnames(styles.logo, {
-              [styles.logo_route_savedNews]: !props.isMain,
-            })}
-          >
-            NewsExplorer
+          <h1 className={styles.logo}>
+            <Link
+              to="/"
+              className={classnames(styles.logoLink, {
+                [styles.logoLink_route_savedNews]: !props.isMain,
+              })}
+            >
+              NewsExplorer
+            </Link>
           </h1>
           <div className={styles.actions}>
             <nav>

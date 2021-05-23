@@ -163,6 +163,10 @@
     height: 150px;
   }
 
+  .bits {
+    padding: 8px 8px 0;
+  }
+
   .info {
     padding: 16px 16px 0;
   }
@@ -193,6 +197,10 @@
 
   .image {
     height: 196px;
+  }
+
+  .bits {
+    padding: 16px 16px 0;
   }
 
   .title {

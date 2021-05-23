@@ -26,10 +26,14 @@
   line-height: 24px;
   margin: 0;
   padding-top: 30px;
+}
+
+.logoLink {
+  text-decoration: none;
   color: #fff;
 }
 
-.logo_route_savedNews {
+.logoLink_route_savedNews {
   color: #1a1b22;
 }
 
