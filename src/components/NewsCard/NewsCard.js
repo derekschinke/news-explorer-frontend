@@ -20,11 +20,10 @@ function NewsCard(props) {
             {props.card.keyword}
           </div>
           <button
-            className={classnames(
-              styles.button,
-              styles.button_delete,
-              'clickable'
-            )}
+            className={classnames(styles.button, 'clickable', {
+              [styles.button_bookmark]: props.isMain,
+              [styles.button_delete]: !props.isMain,
+            })}
             label=""
           ></button>
         </div>

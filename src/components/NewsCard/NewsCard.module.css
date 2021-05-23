@@ -58,16 +58,20 @@
   z-index: 1;
 }
 
-.button_save {
-  background-image: url(../../images//buttons/bookmark/normal.svg);
+.button_bookmark {
+  background-image: url(../../images/buttons/bookmark/normal.svg);
 }
 
-.button_save:hover {
+.button_bookmark:hover {
   background-image: url(../../images/buttons/bookmark/hover.svg);
 }
 
-.button_save_marked {
+.button_bookmark_marked {
   background-image: url(../../images/buttons/bookmark/marked.svg);
+}
+
+.button_bookmark_marked:hover {
+  background-image: url(../../images/buttons/bookmark/hover.svg);
 }
 
 .button_delete {
