@@ -19130,7 +19130,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["spdx-correct", "npm:3.1.1"],
             ["spdx-expression-parse", "npm:3.0.1"],
-            ["spdx-license-ids", "npm:3.0.8"]
+            ["spdx-license-ids", "npm:3.0.9"]
           ],
           "linkType": "HARD",
         }]
@@ -19150,16 +19150,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["spdx-expression-parse", "npm:3.0.1"],
             ["spdx-exceptions", "npm:2.3.0"],
-            ["spdx-license-ids", "npm:3.0.8"]
+            ["spdx-license-ids", "npm:3.0.9"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["spdx-license-ids", [
-        ["npm:3.0.8", {
-          "packageLocation": "./.yarn/cache/spdx-license-ids-npm-3.0.8-1b3b627cc1-fb9ed29f99.zip/node_modules/spdx-license-ids/",
+        ["npm:3.0.9", {
+          "packageLocation": "./.yarn/cache/spdx-license-ids-npm-3.0.9-3f7722e2d4-021c632a45.zip/node_modules/spdx-license-ids/",
           "packageDependencies": [
-            ["spdx-license-ids", "npm:3.0.8"]
+            ["spdx-license-ids", "npm:3.0.9"]
           ],
           "linkType": "HARD",
         }]
@@ -20278,10 +20278,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["tr46", [
-        ["npm:2.0.2", {
-          "packageLocation": "./.yarn/cache/tr46-npm-2.0.2-9a9c502938-2b2b3dfa6b.zip/node_modules/tr46/",
+        ["npm:2.1.0", {
+          "packageLocation": "./.yarn/cache/tr46-npm-2.1.0-00af583f4f-ffe6049b9d.zip/node_modules/tr46/",
           "packageDependencies": [
-            ["tr46", "npm:2.0.2"],
+            ["tr46", "npm:2.1.0"],
             ["punycode", "npm:2.1.1"]
           ],
           "linkType": "HARD",
@@ -21327,7 +21327,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["whatwg-url", "npm:8.5.0"],
             ["lodash", "npm:4.17.21"],
-            ["tr46", "npm:2.0.2"],
+            ["tr46", "npm:2.1.0"],
             ["webidl-conversions", "npm:6.1.0"]
           ],
           "linkType": "HARD",

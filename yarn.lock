@@ -14506,9 +14506,9 @@ resolve@^2.0.0-next.3:
   linkType: hard
 
 "spdx-license-ids@npm:^3.0.0":
-  version: 3.0.8
-  resolution: "spdx-license-ids@npm:3.0.8"
-  checksum: fb9ed29f995421a3a6c0ca12bf55abe733a53259c8e079e2c6ff91fbf1faee047bb0553e340addf1e88eb65ff5f219d17df32382965dcfcbc54c9eaef31cec1d
+  version: 3.0.9
+  resolution: "spdx-license-ids@npm:3.0.9"
+  checksum: 021c632a458b3f5144587350ee1e6d0da8e211c4acdeb511a89699ac7de5e9b84860aaea38b6b9b631b9fed8d3199a763b6baf96db4a2a77dc7c9c8ee6172288
   languageName: node
   linkType: hard
 
@@ -15455,11 +15455,11 @@ resolve@^2.0.0-next.3:
   linkType: hard
 
 "tr46@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "tr46@npm:2.0.2"
+  version: 2.1.0
+  resolution: "tr46@npm:2.1.0"
   dependencies:
     punycode: ^2.1.1
-  checksum: 2b2b3dfa6bc65d027b2fac729fba0fb5b9d98af7b69ad6876c0f088ebf127f2d53e5a4d4464e5de40380cf721f392262c9183d2a05cea4967a890e8801c842f6
+  checksum: ffe6049b9dca3ae329b059aada7f515b0f0064c611b39b51ff6b53897e954650f6f63d9319c6c008d36ead477c7b55e5f64c9dc60588ddc91ff720d64eb710b3
   languageName: node
   linkType: hard
 
