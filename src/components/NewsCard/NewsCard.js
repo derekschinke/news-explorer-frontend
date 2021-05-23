@@ -26,6 +26,7 @@ function NewsCard(props) {
             })}
             label=""
           ></button>
+          <div className={styles.tooltip}>Sign in to save articles</div>
         </div>
       </div>
       <div className={styles.info}>

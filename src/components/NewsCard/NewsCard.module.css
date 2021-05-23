@@ -7,7 +7,7 @@
 }
 
 .block:hover {
-  box-shadow: 0 5px 15px rgba(8, 29, 45, 0.1);
+  box-shadow: 0 8px 58px rgba(8, 29, 45, 0.1);
 }
 
 .image {
@@ -25,7 +25,7 @@
 }
 
 .keyword {
-  max-width: 213px;
+  max-width: 307px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -80,6 +80,28 @@
 
 .button_delete:hover {
   background-image: url(../../images/buttons/delete/hover.svg);
+}
+
+.tooltip {
+  display: block;
+  position: absolute;
+  background: #fff;
+  padding: 13px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000;
+  top: 24px;
+  right: 69px;
+  box-shadow: 0 10px 22px rgba(59, 74, 116, 0.1);
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+.button:hover + .tooltip {
+  visibility: visible;
 }
 
 .info {
@@ -171,6 +193,16 @@
     padding: 8px 8px 0;
   }
 
+  .keyword {
+    max-width: 163px;
+  }
+
+  .tooltip {
+    padding: 13px 18px;
+    top: 8px;
+    right: 53px;
+  }
+
   .info {
     padding: 16px 16px 0;
   }
@@ -205,6 +237,16 @@
 
   .bits {
     padding: 16px 16px 0;
+  }
+
+  .keyword {
+    max-width: 211px;
+  }
+
+  .tooltip {
+    padding: 13px 20px;
+    top: 16px;
+    right: 61px;
   }
 
   .title {
