@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Cross as Hamburger } from 'hamburger-react';
 import classnames from 'classnames';
 import MobileNavigation from '../MobileNavigation/MobileNavigation';
+import { RemoveScroll } from 'react-remove-scroll';
 
 import { ReactComponent as SignOutIcon } from '../../images/buttons/signout.svg';
 
@@ -88,7 +89,12 @@ function Navigation(props) {
           />
         </div>
       </div>
-      {isMobileNavigationOpen && <MobileNavigation isMain={props.isMain} />}
+      {isMobileNavigationOpen && (
+        <>
+          <MobileNavigation isMain={props.isMain} />
+          <RemoveScroll />
+        </>
+      )}
     </>
   );
 }
