@@ -41,6 +41,7 @@ function MobileNavigation(props) {
           className={classnames(styles.button, 'clickable', {
             [styles.button_route_savedNews]: !props.isMain,
           })}
+          label={props.isMain ? 'Sign in' : 'Sign out'}
         >
           {props.isMain ? 'Sign in' : 'Elise'}
           {!props.isMain && <SignOutIcon className={styles.buttonImage} />}

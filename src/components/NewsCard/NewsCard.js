@@ -24,7 +24,7 @@ function NewsCard(props) {
               [styles.button_bookmark]: props.isMain,
               [styles.button_delete]: !props.isMain,
             })}
-            label=""
+            label={props.isMain ? 'Bookmark' : 'Delete'}
           ></button>
           <div
             className={classnames(styles.tooltip, {
