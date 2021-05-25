@@ -87,6 +87,11 @@
 }
 
 .validation {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
   color: #f00;
   padding-top: 3px;
   visibility: hidden;
@@ -113,19 +118,12 @@
   cursor: pointer;
 }
 
-/* .input:invalid:not(:placeholder-shown) ~ .submitButton {
+.input:invalid ~ .submitButton {
   color: #b6bcbf;
   background: #e6e8eb;
   box-shadow: none;
   cursor: default;
 }
-
-.submitButton:disabled {
-  color: #b6bcbf;
-  background: #e6e8eb;
-  box-shadow: none;
-  cursor: default;
-} */
 
 .redirect {
   font-family: 'Inter', sans-serif;
