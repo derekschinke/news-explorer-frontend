@@ -35,7 +35,7 @@ function PopupWithForm() {
             <span className={styles.validation}>Invalid password</span>
 
             <input
-              className={classnames(styles.submitButton)}
+              className={styles.submitButton}
               type="submit"
               value="Sign in"
             />
