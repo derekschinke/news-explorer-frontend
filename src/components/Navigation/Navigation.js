@@ -71,7 +71,7 @@ function Navigation(props) {
               </ul>
             </nav>
             <button
-              className={classnames(styles.button, 'clickable', {
+              className={classnames(styles.button, '', {
                 [styles.button_route_savedNews]: !props.isMain,
               })}
               label={props.isMain ? 'Sign in' : 'Sign out'}

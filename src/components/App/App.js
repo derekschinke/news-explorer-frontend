@@ -5,6 +5,8 @@ import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 import SavedNewsHeader from '../SavedNewsHeader/SavedNewsHeader';
 import SavedNews from '../SavedNews/SavedNews';
+import PopupWithForm from '../PopupWithForm/PopupWithForm';
+// import { RemoveScroll } from 'react-remove-scroll';
 
 function App() {
   return (
@@ -14,6 +16,10 @@ function App() {
           <Header />
           <Main />
           <Footer />
+          <>
+            <PopupWithForm />
+            {/* <RemoveScroll /> */}
+          </>
         </Route>
 
         <Route exact path="/saved-news">
