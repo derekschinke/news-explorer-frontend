@@ -18,13 +18,6 @@
   border-radius: 16px;
 }
 
-.content {
-  width: 358px;
-  margin: auto;
-  padding-bottom: 22px;
-  transform: translateY(-6px);
-}
-
 .closeButton {
   width: 40px;
   height: 40px;
@@ -34,6 +27,13 @@
   background: transparent url(../../images/buttons/close.svg) no-repeat
     center/contain;
   border: none;
+}
+
+.content {
+  width: 358px;
+  margin: auto;
+  padding-bottom: 22px;
+  transform: translateY(-6px);
 }
 
 .header {
@@ -160,4 +160,39 @@
   padding-top: 14px;
   font-size: 18px;
   line-height: 22px;
+}
+
+@media screen and (max-width: 767px) {
+  .block {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .container {
+    width: 100vw;
+    height: calc(100vh - 56px);
+    bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .closeButton {
+    width: 24px;
+    height: 24px;
+    left: calc(100vw - 40px);
+    bottom: 42px;
+  }
+
+  .content {
+    width: calc(100vw - 32px);
+    transform: translateY(-8px);
+  }
+
+  .form {
+    padding-top: 17px;
+  }
+
+  .submitButton {
+    margin-top: 10px;
+  }
 }
