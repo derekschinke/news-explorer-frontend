@@ -6,20 +6,33 @@ import Footer from '../Footer/Footer';
 import SavedNewsHeader from '../SavedNewsHeader/SavedNewsHeader';
 import SavedNews from '../SavedNews/SavedNews';
 import PopupWithForm from '../PopupWithForm/PopupWithForm';
-// import { RemoveScroll } from 'react-remove-scroll';
+import { useState } from 'react';
+import { RemoveScroll } from 'react-remove-scroll';
 
 function App() {
+  const [isSignInPopupOpen, setIsSignInPopupOpen] = useState(false);
+
+  function closePopups() {
+    setIsSignInPopupOpen(false);
+  }
+
+  function handleNavigationButtonClick() {
+    setIsSignInPopupOpen(true);
+  }
+
   return (
     <div className={styles.block}>
       <Switch>
         <Route exact path="/">
-          <Header />
+          <Header onNavigationButtonClick={handleNavigationButtonClick} />
           <Main />
           <Footer />
-          <>
-            <PopupWithForm />
-            {/* <RemoveScroll /> */}
-          </>
+          {isSignInPopupOpen && (
+            <>
+              <PopupWithForm onClose={closePopups} />
+              <RemoveScroll />
+            </>
+          )}
         </Route>
 
         <Route exact path="/saved-news">

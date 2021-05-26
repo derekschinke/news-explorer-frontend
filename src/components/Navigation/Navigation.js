@@ -12,6 +12,11 @@ import { ReactComponent as SignOutIcon } from '../../images/buttons/signout.svg'
 function Navigation(props) {
   const [isMobileNavigationOpen, setIsMobileNavigationOpen] = useState(false);
 
+  function handleMobileNavigationButtonClick() {
+    setIsMobileNavigationOpen(false);
+    props.onNavigationButtonClick();
+  }
+
   return (
     <>
       <div
@@ -75,8 +80,9 @@ function Navigation(props) {
                 [styles.button_route_savedNews]: !props.isMain,
               })}
               label={props.isMain ? 'Sign in' : 'Sign out'}
+              onClick={props.onNavigationButtonClick}
             >
-              {props.isMain ? 'Sign in' : 'Elise'}{' '}
+              {props.isMain ? 'Sign in' : 'Elise'}
               {!props.isMain && <SignOutIcon className={styles.buttonImage} />}
             </button>
           </div>
@@ -91,7 +97,10 @@ function Navigation(props) {
       </div>
       {isMobileNavigationOpen && (
         <>
-          <MobileNavigation isMain={props.isMain} />
+          <MobileNavigation
+            isMain={props.isMain}
+            onMobileNavigationButtonClick={handleMobileNavigationButtonClick}
+          />
           <RemoveScroll />
         </>
       )}

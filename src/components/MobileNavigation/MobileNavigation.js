@@ -42,6 +42,7 @@ function MobileNavigation(props) {
             [styles.button_route_savedNews]: !props.isMain,
           })}
           label={props.isMain ? 'Sign in' : 'Sign out'}
+          onClick={props.onMobileNavigationButtonClick}
         >
           {props.isMain ? 'Sign in' : 'Elise'}
           {!props.isMain && <SignOutIcon className={styles.buttonImage} />}

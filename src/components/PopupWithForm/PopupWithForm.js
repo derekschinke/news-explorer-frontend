@@ -2,10 +2,15 @@ import styles from './PopupWithForm.module.css';
 
 import classnames from 'classnames';
 
-function PopupWithForm() {
+function PopupWithForm(props) {
   return (
     <div className={styles.block}>
       <div className={styles.container}>
+        <button
+          className={classnames(styles.closeButton, 'clickable')}
+          label="Close"
+          onClick={props.onClose}
+        />
         <div className={styles.content}>
           <h2 className={styles.header}>Sign in</h2>
           <form className={styles.form} method="POST">
@@ -38,12 +43,16 @@ function PopupWithForm() {
               className={styles.submitButton}
               type="submit"
               value="Sign in"
+              label="Sign in"
             />
           </form>
 
           <p className={styles.redirect}>
             or{' '}
-            <button className={classnames(styles.redirectButton, 'clickable')}>
+            <button
+              className={classnames(styles.redirectButton, 'clickable')}
+              label="Sign up"
+            >
               Sign up
             </button>
           </p>
