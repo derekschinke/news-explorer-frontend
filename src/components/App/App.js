@@ -1,4 +1,4 @@
-import { Redirect, Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch, useHistory } from 'react-router-dom';
 import styles from './App.module.css';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
@@ -10,6 +10,8 @@ import { useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 
 function App() {
+  const history = useHistory();
+
   const [isSignInPopupOpen, setIsSignInPopupOpen] = useState(false);
   const [isSignUpPopupOpen, setIsSignUpPopupOpen] = useState(false);
   const [
@@ -34,6 +36,10 @@ function App() {
   function handleRedirectRegistrationCompletedPopupButtonClick() {
     setIsSignInPopupOpen(true);
     setIsRegistrationCompletedPopupOpen(false);
+  }
+
+  function handleSignOut() {
+    history.push('/');
   }
 
   return (
@@ -78,7 +84,7 @@ function App() {
         </Route>
 
         <Route exact path="/saved-news">
-          <SavedNewsHeader />
+          <SavedNewsHeader onNavigationButtonClick={handleSignOut} />
           <SavedNews />
           <Footer />
         </Route>

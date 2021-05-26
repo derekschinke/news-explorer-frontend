@@ -2,10 +2,10 @@ import styles from './SavedNewsHeader.module.css';
 
 import Navigation from '../Navigation/Navigation';
 
-function SavedNewsHeader() {
+function SavedNewsHeader(props) {
   return (
     <header>
-      <Navigation />
+      <Navigation onNavigationButtonClick={props.onNavigationButtonClick} />
       <section className={styles.block}>
         <div className={styles.items}>
           <h2 className={styles.header}>Saved articles</h2>
