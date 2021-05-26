@@ -11,13 +11,29 @@ import { RemoveScroll } from 'react-remove-scroll';
 
 function App() {
   const [isSignInPopupOpen, setIsSignInPopupOpen] = useState(false);
+  const [isSignUpPopupOpen, setIsSignUpPopupOpen] = useState(false);
+  const [
+    isRegistrationCompletedPopupOpen,
+    setIsRegistrationCompletedPopupOpen,
+  ] = useState(false);
 
   function closePopups() {
     setIsSignInPopupOpen(false);
+    setIsSignUpPopupOpen(false);
   }
 
   function handleNavigationButtonClick() {
     setIsSignInPopupOpen(true);
+  }
+
+  function handleRedirectPopupButtonClick() {
+    setIsSignInPopupOpen(!isSignInPopupOpen);
+    setIsSignUpPopupOpen(!isSignUpPopupOpen);
+  }
+
+  function handleRedirectRegistrationCompletedPopupButtonClick() {
+    setIsSignInPopupOpen(true);
+    setIsRegistrationCompletedPopupOpen(false);
   }
 
   return (
@@ -29,7 +45,33 @@ function App() {
           <Footer />
           {isSignInPopupOpen && (
             <>
-              <PopupWithForm onClose={closePopups} />
+              <PopupWithForm
+                onClose={closePopups}
+                onRedirectPopupButtonClick={handleRedirectPopupButtonClick}
+                type="signIn"
+              />
+              <RemoveScroll />
+            </>
+          )}
+          {isSignUpPopupOpen && (
+            <>
+              <PopupWithForm
+                onClose={closePopups}
+                onRedirectPopupButtonClick={handleRedirectPopupButtonClick}
+                type="signUp"
+              />
+              <RemoveScroll />
+            </>
+          )}
+          {isRegistrationCompletedPopupOpen && (
+            <>
+              <PopupWithForm
+                onClose={closePopups}
+                onRedirectPopupButtonClick={
+                  handleRedirectRegistrationCompletedPopupButtonClick
+                }
+                type="registrationCompleted"
+              />
               <RemoveScroll />
             </>
           )}

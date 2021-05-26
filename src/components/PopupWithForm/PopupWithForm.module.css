@@ -8,13 +8,7 @@
   overflow: auto;
   background: rgba(0, 0, 0, 0.5);
   display: grid;
-
-  /* visibility: hidden; */
   place-items: center;
-
-  /* opacity: 0; */
-  transition: visibility 0s ease 0.5s, opacity 0.5s ease;
-  transition-delay: 0.5s, 0s;
 }
 
 .container {
@@ -27,8 +21,8 @@
 .content {
   width: 358px;
   margin: auto;
-  padding-top: 34px;
-  padding-bottom: 28px;
+  padding-bottom: 22px;
+  transform: translateY(-6px);
 }
 
 .closeButton {
@@ -160,4 +154,10 @@
   line-height: 17.5px;
   margin: 0;
   padding: 0;
+}
+
+.redirectButton_registrationCompleted {
+  padding-top: 14px;
+  font-size: 18px;
+  line-height: 22px;
 }
