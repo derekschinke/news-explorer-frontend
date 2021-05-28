@@ -7,10 +7,13 @@ import classnames from 'classnames';
 import MobileNavigation from '../MobileNavigation/MobileNavigation';
 import { RemoveScroll } from 'react-remove-scroll';
 
-import { ReactComponent as SignOutIcon } from '../../images/buttons/signout.svg';
+import { ReactComponent as MainSignOutIcon } from '../../images/buttons/signout/main.svg';
+import { ReactComponent as SavedNewsSignOutIcon } from '../../images/buttons/signout/savedNews.svg';
 
 function Navigation(props) {
   const [isMobileNavigationOpen, setIsMobileNavigationOpen] = useState(false);
+
+  const SignOutIcon = props.isMain ? MainSignOutIcon : SavedNewsSignOutIcon;
 
   function handleMobileNavigationButtonClick() {
     setIsMobileNavigationOpen(false);
@@ -56,7 +59,7 @@ function Navigation(props) {
                     Home
                   </Link>
                 </li>
-                {!props.isMain && (
+                {props.isLoggedIn && (
                   <li
                     className={classnames(styles.navListItem, {
                       [styles.navListItem_active]: !props.isMain,
@@ -77,13 +80,16 @@ function Navigation(props) {
             </nav>
             <button
               className={classnames(styles.button, 'clickable', {
+                [styles.button_loggedIn]: props.isLoggedIn,
                 [styles.button_route_savedNews]: !props.isMain,
               })}
-              label={props.isMain ? 'Sign in' : 'Sign out'}
+              label={!props.isLoggedIn ? 'Sign in' : 'Sign out'}
               onClick={props.onNavigationButtonClick}
             >
-              {props.isMain ? 'Sign in' : 'Elise'}
-              {!props.isMain && <SignOutIcon className={styles.buttonImage} />}
+              {!props.isLoggedIn ? 'Sign in' : 'Elise'}
+              {props.isLoggedIn && (
+                <SignOutIcon className={styles.buttonIcon} />
+              )}
             </button>
           </div>
           <Hamburger

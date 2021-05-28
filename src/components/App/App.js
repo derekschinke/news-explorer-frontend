@@ -12,6 +12,8 @@ import { RemoveScroll } from 'react-remove-scroll';
 function App() {
   const history = useHistory();
 
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   const [isSignInPopupOpen, setIsSignInPopupOpen] = useState(false);
   const [isSignUpPopupOpen, setIsSignUpPopupOpen] = useState(false);
   const [
@@ -46,7 +48,10 @@ function App() {
     <div className={styles.block}>
       <Switch>
         <Route exact path="/">
-          <Header onNavigationButtonClick={handleNavigationButtonClick} />
+          <Header
+            isLoggedIn={isLoggedIn}
+            onNavigationButtonClick={handleNavigationButtonClick}
+          />
           <Main />
           <Footer />
           {isSignInPopupOpen && (
@@ -84,7 +89,10 @@ function App() {
         </Route>
 
         <Route exact path="/saved-news">
-          <SavedNewsHeader onNavigationButtonClick={handleSignOut} />
+          <SavedNewsHeader
+            isLoggedIn={isLoggedIn}
+            onNavigationButtonClick={handleSignOut}
+          />
           <SavedNews />
           <Footer />
         </Route>

@@ -93,13 +93,16 @@
   color: #fff;
 }
 
-.button_route_savedNews {
-  color: #1a1b22;
+.button_loggedIn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
   padding: 0 15px 0 19px;
+}
+
+.button_route_savedNews {
+  color: #1a1b22;
 }
 
 .buttonIcon {
@@ -135,7 +138,7 @@
     padding-right: 56px;
   }
 
-  .button_route_savedNews {
+  .button_loggedIn {
     padding-left: 15px;
     padding-right: 13px;
     gap: 13px;

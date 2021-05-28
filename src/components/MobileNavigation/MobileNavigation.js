@@ -3,7 +3,7 @@ import styles from './MobileNavigation.module.css';
 import { Link } from 'react-router-dom';
 import classnames from 'classnames';
 
-import { ReactComponent as SignOutIcon } from '../../images/buttons/signout.svg';
+import { ReactComponent as MainSignOutIcon } from '../../images/buttons/signout/main.svg';
 
 function MobileNavigation(props) {
   return (
@@ -45,7 +45,7 @@ function MobileNavigation(props) {
           onClick={props.onMobileNavigationButtonClick}
         >
           {props.isMain ? 'Sign in' : 'Elise'}
-          {!props.isMain && <SignOutIcon className={styles.buttonImage} />}
+          {!props.isMain && <MainSignOutIcon className={styles.buttonImage} />}
         </button>
       </nav>
     </div>

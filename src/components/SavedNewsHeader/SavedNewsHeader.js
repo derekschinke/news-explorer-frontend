@@ -5,7 +5,10 @@ import Navigation from '../Navigation/Navigation';
 function SavedNewsHeader(props) {
   return (
     <header>
-      <Navigation onNavigationButtonClick={props.onNavigationButtonClick} />
+      <Navigation
+        isLoggedIn={props.isLoggedIn}
+        onNavigationButtonClick={props.onNavigationButtonClick}
+      />
       <section className={styles.block}>
         <div className={styles.items}>
           <h2 className={styles.header}>Saved articles</h2>
