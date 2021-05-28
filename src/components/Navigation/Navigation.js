@@ -104,8 +104,10 @@ function Navigation(props) {
       {isMobileNavigationOpen && (
         <>
           <MobileNavigation
+            isLoggedIn={props.isLoggedIn}
             isMain={props.isMain}
             onMobileNavigationButtonClick={handleMobileNavigationButtonClick}
+            signOutIcon={SignOutIcon}
           />
           <RemoveScroll />
         </>

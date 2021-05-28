@@ -3,8 +3,6 @@ import styles from './MobileNavigation.module.css';
 import { Link } from 'react-router-dom';
 import classnames from 'classnames';
 
-import { ReactComponent as MainSignOutIcon } from '../../images/buttons/signout/main.svg';
-
 function MobileNavigation(props) {
   return (
     <div className={styles.block}>
@@ -24,7 +22,7 @@ function MobileNavigation(props) {
               Home
             </Link>
           </li>
-          {!props.isMain && (
+          {props.isLoggedIn && (
             <li className={styles.navListItem}>
               <Link
                 className={classnames(styles.navLink, {
@@ -41,11 +39,13 @@ function MobileNavigation(props) {
           className={classnames(styles.button, 'clickable', {
             [styles.button_route_savedNews]: !props.isMain,
           })}
-          label={props.isMain ? 'Sign in' : 'Sign out'}
+          label={!props.isLoggedIn ? 'Sign in' : 'Sign out'}
           onClick={props.onMobileNavigationButtonClick}
         >
-          {props.isMain ? 'Sign in' : 'Elise'}
-          {!props.isMain && <MainSignOutIcon className={styles.buttonImage} />}
+          {!props.isLoggedIn ? 'Sign in' : 'Elise'}
+          {props.isLoggedIn && (
+            <props.signOutIcon className={styles.buttonImage} />
+          )}
         </button>
       </nav>
     </div>

@@ -24,6 +24,7 @@ function App() {
   function closePopups() {
     setIsSignInPopupOpen(false);
     setIsSignUpPopupOpen(false);
+    setIsRegistrationCompletedPopupOpen(false);
   }
 
   function handleNavigationButtonClick() {
