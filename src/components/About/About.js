@@ -4,7 +4,7 @@ import image from '../../images/jakayla-toney-LmF4eBYs08c-unsplash.webp';
 function About() {
   return (
     <section className={styles.block}>
-      <img className={styles.image} alt="" src={image}></img>
+      <img className={styles.image} alt="Author" src={image}></img>
       <div className={styles.text}>
         <h2 className={styles.header}>About the author</h2>
         <p className={styles.description}>
