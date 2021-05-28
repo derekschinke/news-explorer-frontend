@@ -1,5 +1,7 @@
 import styles from './Footer.module.css';
 
+import { Link } from 'react-router-dom';
+
 import { ReactComponent as GitHubLogo } from 'bootstrap-icons/icons/github.svg';
 import { ReactComponent as LinkedInLogo } from 'bootstrap-icons/icons/linkedin.svg';
 
@@ -13,7 +15,11 @@ function Footer() {
       </p>
       <nav>
         <ul className={styles.list}>
-          <li className={styles.listItem}>Home</li>
+          <li className={styles.listItem}>
+            <Link className={styles.link} to="/">
+              Home
+            </Link>
+          </li>
           <li className={styles.listItem}>
             <a className={styles.link} href="https://practicum.yandex.com/">
               Practicum by Yandex
