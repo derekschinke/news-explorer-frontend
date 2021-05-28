@@ -21,7 +21,7 @@ function App() {
     setIsRegistrationCompletedPopupOpen,
   ] = useState(false);
 
-  function closePopups() {
+  function closeAllPopups() {
     setIsSignInPopupOpen(false);
     setIsSignUpPopupOpen(false);
     setIsRegistrationCompletedPopupOpen(false);
@@ -58,7 +58,7 @@ function App() {
           {isSignInPopupOpen && (
             <>
               <PopupWithForm
-                onClose={closePopups}
+                onCloseButtonClick={closeAllPopups}
                 onRedirectPopupButtonClick={handleRedirectPopupButtonClick}
                 type="signIn"
               />
@@ -68,7 +68,7 @@ function App() {
           {isSignUpPopupOpen && (
             <>
               <PopupWithForm
-                onClose={closePopups}
+                onCloseButtonClick={closeAllPopups}
                 onRedirectPopupButtonClick={handleRedirectPopupButtonClick}
                 type="signUp"
               />
@@ -78,7 +78,7 @@ function App() {
           {isRegistrationCompletedPopupOpen && (
             <>
               <PopupWithForm
-                onClose={closePopups}
+                onCloseButtonClick={closeAllPopups}
                 onRedirectPopupButtonClick={
                   handleRedirectRegistrationCompletedPopupButtonClick
                 }

@@ -9,7 +9,7 @@ function PopupWithForm(props) {
         <button
           className={classnames(styles.closeButton, 'clickable')}
           label="Close"
-          onClick={props.onClose}
+          onClick={props.onCloseButtonClick}
         />
         <div className={styles.content}>
           {
