@@ -5,7 +5,7 @@ function NewsCardList(props) {
   return (
     <ul className={styles.block}>
       {props.cards.map((card, index) => (
-        <NewsCard key={index} card={card} isMain={props.isMain} />
+        <NewsCard card={card} key={index} isMain={props.isMain} />
       ))}
     </ul>
   );
