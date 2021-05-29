@@ -28,7 +28,11 @@ function Footer() {
           <li
             className={classnames(styles.listItem, styles.listItem_type_icon)}
           >
-            <a href="https://github.com/derekschinke">
+            <a
+              href="https://github.com/derekschinke"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GitHubLogo
                 className={classnames(styles.icon, styles.icon_github)}
                 title="GitHub"
@@ -38,7 +42,11 @@ function Footer() {
           <li
             className={classnames(styles.listItem, styles.listItem_type_icon)}
           >
-            <a href="https://www.linkedin.com/in/derekschinke">
+            <a
+              href="https://www.linkedin.com/in/derekschinke"
+              target="_blank"
+              rel="noreferrer"
+            >
               <LinkedInLogo
                 className={classnames(styles.icon, styles.icon_linkedin)}
                 title="LinkedIn"
