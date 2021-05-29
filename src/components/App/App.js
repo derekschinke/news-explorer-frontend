@@ -13,7 +13,7 @@ import IsLoggedInContext from '../../contexts/IsLoggedInContext';
 function App() {
   const history = useHistory();
 
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn] = useState(false);
 
   const [isSignInPopupOpen, setIsSignInPopupOpen] = useState(false);
   const [isSignUpPopupOpen, setIsSignUpPopupOpen] = useState(false);

@@ -39,7 +39,7 @@ function NewsCard(props) {
               [styles.button_delete]: !props.isMain,
             })}
             label={props.isMain ? 'Bookmark' : 'Delete'}
-            disable={!(props.isMain && !isLoggedIn)}
+            disabled={props.isMain && !isLoggedIn}
             onClick={handleButtonClick}
           ></button>
           {!(props.isMain && isLoggedIn) && (
