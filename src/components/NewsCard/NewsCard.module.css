@@ -66,12 +66,8 @@
   background-image: url(../../images/buttons/bookmark/hover.svg);
 }
 
-.button_bookmark_marked {
+.button_bookmark_bookmarked {
   background-image: url(../../images/buttons/bookmark/marked.svg);
-}
-
-.button_bookmark_marked:hover {
-  background-image: url(../../images/buttons/bookmark/hover.svg);
 }
 
 .button_delete {
