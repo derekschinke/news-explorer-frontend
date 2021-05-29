@@ -21,7 +21,12 @@ function Footer() {
             </Link>
           </li>
           <li className={styles.listItem}>
-            <a className={styles.link} href="https://practicum.yandex.com/">
+            <a
+              className={styles.link}
+              href="https://practicum.yandex.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Practicum by Yandex
             </a>
           </li>
