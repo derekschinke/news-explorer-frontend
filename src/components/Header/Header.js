@@ -8,7 +8,6 @@ function Header(props) {
     <header className={styles.block} role="img" alt="Person using smartphone">
       <div className={styles.backgroundFilter}>
         <Navigation
-          isLoggedIn={props.isLoggedIn}
           isMain={true}
           onNavigationButtonClick={props.onNavigationButtonClick}
         />

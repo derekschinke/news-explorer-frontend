@@ -2,8 +2,12 @@ import styles from './MobileNavigation.module.css';
 
 import { Link } from 'react-router-dom';
 import classnames from 'classnames';
+import { useContext } from 'react';
+import IsLoggedInContext from '../../contexts/IsLoggedInContext';
 
 function MobileNavigation(props) {
+  const isLoggedIn = useContext(IsLoggedInContext);
+
   return (
     <div className={styles.block}>
       <nav
@@ -22,7 +26,7 @@ function MobileNavigation(props) {
               Home
             </Link>
           </li>
-          {props.isLoggedIn && (
+          {isLoggedIn && (
             <li className={styles.navListItem}>
               <Link
                 className={classnames(styles.navLink, {
@@ -39,13 +43,11 @@ function MobileNavigation(props) {
           className={classnames(styles.button, 'clickable', {
             [styles.button_route_savedNews]: !props.isMain,
           })}
-          label={!props.isLoggedIn ? 'Sign in' : 'Sign out'}
+          label={!isLoggedIn ? 'Sign in' : 'Sign out'}
           onClick={props.onMobileNavigationButtonClick}
         >
-          {!props.isLoggedIn ? 'Sign in' : 'Elise'}
-          {props.isLoggedIn && (
-            <props.signOutIcon className={styles.buttonImage} />
-          )}
+          {!isLoggedIn ? 'Sign in' : 'Elise'}
+          {isLoggedIn && <props.signOutIcon className={styles.buttonImage} />}
         </button>
       </nav>
     </div>
