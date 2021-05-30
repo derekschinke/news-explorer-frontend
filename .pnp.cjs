@@ -10172,10 +10172,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:5.0.0", {
-          "packageLocation": "./.yarn/cache/execa-npm-5.0.0-4ee568fb49-a044367ebd.zip/node_modules/execa/",
+        ["npm:5.0.1", {
+          "packageLocation": "./.yarn/cache/execa-npm-5.0.1-596ff0920a-8d78a3a500.zip/node_modules/execa/",
           "packageDependencies": [
-            ["execa", "npm:5.0.0"],
+            ["execa", "npm:5.0.1"],
             ["cross-spawn", "npm:7.0.3"],
             ["get-stream", "npm:6.0.1"],
             ["human-signals", "npm:2.1.0"],
@@ -13578,7 +13578,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:48933b28331d16c1d73786360e7ba20f54f6df4949c6ab5c13ac4c4353b5c70f2d36a97de9a9c531027ad3588d8fd7f384706f298f0eff0356b58bb9c47f63ec#npm:4.3.2"],
             ["dedent", "npm:0.7.0"],
             ["enquirer", "npm:2.3.6"],
-            ["execa", "npm:5.0.0"],
+            ["execa", "npm:5.0.1"],
             ["listr2", "virtual:4b0eea214d83e6e05cbe9674d69cb7f553c930fbd95cf27b023ecb1d9ff23bce32ab3afc880c65a5b91bd3abeccea112435944b80702879b8337532cf8f5b466#npm:3.9.0"],
             ["log-symbols", "npm:4.1.0"],
             ["micromatch", "npm:4.0.4"],
