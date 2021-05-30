@@ -1,0 +1,174 @@
+.block {
+  height: 80px;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+  position: relative;
+  background: rgba(196, 196, 196, 0.01);
+}
+
+.block_route_savedNews {
+  background: #fff;
+  box-shadow: inset 0 -1px 0 #d1d2d6;
+}
+
+.items {
+  max-width: 1232px;
+  padding: 0 40px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.logoLink {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logoLink_route_savedNews {
+  color: #1a1b22;
+}
+
+.actions {
+  display: flex;
+}
+
+.navList {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navListItem {
+  list-style-type: none;
+  padding: 30px 32px 23px;
+  color: #fff;
+}
+
+.navListItem_active {
+  border-bottom: 3px solid;
+}
+
+.navListItem_route_savedNews {
+  color: #1a1b22;
+}
+
+.navLink {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navLink_route_savedNews {
+  color: #1a1b22;
+}
+
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  height: 48px;
+  border: 1px solid;
+  box-sizing: border-box;
+  border-radius: 100px;
+  margin-top: 19px;
+  margin-left: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+.button_loggedIn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 15px 0 19px;
+}
+
+.button_route_savedNews {
+  color: #1a1b22;
+}
+
+.buttonIcon {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 1439px) {
+  .block {
+    height: 66px;
+  }
+
+  .logo {
+    padding-top: 22px;
+  }
+
+  .navListItem {
+    padding: 22px 16px 16px;
+    padding-top: 22px;
+    padding-bottom: 17px;
+  }
+
+  .navLink {
+    font-size: 16px;
+  }
+
+  .button {
+    height: 40px;
+    margin-top: 14px;
+    margin-left: 16px;
+    font-size: 16px;
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  .button_loggedIn {
+    padding-left: 15px;
+    padding-right: 13px;
+    gap: 13px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block {
+    height: 56px;
+  }
+
+  .block_mobileNavigation {
+    background: #1c1d24;
+  }
+
+  .block_mobileNavigation_route_savedNews {
+    background: #fff;
+  }
+
+  .items {
+    padding: 0 16px;
+  }
+
+  .logo {
+    padding-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .actions {
+    display: none;
+  }
+}

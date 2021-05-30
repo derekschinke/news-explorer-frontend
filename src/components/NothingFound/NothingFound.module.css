@@ -1,0 +1,36 @@
+.block {
+  background-color: #f5f6f7;
+  padding: 86px 0 80px;
+}
+
+.image {
+  width: 96px;
+  height: 96px;
+  margin: auto;
+  background-image: url(../../images/not-found.svg);
+}
+
+.header {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #1a1b22;
+  margin: auto;
+  padding-top: 24px;
+}
+
+.description {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin: auto;
+  text-align: center;
+  color: #b6bcbf;
+  max-width: 356px;
+  padding: 16px 16px 0;
+}

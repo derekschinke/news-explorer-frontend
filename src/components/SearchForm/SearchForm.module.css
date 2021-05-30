@@ -1,0 +1,147 @@
+.block {
+  padding: 80px 16px;
+  max-width: 608px;
+  margin: auto;
+}
+
+.header {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 64px;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.subheader {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin: 0;
+  padding-top: 32px;
+}
+
+.form {
+  width: 100%;
+  height: 64px;
+  background: #fff;
+  border: 1px solid #d1d2d6;
+  box-sizing: border-box;
+  backdrop-filter: blur(8px);
+  border-radius: 100px;
+  border-right: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 88px;
+}
+
+.searchField {
+  max-width: 376px;
+  height: 22px;
+  border: none;
+  margin-left: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1a1b22;
+  caret-color: #2f71e5;
+  padding: 0;
+}
+
+.searchField::placeholder {
+  color: #b6bcbf;
+  opacity: 1;
+}
+
+.searchField:focus {
+  outline: none;
+}
+
+.submitButton {
+  background-color: #2f71e5;
+  width: 168px;
+  height: 64px;
+  box-shadow: 0 5px 15px rgba(14, 26, 57, 0.2);
+  border: none;
+  border-radius: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.submitButton:hover {
+  background: #347eff;
+}
+
+.submitButton:active {
+  background: #2a65cc;
+}
+
+@media screen and (max-width: 1439px) {
+  .block {
+    padding-top: 38px;
+    padding-bottom: 48px;
+    max-width: 448px;
+  }
+
+  .header {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .subheader {
+    padding-top: 16px;
+  }
+
+  .form {
+    height: 56px;
+    margin-top: 48px;
+  }
+
+  .searchField {
+    max-width: 228px;
+  }
+
+  .submitButton {
+    width: 160px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block {
+    padding-top: 30px;
+    padding-bottom: 104px;
+  }
+
+  .form {
+    margin-top: 120px;
+    flex-direction: column;
+  }
+
+  .searchField {
+    margin: 17px 16px 0;
+    margin-top: 16px;
+    max-width: 416px;
+    width: calc(100vw - 64px);
+  }
+
+  .submitButton {
+    margin-top: 33px;
+    max-width: 448px;
+    width: calc(100vw - 32px);
+  }
+}

@@ -1,13 +1,18 @@
-import React from 'react';
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter as Router } from 'react-router-dom';
+import '@csstools/normalize.css';
+import './fonts/fonts.css';
 import './index.css';
-import App from './App';
+import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <StrictMode>
+    <Router basename="/">
+      <App />
+    </Router>
+  </StrictMode>,
   document.getElementById('root')
 );
 

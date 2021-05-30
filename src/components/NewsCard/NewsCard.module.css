@@ -1,0 +1,268 @@
+.block {
+  width: 400px;
+  height: 576px;
+  background: #fff;
+  border-radius: 16px;
+  position: relative;
+}
+
+.block:hover {
+  box-shadow: 0 8px 58px rgba(8, 29, 45, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: 272px;
+  background: no-repeat center/cover;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.bits {
+  padding: 24px 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.keyword {
+  max-width: 115px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 8px 22px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.keyword::first-letter {
+  text-transform: capitalize;
+}
+
+.keyword_hidden {
+  visibility: hidden;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  background: #fff no-repeat center/24px 24px;
+  border-radius: 8px;
+  border: none;
+  display: block;
+  z-index: 1;
+}
+
+.button_bookmark {
+  background-image: url(../../images/buttons/bookmark/normal.svg);
+}
+
+.button_bookmark:hover {
+  background-image: url(../../images/buttons/bookmark/hover.svg);
+}
+
+.button_bookmark_bookmarked {
+  background-image: url(../../images/buttons/bookmark/marked.svg);
+}
+
+.button_delete {
+  background-image: url(../../images/buttons/delete/normal.svg);
+}
+
+.button_delete:hover {
+  background-image: url(../../images/buttons/delete/hover.svg);
+}
+
+.tooltip {
+  display: block;
+  position: absolute;
+  background: #fff;
+  padding: 13px 18px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000;
+  top: 24px;
+  right: 69px;
+  box-shadow: 0 10px 22px rgba(59, 74, 116, 0.1);
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+.button:hover + .tooltip {
+  visibility: visible;
+}
+
+.info {
+  padding: 20px 24px 0;
+}
+
+.date {
+  height: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #b6bcbf;
+  margin: 0;
+}
+
+.title {
+  height: 60px;
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1a1b22;
+  padding-top: 12px;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.text {
+  height: 110px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1a1b22;
+  padding-top: 16px;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+.source {
+  height: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #b6bcbf;
+  text-decoration: none;
+  margin-top: 18px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.source::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: ' ';
+}
+
+@media screen and (max-width: 1439px) {
+  .block {
+    width: 220px;
+    height: 420px;
+  }
+
+  .image {
+    height: 150px;
+  }
+
+  .bits {
+    padding: 8px 8px 0;
+  }
+
+  .keyword {
+    max-width: 103px;
+    padding: 8px 20px;
+  }
+
+  .tooltip {
+    top: 8px;
+    right: 53px;
+  }
+
+  .tooltip_route_savedNews {
+    right: 69.45px;
+  }
+
+  .info {
+    padding: 16px 16px 0;
+  }
+
+  .title {
+    height: 72px;
+    font-size: 22px;
+    line-height: 24px;
+    -webkit-line-clamp: 3;
+  }
+
+  .text {
+    height: 88px;
+    padding-top: 10px;
+    -webkit-line-clamp: 4;
+  }
+
+  .source {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block {
+    width: 288px;
+    height: 440px;
+  }
+
+  .image {
+    height: 196px;
+  }
+
+  .bits {
+    padding: 16px 16px 0;
+  }
+
+  .keyword {
+    padding: 8px 20px;
+  }
+
+  .tooltip {
+    top: 16px;
+    right: 61px;
+  }
+
+  .tooltip_route_savedNews {
+    right: 129.45px;
+  }
+
+  .title {
+    height: 50px;
+    padding-top: 10px;
+    -webkit-line-clamp: 2;
+  }
+
+  .text {
+    padding-top: 12px;
+  }
+
+  .source {
+    margin-top: 8px;
+  }
+}
