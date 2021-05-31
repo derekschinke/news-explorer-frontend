@@ -2,10 +2,13 @@ import styles from './NewsCard.module.css';
 
 import classnames from 'classnames';
 import { useContext, useState } from 'react';
-import IsLoggedInContext from '../../contexts/IsLoggedInContext';
+import CurrentUserContext from '../../contexts/CurrentUserContext';
+import { isObjectEmpty } from '../../utils/helpers';
 
 function NewsCard(props) {
-  const isLoggedIn = useContext(IsLoggedInContext);
+  const currentUser = useContext(CurrentUserContext);
+
+  const isLoggedIn = !isObjectEmpty(currentUser);
 
   const [isBookmarked, setIsBookmarked] = useState(false);
 

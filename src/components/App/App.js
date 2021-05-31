@@ -8,12 +8,14 @@ import SavedNews from '../SavedNews/SavedNews';
 import PopupWithForm from '../PopupWithForm/PopupWithForm';
 import { useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
-import IsLoggedInContext from '../../contexts/IsLoggedInContext';
+import CurrentUserContext from '../../contexts/CurrentUserContext';
 
 function App() {
   const history = useHistory();
 
-  const [isLoggedIn] = useState(false);
+  const [currentUser] = useState({});
+
+  // const [isLoggedIn] = useState(false);
 
   const [isSignInPopupOpen, setIsSignInPopupOpen] = useState(false);
   const [isSignUpPopupOpen, setIsSignUpPopupOpen] = useState(false);
@@ -47,7 +49,7 @@ function App() {
   }
 
   return (
-    <IsLoggedInContext.Provider value={isLoggedIn}>
+    <CurrentUserContext.Provider value={currentUser}>
       <div className={styles.block}>
         <Switch>
           <Route exact path="/">
@@ -97,7 +99,7 @@ function App() {
           <Redirect from="*" to="/" />
         </Switch>
       </div>
-    </IsLoggedInContext.Provider>
+    </CurrentUserContext.Provider>
   );
 }
 

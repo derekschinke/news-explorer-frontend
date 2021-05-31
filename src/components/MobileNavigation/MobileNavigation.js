@@ -3,10 +3,13 @@ import styles from './MobileNavigation.module.css';
 import { Link } from 'react-router-dom';
 import classnames from 'classnames';
 import { useContext } from 'react';
-import IsLoggedInContext from '../../contexts/IsLoggedInContext';
+import CurrentUserContext from '../../contexts/CurrentUserContext';
+import { isObjectEmpty } from '../../utils/helpers';
 
 function MobileNavigation(props) {
-  const isLoggedIn = useContext(IsLoggedInContext);
+  const currentUser = useContext(CurrentUserContext);
+
+  const isLoggedIn = !isObjectEmpty(currentUser);
 
   return (
     <div className={styles.block}>
