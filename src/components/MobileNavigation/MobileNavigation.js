@@ -49,7 +49,7 @@ function MobileNavigation(props) {
           label={!isLoggedIn ? 'Sign in' : 'Sign out'}
           onClick={props.onMobileNavigationButtonClick}
         >
-          {!isLoggedIn ? 'Sign in' : 'Elise'}
+          {!isLoggedIn ? 'Sign in' : currentUser.name}
           {isLoggedIn && <props.signOutIcon className={styles.buttonImage} />}
         </button>
       </nav>

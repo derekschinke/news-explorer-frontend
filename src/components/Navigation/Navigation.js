@@ -92,7 +92,7 @@ function Navigation(props) {
               label={!isLoggedIn ? 'Sign in' : 'Sign out'}
               onClick={props.onNavigationButtonClick}
             >
-              {!isLoggedIn ? 'Sign in' : 'Elise'}
+              {!isLoggedIn ? 'Sign in' : currentUser.name}
               {isLoggedIn && <SignOutIcon className={styles.buttonIcon} />}
             </button>
           </div>
