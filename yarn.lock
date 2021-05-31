@@ -3036,11 +3036,11 @@ __metadata:
   linkType: hard
 
 "acorn@npm:^8.2.4":
-  version: 8.2.4
-  resolution: "acorn@npm:8.2.4"
+  version: 8.3.0
+  resolution: "acorn@npm:8.3.0"
   bin:
     acorn: bin/acorn
-  checksum: cb4ffa2746bebd8ea808e98e139e2e497eaa254de45877abea6a2bad4e65a824fc37e23f6d163562b1e4ee12fcc8fa03948986c0a353b314bff78a0327168cb2
+  checksum: 9217542382451ea95902c650e0d03c661abaf39c41f3c797347b61f2950b0f03c5f77ef93b9f702dc8112907cf40812e3cb5f1e62b3054f017ebeb07ed267587
   languageName: node
   linkType: hard
 
@@ -4324,9 +4324,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30000981, caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001125, caniuse-lite@npm:^1.0.30001219":
-  version: 1.0.30001230
-  resolution: "caniuse-lite@npm:1.0.30001230"
-  checksum: 7ad6bf592c272dc62e59eb05b7e8581f6e8e0b0f6cef8e687c82c8306d77dccacdbba86286a4d1e3defebdd358ddc0a236208f08ea8e7b899d7b519c1223399a
+  version: 1.0.30001231
+  resolution: "caniuse-lite@npm:1.0.30001231"
+  checksum: 7c5fdd75c435b589ce594fafce6ddad4f7bb8215b08f99ee98911692eac6e6ded1706537177f29d46ed33c44b76ec49dd1f28d72dbd15fb4da57ab21acaa9ce6
   languageName: node
   linkType: hard
 
@@ -5687,9 +5687,9 @@ __metadata:
   linkType: hard
 
 "dom-accessibility-api@npm:^0.5.4":
-  version: 0.5.4
-  resolution: "dom-accessibility-api@npm:0.5.4"
-  checksum: 1fb22b351984564212b41bd7265ad1288322ad72e7367753f589facaeb98c2e3515502396acf2463f71dbaa1e238d6e006ec144a6217f1cd42e962b9bebd2dee
+  version: 0.5.5
+  resolution: "dom-accessibility-api@npm:0.5.5"
+  checksum: a9e302dd48d0f058b1ea1fbcc438b2de93689f843f4bfdc665515704d1b6422d9f723a68298d63489990003041e84852e3508044da43d8bd3d95da74fd7173b2
   languageName: node
   linkType: hard
 
@@ -10162,10 +10162,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"mime-db@npm:1.47.0, mime-db@npm:>= 1.43.0 < 2":
+"mime-db@npm:1.47.0":
   version: 1.47.0
   resolution: "mime-db@npm:1.47.0"
   checksum: 6808235243c39b3142e677af86972cf32de8ebbec81178491475a79aa07caf67646cd9b559972d22c3c372ddca4a093e58bb0ba10376d75a1efbd0e07be82de2
+  languageName: node
+  linkType: hard
+
+"mime-db@npm:>= 1.43.0 < 2":
+  version: 1.48.0
+  resolution: "mime-db@npm:1.48.0"
+  checksum: d778392e474a5e78c24eef5a2894261f0ed168d2762c1ac2a115aa34c2274c9426178b92a6cc55e9edb8f13e7e9b8116380b0e61db9ff6d763e62876a65eea57
   languageName: node
   linkType: hard
 
