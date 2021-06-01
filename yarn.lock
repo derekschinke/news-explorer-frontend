@@ -2370,12 +2370,12 @@ __metadata:
   linkType: hard
 
 "@types/eslint@npm:^7.2.6":
-  version: 7.2.12
-  resolution: "@types/eslint@npm:7.2.12"
+  version: 7.2.13
+  resolution: "@types/eslint@npm:7.2.13"
   dependencies:
     "@types/estree": "*"
     "@types/json-schema": "*"
-  checksum: 734938208a147b65bf85f60f6b29a04888e51d304ce2d0b5cdd47030e469954e585a4fd6a140ab158330e51563fea23cb8d5dfa458c1fd229388b889684b6b6c
+  checksum: 6dac9f9d7d155c90a6eba104718e1adb43c3e4020ea75ab8f5094db8603617473a4ac6f7ddeb2c670822860b869a7e3871406a82425ec470965cdfc1f3dd3ad0
   languageName: node
   linkType: hard
 
@@ -2436,11 +2436,11 @@ __metadata:
   linkType: hard
 
 "@types/istanbul-reports@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@types/istanbul-reports@npm:3.0.0"
+  version: 3.0.1
+  resolution: "@types/istanbul-reports@npm:3.0.1"
   dependencies:
     "@types/istanbul-lib-report": "*"
-  checksum: 286a18cff19c4dac4321b9ea406a3560faf577fb2a4df5abf9d577fa81ba831c9baa7d40d03f1daf7fe613d468546b731c00b844b72fad9834c583311a35bb7b
+  checksum: f1ad54bc68f37f60b30c7915886b92f86b847033e597f9b34f2415acdbe5ed742fa559a0a40050d74cdba3b6a63c342cac1f3a64dba5b68b66a6941f4abd7903
   languageName: node
   linkType: hard
 
@@ -10173,14 +10173,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"mime-db@npm:1.47.0":
-  version: 1.47.0
-  resolution: "mime-db@npm:1.47.0"
-  checksum: 6808235243c39b3142e677af86972cf32de8ebbec81178491475a79aa07caf67646cd9b559972d22c3c372ddca4a093e58bb0ba10376d75a1efbd0e07be82de2
-  languageName: node
-  linkType: hard
-
-"mime-db@npm:>= 1.43.0 < 2":
+"mime-db@npm:1.48.0, mime-db@npm:>= 1.43.0 < 2":
   version: 1.48.0
   resolution: "mime-db@npm:1.48.0"
   checksum: d778392e474a5e78c24eef5a2894261f0ed168d2762c1ac2a115aa34c2274c9426178b92a6cc55e9edb8f13e7e9b8116380b0e61db9ff6d763e62876a65eea57
@@ -10188,11 +10181,11 @@ fsevents@^1.2.7:
   linkType: hard
 
 "mime-types@npm:^2.1.12, mime-types@npm:^2.1.27, mime-types@npm:~2.1.17, mime-types@npm:~2.1.24":
-  version: 2.1.30
-  resolution: "mime-types@npm:2.1.30"
+  version: 2.1.31
+  resolution: "mime-types@npm:2.1.31"
   dependencies:
-    mime-db: 1.47.0
-  checksum: 53c36729b1c4f6029fd5957d5859e62eff4b86311a6e1dce87937583dc8971fec9f359ffcff4be93d26bb5ddd03f1b5ffc7626912031ce0a63510d7896521b2e
+    mime-db: 1.48.0
+  checksum: eb1612aa96403823c7a2ccb1a39d58ce11477e685560186e7d369d8164260fd6fc1eeb56fa23acb6a4050583f417b2a685b69c23eb2bd8ed169fb0c6e323740a
   languageName: node
   linkType: hard
 
@@ -16469,11 +16462,11 @@ resolve@^2.0.0-next.3:
   linkType: hard
 
 "ws@npm:^6.2.1":
-  version: 6.2.1
-  resolution: "ws@npm:6.2.1"
+  version: 6.2.2
+  resolution: "ws@npm:6.2.2"
   dependencies:
     async-limiter: ~1.0.0
-  checksum: 82f7512bb74ad6e94002b5016944aee2aeefd1c480477b5f55a03ee010d4a1bd5bb4a688e07695f0a727227a0591a1a7c70e31f97baad826e3c48f85be4db6a9
+  checksum: aec3154ec51477c094ac2cb5946a156e17561a581fa27005cbf22c53ac57f8d4e5f791dd4bbba6a488602cb28778c8ab7df06251d590507c3c550fd8ebeee949
   languageName: node
   linkType: hard
 
