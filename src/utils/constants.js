@@ -1,3 +1,9 @@
+const prod = { url: { API_URL: 'https://newsapi.org' } };
+
+const dev = { url: { API_URL: 'http://localhost:3000' } };
+
+export default process.env.NODE_ENV === 'development' ? dev : prod;
+
 export const cards = [
   {
     keyword: 'nature',
