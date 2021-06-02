@@ -2380,9 +2380,9 @@ __metadata:
   linkType: hard
 
 "@types/estree@npm:*":
-  version: 0.0.47
-  resolution: "@types/estree@npm:0.0.47"
-  checksum: aed5c940436250c25c5e140aa19e7199ba3452e72e1aecc515621507df9e5ed5076ddba84a1684c36d62be841ff3e2bafce8793f16fe6f69d10884449d4461e7
+  version: 0.0.48
+  resolution: "@types/estree@npm:0.0.48"
+  checksum: 5062c9a65d3b4020df54741ec7e697ad516bb446a1f8823bd7990544cf6221ab6facf8dd7ad1c79753a5dde5ecb6a9bc4ffcaa1123dba1119566887732cc39fb
   languageName: node
   linkType: hard
 
@@ -2492,9 +2492,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 15.6.1
-  resolution: "@types/node@npm:15.6.1"
-  checksum: 8ed16d4f7404203d3aade0b73e58c969fab4a721cfe637eff9b739f6b25a35e33dfe9e0961b9ac5994d629302faa977f8ee8931d09187a136875f966332cc552
+  version: 15.6.2
+  resolution: "@types/node@npm:15.6.2"
+  checksum: 80357594472d4d854d64b046f0fed4b7487527ee2fea225b6c155d0598562136cb662e703bc40c8126d69751dda68d4eae8078adac0da41b13bd78c7b5df738d
   languageName: node
   linkType: hard
 
@@ -4324,9 +4324,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30000981, caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001125, caniuse-lite@npm:^1.0.30001219":
-  version: 1.0.30001232
-  resolution: "caniuse-lite@npm:1.0.30001232"
-  checksum: 0075ade243e99898f026de08d5cf76348549d55b7a88d9b487652889afcaf2d8bd1906970e96efda255b4c17ee3849652031134104bdc8b96921b2cee6e2cd1f
+  version: 1.0.30001233
+  resolution: "caniuse-lite@npm:1.0.30001233"
+  checksum: 7a628430f01192779a0e21384a464c566b7ffd1b9a082526efdb1dee4dda685ae05bbf7c2b8c04217ae7e3fb507af65c3df1eb0f87c3441f5e6a01a9a7030858
   languageName: node
   linkType: hard
 
@@ -6594,8 +6594,8 @@ __metadata:
   linkType: hard
 
 "execa@npm:^5.0.0":
-  version: 5.0.1
-  resolution: "execa@npm:5.0.1"
+  version: 5.1.0
+  resolution: "execa@npm:5.1.0"
   dependencies:
     cross-spawn: ^7.0.3
     get-stream: ^6.0.0
@@ -6606,7 +6606,7 @@ __metadata:
     onetime: ^5.1.2
     signal-exit: ^3.0.3
     strip-final-newline: ^2.0.0
-  checksum: 8d78a3a5006115b8d7f7c4c17077afdeaa7e7ba08d6b11f2e621fec585ea8cd0857293495f28f90ba12be905562c780e5f48752c2df78590d910689548b43228
+  checksum: d627f4cc821c63c4c1a1d8629de4d68e55fbdcb3e0523e1eb070587ac941612a70e56dd49c7d31758589c3246479c41494755626c6631c76b3b30dc3676bc17a
   languageName: node
   linkType: hard
 
