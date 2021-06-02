@@ -20,7 +20,6 @@ class NewsApi {
         `&sortBy=popularity`,
       {
         headers: {
-          'Content-Type': 'application/json',
           'X-Api-Key': this.apiKey,
         },
       }
