@@ -9,11 +9,14 @@ import PopupWithForm from '../PopupWithForm/PopupWithForm';
 import { useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 import CurrentUserContext from '../../contexts/CurrentUserContext';
+import newsApi from '../../utils/NewsApi';
 
 function App() {
   const history = useHistory();
 
   const [currentUser] = useState({});
+
+  const [searchTerm, setSearchTerm] = useState('');
 
   // const [isLoggedIn] = useState(false);
 
@@ -48,12 +51,28 @@ function App() {
     history.push('/');
   }
 
+  function handleSearchTermChange(evt) {
+    setSearchTerm(evt.target.value);
+  }
+
+  function handleSearchFormSubmit(evt) {
+    evt.preventDefault();
+    newsApi
+      .getArticles(searchTerm)
+      .then((data) => data.forEach((article) => console.log(article)));
+  }
+
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <div className={styles.block}>
         <Switch>
           <Route exact path="/">
-            <Header onNavigationButtonClick={handleNavigationButtonClick} />
+            <Header
+              onNavigationButtonClick={handleNavigationButtonClick}
+              searchTerm={searchTerm}
+              handleSearchTermChange={handleSearchTermChange}
+              handleSearchFormSubmit={handleSearchFormSubmit}
+            />
             <Main />
             <Footer />
             {isSignInPopupOpen && (
