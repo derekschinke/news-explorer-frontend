@@ -10575,7 +10575,7 @@ fsevents@^1.2.7:
     stylelint-config-prettier: ^8.0.2
     stylelint-config-standard: ^22.0.0
     stylelint-prettier: ^1.2.0
-    web-vitals: ^1.1.2
+    web-vitals: ^2.0.0
   languageName: unknown
   linkType: soft
 
@@ -15938,10 +15938,10 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"web-vitals@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "web-vitals@npm:1.1.2"
-  checksum: 92071029089277166e11141b735831d9011e85737d32c1360034676db898ab0ca95f19041ee01904f2189ad6e711b9da6b17567e4831290a429a586c98bc573f
+"web-vitals@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "web-vitals@npm:2.0.0"
+  checksum: be6e0b6df0473625e7c3584bc30788e246f2bc71c95798f1bc82a1bb74c421a083203eb16e66cbb06d7bb24b895e2ec8a912f81e52df70da5d3db08112b06e89
   languageName: node
   linkType: hard
 

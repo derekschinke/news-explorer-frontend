@@ -71,7 +71,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["stylelint-config-prettier", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:8.0.2"],
             ["stylelint-config-standard", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:22.0.0"],
             ["stylelint-prettier", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:1.2.0"],
-            ["web-vitals", "npm:1.1.2"]
+            ["web-vitals", "npm:2.0.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -14684,7 +14684,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["stylelint-config-prettier", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:8.0.2"],
             ["stylelint-config-standard", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:22.0.0"],
             ["stylelint-prettier", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:1.2.0"],
-            ["web-vitals", "npm:1.1.2"]
+            ["web-vitals", "npm:2.0.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -20879,10 +20879,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["web-vitals", [
-        ["npm:1.1.2", {
-          "packageLocation": "./.yarn/cache/web-vitals-npm-1.1.2-8e3860bc35-9207102908.zip/node_modules/web-vitals/",
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/web-vitals-npm-2.0.0-c34667cd41-be6e0b6df0.zip/node_modules/web-vitals/",
           "packageDependencies": [
-            ["web-vitals", "npm:1.1.2"]
+            ["web-vitals", "npm:2.0.0"]
           ],
           "linkType": "HARD",
         }]
