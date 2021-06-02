@@ -17,7 +17,7 @@ class NewsApi {
         `&to=${this.to.toISOString()}` +
         `&pageSize=${this.pageSize.toString()}` +
         `&language=en` +
-        `&sortBy=popularity`,
+        `&sortBy=relevancy`,
       {
         headers: {
           'X-Api-Key': this.apiKey,
