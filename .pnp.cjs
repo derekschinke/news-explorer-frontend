@@ -45,6 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-eslint", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:10.1.0"],
             ["bootstrap-icons", "npm:1.5.0"],
             ["classnames", "npm:2.3.1"],
+            ["date-fns", "npm:2.22.1"],
             ["eslint", "npm:7.27.0"],
             ["eslint-config-prettier", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:8.3.0"],
             ["eslint-config-react-app", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:6.0.0"],
@@ -8674,6 +8675,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["date-fns", [
+        ["npm:2.22.1", {
+          "packageLocation": "./.yarn/cache/date-fns-npm-2.22.1-cc0cbadceb-7ff97cd605.zip/node_modules/date-fns/",
+          "packageDependencies": [
+            ["date-fns", "npm:2.22.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["debug", [
         ["npm:2.6.9", {
           "packageLocation": "./.yarn/cache/debug-npm-2.6.9-7d4cb597dc-d2f51589ca.zip/node_modules/debug/",
@@ -14658,6 +14668,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-eslint", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:10.1.0"],
             ["bootstrap-icons", "npm:1.5.0"],
             ["classnames", "npm:2.3.1"],
+            ["date-fns", "npm:2.22.1"],
             ["eslint", "npm:7.27.0"],
             ["eslint-config-prettier", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:8.3.0"],
             ["eslint-config-react-app", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:6.0.0"],

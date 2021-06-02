@@ -3,12 +3,12 @@ import About from '../About/About';
 // import Preloader from '../Preloader/Preloader';
 import SearchResults from '../SearchResults/SearchResults';
 
-function Main() {
+function Main({ cards }) {
   return (
     <main>
       {/* <Preloader /> */}
       {/* <NothingFound /> */}
-      <SearchResults />
+      <SearchResults cards={cards} />
       <About />
     </main>
   );

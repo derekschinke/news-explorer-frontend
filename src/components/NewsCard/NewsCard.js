@@ -1,11 +1,12 @@
 import styles from './NewsCard.module.css';
 
 import classnames from 'classnames';
+import { parseISO, format } from 'date-fns';
 import { useContext, useState } from 'react';
 import CurrentUserContext from '../../contexts/CurrentUserContext';
 import { isObjectEmpty } from '../../utils/helpers';
 
-function NewsCard(props) {
+function NewsCard({ card, isMain }) {
   const currentUser = useContext(CurrentUserContext);
 
   const isLoggedIn = !isObjectEmpty(currentUser);
@@ -13,7 +14,7 @@ function NewsCard(props) {
   const [isBookmarked, setIsBookmarked] = useState(false);
 
   function handleButtonClick() {
-    if (props.isMain) {
+    if (isMain) {
       setIsBookmarked(!isBookmarked);
     }
   }
@@ -23,50 +24,52 @@ function NewsCard(props) {
       <div
         className={styles.image}
         role="img"
-        alt={props.card.title}
-        style={{ backgroundImage: `url(${props.card.image})` }}
+        alt={card.title}
+        style={{ backgroundImage: `url(${card.image})` }}
       >
         <div className={styles.bits}>
           <div
             className={classnames(styles.keyword, {
-              [styles.keyword_hidden]: props.isMain,
+              [styles.keyword_hidden]: isMain,
             })}
           >
-            {props.card.keyword}
+            {card.keyword}
           </div>
           <button
             className={classnames(styles.button, {
-              clickable: !(props.isMain && !isLoggedIn),
-              [styles.button_bookmark]: props.isMain,
-              [styles.button_bookmark_bookmarked]: props.isMain && isBookmarked,
-              [styles.button_delete]: !props.isMain,
+              clickable: !(isMain && !isLoggedIn),
+              [styles.button_bookmark]: isMain,
+              [styles.button_bookmark_bookmarked]: isMain && isBookmarked,
+              [styles.button_delete]: !isMain,
             })}
-            label={props.isMain ? 'Bookmark' : 'Delete'}
-            disabled={props.isMain && !isLoggedIn}
+            label={isMain ? 'Bookmark' : 'Delete'}
+            disabled={isMain && !isLoggedIn}
             onClick={handleButtonClick}
           ></button>
-          {!(props.isMain && isLoggedIn) && (
+          {!(isMain && isLoggedIn) && (
             <div
               className={classnames(styles.tooltip, {
-                [styles.tooltip_route_savedNews]: !props.isMain,
+                [styles.tooltip_route_savedNews]: !isMain,
               })}
             >
-              {props.isMain ? 'Sign in to save articles' : 'Remove from saved'}
+              {isMain ? 'Sign in to save articles' : 'Remove from saved'}
             </div>
           )}
         </div>
       </div>
       <div className={styles.info}>
-        <p className={styles.date}>{props.card.date}</p>
-        <h3 className={styles.title}>{props.card.title}</h3>
-        <p className={styles.text}>{props.card.text}</p>
+        <time dateTime={card.date} className={styles.date}>
+          {format(parseISO(card.date), 'LLLL d, yyyy')}
+        </time>
+        <h3 className={styles.title}>{card.title}</h3>
+        <p className={styles.text}>{card.text}</p>
         <a
           className={styles.source}
-          href={props.card.link}
+          href={card.link}
           target="_blank"
           rel="noreferrer"
         >
-          {props.card.source}
+          {card.source}
         </a>
       </div>
     </li>

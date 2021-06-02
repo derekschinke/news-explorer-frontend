@@ -3,9 +3,7 @@ import styles from './SearchResults.module.css';
 
 import classnames from 'classnames';
 
-import { cards } from '../../utils/constants';
-
-function SearchResults() {
+function SearchResults({ cards }) {
   return (
     <section className={styles.block}>
       <div className={styles.items}>

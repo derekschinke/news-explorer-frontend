@@ -16,6 +16,8 @@ function App() {
 
   const [currentUser] = useState({});
 
+  const [cards, setCards] = useState([]);
+
   const [searchTerm, setSearchTerm] = useState('');
 
   // const [isLoggedIn] = useState(false);
@@ -57,9 +59,18 @@ function App() {
 
   function handleSearchFormSubmit(evt) {
     evt.preventDefault();
-    newsApi
-      .getArticles(searchTerm)
-      .then((data) => data.forEach((article) => console.log(article)));
+
+    newsApi.getArticles(searchTerm).then((articles) => {
+      articles.forEach((article) => {
+        article.keyword = searchTerm;
+        article.source = article.source.name;
+        article.text = article.description;
+        article.link = article.url;
+        article.image = article.urlToImage;
+        article.date = article.publishedAt;
+      });
+      setCards(articles);
+    });
   }
 
   return (
@@ -73,7 +84,7 @@ function App() {
               handleSearchTermChange={handleSearchTermChange}
               handleSearchFormSubmit={handleSearchFormSubmit}
             />
-            <Main />
+            <Main cards={cards} />
             <Footer />
             {isSignInPopupOpen && (
               <>

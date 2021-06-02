@@ -5385,6 +5385,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"date-fns@npm:^2.22.1":
+  version: 2.22.1
+  resolution: "date-fns@npm:2.22.1"
+  checksum: 7ff97cd605af50c02f341687c2cafd218839a1aace67965374989855a13f76dc4fe52e0e38c343c1ad1f8399787cb6839a0b14a669c44b30550c287300b1bb50
+  languageName: node
+  linkType: hard
+
 "debug@npm:2.6.9, debug@npm:^2.2.0, debug@npm:^2.3.3, debug@npm:^2.6.0, debug@npm:^2.6.9":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
@@ -10549,6 +10556,7 @@ fsevents@^1.2.7:
     babel-eslint: ^10.1.0
     bootstrap-icons: ^1.5.0
     classnames: ^2.3.1
+    date-fns: ^2.22.1
     eslint: ^7.27.0
     eslint-config-prettier: ^8.3.0
     eslint-config-react-app: ^6.0.0
