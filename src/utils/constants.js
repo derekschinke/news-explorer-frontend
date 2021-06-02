@@ -1,6 +1,6 @@
-const prod = { url: { API_URL: 'https://newsapi.org' } };
+const prod = { url: { NEWS_API_URL: 'https://nomoreparties.co/news' } };
 
-const dev = { url: { API_URL: 'http://localhost:3000' } };
+const dev = { url: { NEWS_API_URL: 'https://newsapi.org' } };
 
 export default process.env.NODE_ENV === 'development' ? dev : prod;
 
