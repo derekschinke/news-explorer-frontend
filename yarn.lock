@@ -2492,9 +2492,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 15.6.2
-  resolution: "@types/node@npm:15.6.2"
-  checksum: 80357594472d4d854d64b046f0fed4b7487527ee2fea225b6c155d0598562136cb662e703bc40c8126d69751dda68d4eae8078adac0da41b13bd78c7b5df738d
+  version: 15.9.0
+  resolution: "@types/node@npm:15.9.0"
+  checksum: 6ba9033ee00cf2fd260755d7aeeb65d6287f507473e54c1bce0dbd687c03245aff636580c8dc9215bea16cc32096d60344d00a9cb0a110c9baaca885573dc402
   languageName: node
   linkType: hard
 
@@ -5846,9 +5846,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.564, electron-to-chromium@npm:^1.3.723":
-  version: 1.3.743
-  resolution: "electron-to-chromium@npm:1.3.743"
-  checksum: ea9526335f835cab6b6e9755c8eb24c24a88827eac4849943914f35c43442c7f36b983d3c3062d126f742750bf1332ed2d0f2966b0695f8dd37fc75f77561ef5
+  version: 1.3.744
+  resolution: "electron-to-chromium@npm:1.3.744"
+  checksum: 08338901bd53c84fcce2d73ccbf048e48771403095386b166704cb05a13ec72b4c5d767f61a01bd43ca4fe1c2253ad268b6ccd3d181952844bac94ce110bb070
   languageName: node
   linkType: hard
 
@@ -10583,7 +10583,7 @@ fsevents@^1.2.7:
     stylelint-config-prettier: ^8.0.2
     stylelint-config-standard: ^22.0.0
     stylelint-prettier: ^1.2.0
-    web-vitals: ^2.0.0
+    web-vitals: ^2.0.1
   languageName: unknown
   linkType: soft
 
@@ -15946,10 +15946,10 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"web-vitals@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "web-vitals@npm:2.0.0"
-  checksum: be6e0b6df0473625e7c3584bc30788e246f2bc71c95798f1bc82a1bb74c421a083203eb16e66cbb06d7bb24b895e2ec8a912f81e52df70da5d3db08112b06e89
+"web-vitals@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "web-vitals@npm:2.0.1"
+  checksum: 929316d4ce532d9d6d5031b703aa0ce757305114825c945beba76670f891928eb901eddc3a410eff6e4dffecbdf6635498e5ea63f07b9adcfd072d531a37dc8f
   languageName: node
   linkType: hard
 
