@@ -15,12 +15,11 @@ function App() {
   const history = useHistory();
 
   const [currentUser] = useState({});
-
+  // const [isLoggedIn] = useState(false);
   const [cards, setCards] = useState([]);
-
   const [searchTerm, setSearchTerm] = useState('');
 
-  // const [isLoggedIn] = useState(false);
+  const [searchResultsStatus, setSearchResultsStatus] = useState('');
 
   const [isSignInPopupOpen, setIsSignInPopupOpen] = useState(false);
   const [isSignUpPopupOpen, setIsSignUpPopupOpen] = useState(false);
@@ -60,17 +59,29 @@ function App() {
   function handleSearchFormSubmit(evt) {
     evt.preventDefault();
 
-    newsApi.getArticles(searchTerm).then((articles) => {
-      articles.forEach((article) => {
-        article.keyword = searchTerm;
-        article.source = article.source.name;
-        article.text = article.description;
-        article.link = article.url;
-        article.image = article.urlToImage;
-        article.date = article.publishedAt;
+    setSearchResultsStatus('preloader');
+
+    newsApi
+      .getArticles(searchTerm)
+      .then((articles) => {
+        setSearchResultsStatus(
+          articles.length === 0 ? 'nothingFound' : 'searchResults'
+        );
+
+        articles.forEach((article) => {
+          article.keyword = searchTerm;
+          article.source = article.source.name;
+          article.text = article.description;
+          article.link = article.url;
+          article.image = article.urlToImage;
+          article.date = article.publishedAt;
+        });
+
+        setCards(articles);
+      })
+      .catch((err) => {
+        console.log(err);
       });
-      setCards(articles);
-    });
   }
 
   return (
@@ -84,7 +95,7 @@ function App() {
               handleSearchTermChange={handleSearchTermChange}
               handleSearchFormSubmit={handleSearchFormSubmit}
             />
-            <Main cards={cards} />
+            <Main cards={cards} searchResultsStatus={searchResultsStatus} />
             <Footer />
             {isSignInPopupOpen && (
               <>
