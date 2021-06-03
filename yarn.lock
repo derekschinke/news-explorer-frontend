@@ -2258,25 +2258,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^7.28.1, @testing-library/dom@npm:^7.31.0":
-  version: 7.31.0
-  resolution: "@testing-library/dom@npm:7.31.0"
+"@testing-library/dom@npm:^7.28.1, @testing-library/dom@npm:^7.31.2":
+  version: 7.31.2
+  resolution: "@testing-library/dom@npm:7.31.2"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/runtime": ^7.12.5
     "@types/aria-query": ^4.2.0
     aria-query: ^4.2.2
     chalk: ^4.1.0
-    dom-accessibility-api: ^0.5.4
+    dom-accessibility-api: ^0.5.6
     lz-string: ^1.4.4
     pretty-format: ^26.6.2
-  checksum: 4214612561da33e4667ecb56d10ce8e2fe40b341b43802e9fb41790a807d962c2f4d45929647eef9a0b5787cb3a96a96d004f2ab1537a0e934975122bfdbda82
+  checksum: 54fbedd1ecdfe1d47be2e592b98d18b2ab9d7e731f57231caf9b152593fe7329fe5ebe219e0e5d1e0df5b1ab803121cb8acd8b73bd1fb292bfdc2c55663eb01d
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^5.12.0":
-  version: 5.12.0
-  resolution: "@testing-library/jest-dom@npm:5.12.0"
+"@testing-library/jest-dom@npm:^5.13.0":
+  version: 5.13.0
+  resolution: "@testing-library/jest-dom@npm:5.13.0"
   dependencies:
     "@babel/runtime": ^7.9.2
     "@types/testing-library__jest-dom": ^5.9.1
@@ -2286,7 +2286,7 @@ __metadata:
     css.escape: ^1.5.1
     lodash: ^4.17.15
     redent: ^3.0.0
-  checksum: d6af8912a7d121dba15b9defcddb33288a637e433478e8327a9d90b95077e5142eec41b1bbc91e3fd33b0c85478e94936b09021500f2602d9c3202c5d71475f2
+  checksum: 962e47cc7e9fa6cca8a38697bb6b407962c391ed8437b819bc0361674eae6aa8d6e3d829e14ba3624b00353b4ebd4398d47e809ffd33a062c0d7d17c7728dc3a
   languageName: node
   linkType: hard
 
@@ -2492,9 +2492,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 15.9.0
-  resolution: "@types/node@npm:15.9.0"
-  checksum: 6ba9033ee00cf2fd260755d7aeeb65d6287f507473e54c1bce0dbd687c03245aff636580c8dc9215bea16cc32096d60344d00a9cb0a110c9baaca885573dc402
+  version: 15.12.0
+  resolution: "@types/node@npm:15.12.0"
+  checksum: c9257134343be27611523f0540184b551cf07c8c928b7c6ac09d4db2309ff77da973fc80707dd22efb26a9ca4a90509c659b6848e0446e0d298a5418cb5767b4
   languageName: node
   linkType: hard
 
@@ -3517,9 +3517,9 @@ __metadata:
   linkType: hard
 
 "axe-core@npm:^4.0.2":
-  version: 4.2.1
-  resolution: "axe-core@npm:4.2.1"
-  checksum: 0a9b6104b091836277e0d3a725bf740ab0e90e413d7833dad0d9390b59213cb9456f4a3aaf712d735e63d68963696f3daa39d517cc5f87609424e7ab1c913370
+  version: 4.2.2
+  resolution: "axe-core@npm:4.2.2"
+  checksum: e8370681065bd8854d809ed350d75d79a63cfbbb1350766979a2395e171f12a071532a9d66f12d5eda9043ed8776873b8db8d5fe726d90d1be57a324d9679ef8
   languageName: node
   linkType: hard
 
@@ -5693,10 +5693,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dom-accessibility-api@npm:^0.5.4":
-  version: 0.5.5
-  resolution: "dom-accessibility-api@npm:0.5.5"
-  checksum: a9e302dd48d0f058b1ea1fbcc438b2de93689f843f4bfdc665515704d1b6422d9f723a68298d63489990003041e84852e3508044da43d8bd3d95da74fd7173b2
+"dom-accessibility-api@npm:^0.5.6":
+  version: 0.5.6
+  resolution: "dom-accessibility-api@npm:0.5.6"
+  checksum: 900eee86c0065ea13a52524093ebf79513d89cc04f1f423d5f5e1641d9d3d41714d271d78ea9827f47013642f222fe515ec3658f51fd82c981512f0a83ba9708
   languageName: node
   linkType: hard
 
@@ -5846,9 +5846,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.564, electron-to-chromium@npm:^1.3.723":
-  version: 1.3.744
-  resolution: "electron-to-chromium@npm:1.3.744"
-  checksum: 08338901bd53c84fcce2d73ccbf048e48771403095386b166704cb05a13ec72b4c5d767f61a01bd43ca4fe1c2253ad268b6ccd3d181952844bac94ce110bb070
+  version: 1.3.747
+  resolution: "electron-to-chromium@npm:1.3.747"
+  checksum: 3e4eb35e39d5df28061468368e8ec969810c7d84ee41f8aebc9295768e4eeb76594d24fcdfc28ea0eef2fe59e717349dbb72932a3115440c4dd4e06f3b873111
   languageName: node
   linkType: hard
 
@@ -10547,8 +10547,8 @@ fsevents@^1.2.7:
   resolution: "news-explorer-frontend@workspace:."
   dependencies:
     "@csstools/normalize.css": ^11.0.1
-    "@testing-library/dom": ^7.31.0
-    "@testing-library/jest-dom": ^5.12.0
+    "@testing-library/dom": ^7.31.2
+    "@testing-library/jest-dom": ^5.13.0
     "@testing-library/react": ^11.2.7
     "@testing-library/user-event": ^13.1.9
     "@typescript-eslint/eslint-plugin": ^4.26.0
