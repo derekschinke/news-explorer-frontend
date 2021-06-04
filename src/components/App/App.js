@@ -62,6 +62,8 @@ function App() {
 
     setSearchResultsStatus('preloader');
 
+    setNumberOfCardsShown(3);
+
     newsApi
       .getArticles(searchTerm)
       .then((articles) => {

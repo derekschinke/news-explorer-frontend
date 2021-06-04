@@ -41,6 +41,10 @@
   opacity: 0.9;
 }
 
+.buttonHidden {
+  display: none;
+}
+
 @media screen and (max-width: 1439px) {
   .block {
     padding: 40px 0;
