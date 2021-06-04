@@ -1,6 +1,16 @@
-const prod = { url: { NEWS_API_URL: 'https://nomoreparties.co/news' } };
+const prod = {
+  url: {
+    NEWS_API_URL: 'https://nomoreparties.co/news',
+    MAIN_API_URL: 'https://whispering-falls-05433.herokuapp.com',
+  },
+};
 
-const dev = { url: { NEWS_API_URL: 'https://newsapi.org' } };
+const dev = {
+  url: {
+    NEWS_API_URL: 'https://newsapi.org',
+    MAIN_API_URL: 'https://whispering-falls-05433.herokuapp.com',
+  },
+};
 
 export default process.env.NODE_ENV === 'development' ? dev : prod;
 
