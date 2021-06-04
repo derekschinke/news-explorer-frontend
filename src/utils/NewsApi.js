@@ -10,25 +10,30 @@ class NewsApi {
   }
 
   async getArticles(request) {
-    const res = await fetch(
-      `${this.baseUrl}/v2/everything?` +
-        `q=${request}` +
-        `&from=${this.from.toISOString()}` +
-        `&to=${this.to.toISOString()}` +
-        `&pageSize=${this.pageSize.toString()}` +
-        `&language=en` +
-        `&sortBy=relevancy`,
-      {
-        headers: {
-          'X-Api-Key': this.apiKey,
-        },
+    try {
+      const res = await fetch(
+        `${this.baseUrl}/v2/everything?` +
+          `q=${request}` +
+          `&from=${this.from.toISOString()}` +
+          `&to=${this.to.toISOString()}` +
+          `&pageSize=${this.pageSize.toString()}` +
+          `&language=en` +
+          `&sortBy=relevancy`,
+        {
+          headers: {
+            'X-Api-Key': this.apiKey,
+          },
+        }
+      );
+
+      if (!res.ok) {
+        throw new Error('News API fetch failed');
       }
-    );
-    if (res.ok) {
+
       const data = await res.json();
-      if (data) {
-        return data.articles;
-      }
+      return data.articles;
+    } catch (err) {
+      console.log(err);
     }
   }
 }
