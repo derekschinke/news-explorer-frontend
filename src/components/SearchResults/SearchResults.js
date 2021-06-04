@@ -15,7 +15,7 @@ function SearchResults({ cards, numberOfCardsShown, handleShowMoreCards }) {
         />
         <button
           className={classnames(styles.button, 'clickable', {
-            [styles.buttonHidden]: numberOfCardsShown > cards.length,
+            [styles.buttonHidden]: numberOfCardsShown >= cards.length,
           })}
           label="Show more"
           onClick={handleShowMoreCards}
