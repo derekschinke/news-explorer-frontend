@@ -1961,30 +1961,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nodelib/fs.scandir@npm:2.1.4":
-  version: 2.1.4
-  resolution: "@nodelib/fs.scandir@npm:2.1.4"
+"@nodelib/fs.scandir@npm:2.1.5":
+  version: 2.1.5
+  resolution: "@nodelib/fs.scandir@npm:2.1.5"
   dependencies:
-    "@nodelib/fs.stat": 2.0.4
+    "@nodelib/fs.stat": 2.0.5
     run-parallel: ^1.1.9
-  checksum: 18c2150ab52a042bd65babe5b70106e6586dc036644131c33d253ff99e5eeef2e65858ab40161530a6f22b512a65e7c7629f0f1e0f35c00ee4c606f960d375ba
+  checksum: a970d595bd23c66c880e0ef1817791432dbb7acbb8d44b7e7d0e7a22f4521260d4a83f7f9fd61d44fda4610105577f8f58a60718105fb38352baed612fd79e59
   languageName: node
   linkType: hard
 
-"@nodelib/fs.stat@npm:2.0.4, @nodelib/fs.stat@npm:^2.0.2":
-  version: 2.0.4
-  resolution: "@nodelib/fs.stat@npm:2.0.4"
-  checksum: d0d9745f878816d041a8b36faf5797d88ba961274178f0ad1f7fe0efef8118ca9bd0e43e4d0d85a9af911bd35122ec1580e626a83d7595fc4d60f2c1c70e2665
+"@nodelib/fs.stat@npm:2.0.5, @nodelib/fs.stat@npm:^2.0.2":
+  version: 2.0.5
+  resolution: "@nodelib/fs.stat@npm:2.0.5"
+  checksum: 012480b5ca9d97bff9261571dbbec7bbc6033f69cc92908bc1ecfad0792361a5a1994bc48674b9ef76419d056a03efadfce5a6cf6dbc0a36559571a7a483f6f0
   languageName: node
   linkType: hard
 
 "@nodelib/fs.walk@npm:^1.2.3":
-  version: 1.2.6
-  resolution: "@nodelib/fs.walk@npm:1.2.6"
+  version: 1.2.7
+  resolution: "@nodelib/fs.walk@npm:1.2.7"
   dependencies:
-    "@nodelib/fs.scandir": 2.1.4
+    "@nodelib/fs.scandir": 2.1.5
     fastq: ^1.6.0
-  checksum: d156901823b3d3de368ad68047a964523e0ce5f796c0aa7712443b1f748d8e7fc24ce2c0f18d22a177e1f1c6092bca609ab5e4cb1792c41cdc8a6989bc391139
+  checksum: f5286c39c2f9cc0e89b2cbee6b735c5cf572c37f9c0a47a16ce3c1d9ba5d488f3153976ceb1b984ad09dbd8d1de620fab3e7b0ef2b64a006267d0895a16ce95c
   languageName: node
   linkType: hard
 
@@ -2492,9 +2492,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 15.12.0
-  resolution: "@types/node@npm:15.12.0"
-  checksum: c9257134343be27611523f0540184b551cf07c8c928b7c6ac09d4db2309ff77da973fc80707dd22efb26a9ca4a90509c659b6848e0446e0d298a5418cb5767b4
+  version: 15.12.1
+  resolution: "@types/node@npm:15.12.1"
+  checksum: a8eb7b5bbd9e4a8c58b9c98fc0eed8d0f5489bdbfd5442ad6230ae3f638f23e0d37c3c6d10d80e8a7ffe2cd06fab0b29c1645eb95862411321a5ff616012593c
   languageName: node
   linkType: hard
 
@@ -4324,9 +4324,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30000981, caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001125, caniuse-lite@npm:^1.0.30001219":
-  version: 1.0.30001233
-  resolution: "caniuse-lite@npm:1.0.30001233"
-  checksum: 7a628430f01192779a0e21384a464c566b7ffd1b9a082526efdb1dee4dda685ae05bbf7c2b8c04217ae7e3fb507af65c3df1eb0f87c3441f5e6a01a9a7030858
+  version: 1.0.30001234
+  resolution: "caniuse-lite@npm:1.0.30001234"
+  checksum: 5a7c3b2c5a5743864ffe94520a473bacd11d36619465e3f225987734430e05be86a35469898e6348d42804a0c1bde5972cc2220c87d9f8e930f9fb7f71b633da
   languageName: node
   linkType: hard
 
@@ -5846,9 +5846,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.564, electron-to-chromium@npm:^1.3.723":
-  version: 1.3.747
-  resolution: "electron-to-chromium@npm:1.3.747"
-  checksum: 3e4eb35e39d5df28061468368e8ec969810c7d84ee41f8aebc9295768e4eeb76594d24fcdfc28ea0eef2fe59e717349dbb72932a3115440c4dd4e06f3b873111
+  version: 1.3.748
+  resolution: "electron-to-chromium@npm:1.3.748"
+  checksum: a644de44caf1c431adfa968f0ab366438376dcf6e0367c3b5904a39888d2a17f0aad5e52c1b344b2066998105a39a48d43363eeaa667483f595a027cfb92d139
   languageName: node
   linkType: hard
 
@@ -6594,8 +6594,8 @@ __metadata:
   linkType: hard
 
 "execa@npm:^5.0.0":
-  version: 5.1.0
-  resolution: "execa@npm:5.1.0"
+  version: 5.1.1
+  resolution: "execa@npm:5.1.1"
   dependencies:
     cross-spawn: ^7.0.3
     get-stream: ^6.0.0
@@ -6606,7 +6606,7 @@ __metadata:
     onetime: ^5.1.2
     signal-exit: ^3.0.3
     strip-final-newline: ^2.0.0
-  checksum: d627f4cc821c63c4c1a1d8629de4d68e55fbdcb3e0523e1eb070587ac941612a70e56dd49c7d31758589c3246479c41494755626c6631c76b3b30dc3676bc17a
+  checksum: fba9022c8c8c15ed862847e94c252b3d946036d7547af310e344a527e59021fd8b6bb0723883ea87044dc4f0201f949046993124a42ccb0855cae5bf8c786343
   languageName: node
   linkType: hard
 
