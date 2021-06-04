@@ -3,7 +3,12 @@ import NothingFound from '../NothingFound/NothingFound';
 import Preloader from '../Preloader/Preloader';
 import SearchResults from '../SearchResults/SearchResults';
 
-function Main({ cards, searchResultsStatus }) {
+function Main({
+  cards,
+  searchResultsStatus,
+  numberOfCardsShown,
+  handleShowMoreCards,
+}) {
   return (
     <main>
       {
@@ -20,7 +25,11 @@ function Main({ cards, searchResultsStatus }) {
           ),
           searchResults: (
             <>
-              <SearchResults cards={cards} />
+              <SearchResults
+                cards={cards}
+                numberOfCardsShown={numberOfCardsShown}
+                handleShowMoreCards={handleShowMoreCards}
+              />
             </>
           ),
         }[searchResultsStatus]

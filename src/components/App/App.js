@@ -17,6 +17,7 @@ function App() {
   const [currentUser] = useState({});
   // const [isLoggedIn] = useState(false);
   const [cards, setCards] = useState([]);
+  const [numberOfCardsShown, setNumberOfCardsShown] = useState(3);
   const [searchTerm, setSearchTerm] = useState('');
 
   const [searchResultsStatus, setSearchResultsStatus] = useState('');
@@ -84,6 +85,10 @@ function App() {
       });
   }
 
+  function handleShowMoreCards() {
+    setNumberOfCardsShown(numberOfCardsShown + 3);
+  }
+
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <div className={styles.block}>
@@ -95,7 +100,12 @@ function App() {
               handleSearchTermChange={handleSearchTermChange}
               handleSearchFormSubmit={handleSearchFormSubmit}
             />
-            <Main cards={cards} searchResultsStatus={searchResultsStatus} />
+            <Main
+              cards={cards}
+              searchResultsStatus={searchResultsStatus}
+              numberOfCardsShown={numberOfCardsShown}
+              handleShowMoreCards={handleShowMoreCards}
+            />
             <Footer />
             {isSignInPopupOpen && (
               <>
