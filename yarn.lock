@@ -4902,19 +4902,19 @@ __metadata:
   linkType: hard
 
 "core-js-compat@npm:^3.6.2, core-js-compat@npm:^3.9.0, core-js-compat@npm:^3.9.1":
-  version: 3.13.1
-  resolution: "core-js-compat@npm:3.13.1"
+  version: 3.14.0
+  resolution: "core-js-compat@npm:3.14.0"
   dependencies:
     browserslist: ^4.16.6
     semver: 7.0.0
-  checksum: b933e2f5f8c4a8f843062ec2b08f2ca0f463be72ac15c5c7357a693573897fe25f045da62bcb5adde9f15a4d997c4f0ac691a660ac220c3e58b903e21a19b490
+  checksum: 6d15427bf9640846d812fb24f4a36e0c647cdd46d17e45107de62b738aa04013f1c29a3f03be56d1c4dd26c258762a9f38e37f2b48acc7e89e60cc35507f5c97
   languageName: node
   linkType: hard
 
 "core-js-pure@npm:^3.0.0":
-  version: 3.13.1
-  resolution: "core-js-pure@npm:3.13.1"
-  checksum: b1f78369587991cb458df08023ec28e94ca41efe23afb221e7418740e672f59da1cf18b1709d48bfaaa341b864a31a47e97803ca27b1c9bbdf73d747f408eae8
+  version: 3.14.0
+  resolution: "core-js-pure@npm:3.14.0"
+  checksum: 800628e5366c884a87783bce2d589101b91bf880a67832533771f1e168c3c7f91f809f7c6fe5d4e13af76b7ec10023a4efc6da1493b31f4ea8452be3719dabc7
   languageName: node
   linkType: hard
 
@@ -4926,9 +4926,9 @@ __metadata:
   linkType: hard
 
 "core-js@npm:^3.6.5":
-  version: 3.13.1
-  resolution: "core-js@npm:3.13.1"
-  checksum: f020e194bac93eb54fbefd1c33931582e3408d08584d9c6829cd3428ebe8b39e1e93a3b03e8aa49f7bf731ff07ef9c76abc2e9efa128edfa2216e00620830dee
+  version: 3.14.0
+  resolution: "core-js@npm:3.14.0"
+  checksum: a450089e5796496c7f4a84b13139d853fec5233077833ed142fe401bf9ff4ec2a5bae781f3879ef76cefcfe8a274218d3d4d7d813f5f7f32911fbd36e13a6dc4
   languageName: node
   linkType: hard
 
@@ -10562,7 +10562,7 @@ fsevents@^1.2.7:
     hamburger-react: ^2.4.1
     husky: ^6.0.0
     lint-staged: ^11.0.0
-    prettier: ^2.3.0
+    prettier: ^2.3.1
     react: ^17.0.2
     react-dom: ^17.0.2
     react-remove-scroll: ^2.4.2
@@ -12468,12 +12468,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "prettier@npm:2.3.0"
+"prettier@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "prettier@npm:2.3.1"
   bin:
     prettier: bin-prettier.js
-  checksum: e8851a45f60f2994775f96e07964646c299b8a8f9c64da4fbd8efafc20db3458bdcedac79aed34e1d5477540b3aa04f6499adc4979cb7937f8ebd058a767d8ff
+  checksum: 3b37731ff7150feecf19736c77c790e7e276b404ac9af81cbaf87cfecefc48ef9a864f34c2a5caf5955378b8f2525984b8611703a0d9c1f052b4cfa6eb35899f
   languageName: node
   linkType: hard
 

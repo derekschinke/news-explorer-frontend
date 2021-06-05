@@ -60,7 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hamburger-react", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:2.4.1"],
             ["husky", "npm:6.0.0"],
             ["lint-staged", "npm:11.0.0"],
-            ["prettier", "npm:2.3.0"],
+            ["prettier", "npm:2.3.1"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:17.0.2"],
             ["react-remove-scroll", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:2.4.2"],
@@ -3874,7 +3874,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-polyfill-corejs2", "virtual:b5eaeb9db1f2fcb5fac4a935d13fb95896fd18468a2b25269c6a41b2aa9184ca694a71b94843087cfe1d7b17c7f3aae69c826e7f21e5c0c67a0ed5522bbc2511#npm:0.2.2"],
             ["babel-plugin-polyfill-corejs3", "virtual:b5eaeb9db1f2fcb5fac4a935d13fb95896fd18468a2b25269c6a41b2aa9184ca694a71b94843087cfe1d7b17c7f3aae69c826e7f21e5c0c67a0ed5522bbc2511#npm:0.2.2"],
             ["babel-plugin-polyfill-regenerator", "virtual:b5eaeb9db1f2fcb5fac4a935d13fb95896fd18468a2b25269c6a41b2aa9184ca694a71b94843087cfe1d7b17c7f3aae69c826e7f21e5c0c67a0ed5522bbc2511#npm:0.2.2"],
-            ["core-js-compat", "npm:3.13.1"],
+            ["core-js-compat", "npm:3.14.0"],
             ["semver", "npm:6.3.0"]
           ],
           "packagePeers": [
@@ -3953,7 +3953,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-modules", "virtual:06d30a6736866c599ace10a122857ae32a8b56ddad32cc2e236b3251c3d049e4100f86e3fb14a06a9ab592a75348f77fd9765c6f27e66fb3b88e8e1cac96fcdb#npm:0.1.4"],
             ["@babel/types", "npm:7.14.4"],
             ["@types/babel__core", null],
-            ["core-js-compat", "npm:3.13.1"],
+            ["core-js-compat", "npm:3.14.0"],
             ["semver", "npm:5.7.1"]
           ],
           "packagePeers": [
@@ -4110,7 +4110,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@babel-runtime-corejs3-npm-7.14.0-369a72598c-a44a75be45.zip/node_modules/@babel/runtime-corejs3/",
           "packageDependencies": [
             ["@babel/runtime-corejs3", "npm:7.14.0"],
-            ["core-js-pure", "npm:3.13.1"],
+            ["core-js-pure", "npm:3.14.0"],
             ["regenerator-runtime", "npm:0.13.8"]
           ],
           "linkType": "HARD",
@@ -6684,7 +6684,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.14.3"],
             ["@babel/helper-define-polyfill-provider", "virtual:ea7e768e8bdb2dd0910d7ec7821a4957eac40d0d1f8da19bfe439174739ea3271004a1b4f0a6f5453858b78504a396a5c0edb594af5b2c053e109e896a2f4e09#npm:0.2.3"],
             ["@types/babel__core", null],
-            ["core-js-compat", "npm:3.13.1"]
+            ["core-js-compat", "npm:3.14.0"]
           ],
           "packagePeers": [
             "@babel/core",
@@ -8149,19 +8149,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:3.13.1", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.13.1-ae43663c4a/node_modules/core-js/",
+        ["npm:3.14.0", {
+          "packageLocation": "./.yarn/unplugged/core-js-npm-3.14.0-29d8f94441/node_modules/core-js/",
           "packageDependencies": [
-            ["core-js", "npm:3.13.1"]
+            ["core-js", "npm:3.14.0"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["core-js-compat", [
-        ["npm:3.13.1", {
-          "packageLocation": "./.yarn/cache/core-js-compat-npm-3.13.1-e01018dd93-b933e2f5f8.zip/node_modules/core-js-compat/",
+        ["npm:3.14.0", {
+          "packageLocation": "./.yarn/cache/core-js-compat-npm-3.14.0-e8c40d67da-6d15427bf9.zip/node_modules/core-js-compat/",
           "packageDependencies": [
-            ["core-js-compat", "npm:3.13.1"],
+            ["core-js-compat", "npm:3.14.0"],
             ["browserslist", "npm:4.16.6"],
             ["semver", "npm:7.0.0"]
           ],
@@ -8169,10 +8169,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["core-js-pure", [
-        ["npm:3.13.1", {
-          "packageLocation": "./.yarn/unplugged/core-js-pure-npm-3.13.1-13e8d70a9f/node_modules/core-js-pure/",
+        ["npm:3.14.0", {
+          "packageLocation": "./.yarn/unplugged/core-js-pure-npm-3.14.0-9a85e5a133/node_modules/core-js-pure/",
           "packageDependencies": [
-            ["core-js-pure", "npm:3.13.1"]
+            ["core-js-pure", "npm:3.14.0"]
           ],
           "linkType": "HARD",
         }]
@@ -9843,7 +9843,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prettier", null],
             ["eslint", "npm:7.28.0"],
             ["eslint-config-prettier", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:8.3.0"],
-            ["prettier", "npm:2.3.0"],
+            ["prettier", "npm:2.3.1"],
             ["prettier-linter-helpers", "npm:1.0.0"]
           ],
           "packagePeers": [
@@ -14675,7 +14675,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hamburger-react", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:2.4.1"],
             ["husky", "npm:6.0.0"],
             ["lint-staged", "npm:11.0.0"],
-            ["prettier", "npm:2.3.0"],
+            ["prettier", "npm:2.3.1"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:17.0.2"],
             ["react-remove-scroll", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:2.4.2"],
@@ -16818,10 +16818,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["prettier", [
-        ["npm:2.3.0", {
-          "packageLocation": "./.yarn/cache/prettier-npm-2.3.0-29ef37e8b6-e8851a45f6.zip/node_modules/prettier/",
+        ["npm:2.3.1", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.3.1-f8593fac45-3b37731ff7.zip/node_modules/prettier/",
           "packageDependencies": [
-            ["prettier", "npm:2.3.0"]
+            ["prettier", "npm:2.3.1"]
           ],
           "linkType": "HARD",
         }]
@@ -17229,7 +17229,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/react-app-polyfill-npm-2.0.0-6c706ec28e-99e52a6b22.zip/node_modules/react-app-polyfill/",
           "packageDependencies": [
             ["react-app-polyfill", "npm:2.0.0"],
-            ["core-js", "npm:3.13.1"],
+            ["core-js", "npm:3.14.0"],
             ["object-assign", "npm:4.1.1"],
             ["promise", "npm:8.1.0"],
             ["raf", "npm:3.4.1"],
@@ -19614,7 +19614,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["stylelint-prettier", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:1.2.0"],
             ["@types/prettier", null],
             ["@types/stylelint", null],
-            ["prettier", "npm:2.3.0"],
+            ["prettier", "npm:2.3.1"],
             ["prettier-linter-helpers", "npm:1.0.0"],
             ["stylelint", "npm:13.13.1"]
           ],
