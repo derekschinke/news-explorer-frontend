@@ -10,12 +10,15 @@ function PopupWithForm(props) {
 
   function handleSignUpEmailChange(e) {
     setSignUpEmail(e.target.value);
+    props.setIsSubmitErrorVisible(false);
   }
   function handleSignUpPasswordChange(e) {
     setSignUpPassword(e.target.value);
+    props.setIsSubmitErrorVisible(false);
   }
   function handleSignUpNameChange(e) {
     setSignUpName(e.target.value);
+    props.setIsSubmitErrorVisible(false);
   }
   function handleSignUpSubmit(e) {
     e.preventDefault();
@@ -135,6 +138,14 @@ function PopupWithForm(props) {
                     />
                     <span className={styles.validation}>Invalid username</span>
 
+                    <span
+                      className={classnames(styles.submitError, {
+                        [styles.submitError_visible]:
+                          props.isSubmitErrorVisible,
+                      })}
+                    >
+                      This email is not available
+                    </span>
                     <input
                       className={styles.submitButton}
                       type="submit"

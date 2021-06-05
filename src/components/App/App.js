@@ -30,10 +30,13 @@ function App() {
     setIsRegistrationCompletedPopupOpen,
   ] = useState(false);
 
+  const [isSubmitErrorVisible, setIsSubmitErrorVisible] = useState(false);
+
   function closeAllPopups() {
     setIsSignInPopupOpen(false);
     setIsSignUpPopupOpen(false);
     setIsRegistrationCompletedPopupOpen(false);
+    setIsSubmitErrorVisible(false);
   }
 
   function handleNavigationButtonClick() {
@@ -96,7 +99,13 @@ function App() {
     mainApi
       .signUp(email, password, name)
       .then((res) => {
-        console.log(res);
+        if (res) {
+          setIsSignUpPopupOpen(false);
+          setIsRegistrationCompletedPopupOpen(true);
+        } else {
+          setIsSubmitErrorVisible(true);
+          throw new Error(res.error);
+        }
       })
       .catch((err) => {
         console.log(err);
@@ -138,6 +147,8 @@ function App() {
                   onRedirectPopupButtonClick={handleRedirectPopupButtonClick}
                   type="signUp"
                   handleSignUp={handleSignUp}
+                  isSubmitErrorVisible={isSubmitErrorVisible}
+                  setIsSubmitErrorVisible={setIsSubmitErrorVisible}
                 />
                 <RemoveScroll />
               </>
