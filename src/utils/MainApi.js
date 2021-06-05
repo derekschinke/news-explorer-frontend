@@ -1,4 +1,4 @@
-import { configs } from './constants';
+import config from './constants';
 
 class MainApi {
   constructor(options) {
@@ -27,6 +27,6 @@ class MainApi {
   }
 }
 
-const mainApi = new MainApi({ baseUrl: configs.url.MAIN_API_URL });
+const mainApi = new MainApi({ baseUrl: config.url.MAIN_API_URL });
 
 export default mainApi;

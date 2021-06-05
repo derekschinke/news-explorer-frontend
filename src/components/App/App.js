@@ -10,6 +10,7 @@ import { useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 import CurrentUserContext from '../../contexts/CurrentUserContext';
 import newsApi from '../../utils/NewsApi';
+import mainApi from '../../utils/MainApi';
 
 function App() {
   const history = useHistory();
@@ -91,6 +92,17 @@ function App() {
     setNumberOfCardsShown(numberOfCardsShown + 3);
   }
 
+  function handleSignUp(email, password, name) {
+    mainApi
+      .signUp(email, password, name)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <div className={styles.block}>
@@ -125,6 +137,7 @@ function App() {
                   onCloseButtonClick={closeAllPopups}
                   onRedirectPopupButtonClick={handleRedirectPopupButtonClick}
                   type="signUp"
+                  handleSignUp={handleSignUp}
                 />
                 <RemoveScroll />
               </>

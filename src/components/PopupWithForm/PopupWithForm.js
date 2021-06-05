@@ -1,8 +1,27 @@
 import styles from './PopupWithForm.module.css';
 
 import classnames from 'classnames';
+import { useState } from 'react';
 
 function PopupWithForm(props) {
+  const [signUpEmail, setSignUpEmail] = useState('');
+  const [signUpPassword, setSignUpPassword] = useState('');
+  const [signUpName, setSignUpName] = useState('');
+
+  function handleSignUpEmailChange(e) {
+    setSignUpEmail(e.target.value);
+  }
+  function handleSignUpPasswordChange(e) {
+    setSignUpPassword(e.target.value);
+  }
+  function handleSignUpNameChange(e) {
+    setSignUpName(e.target.value);
+  }
+  function handleSignUpSubmit(e) {
+    e.preventDefault();
+    props.handleSignUp(signUpEmail, signUpPassword, signUpName);
+  }
+
   return (
     <div className={styles.block}>
       <div className={styles.container}>
@@ -68,7 +87,11 @@ function PopupWithForm(props) {
               signUp: (
                 <>
                   <h2 className={styles.header}>Sign up</h2>
-                  <form className={styles.form} method="POST">
+                  <form
+                    className={styles.form}
+                    method="POST"
+                    onSubmit={handleSignUpSubmit}
+                  >
                     <label className={styles.label} htmlFor="email">
                       Email
                     </label>
@@ -78,6 +101,7 @@ function PopupWithForm(props) {
                       placeholder="Enter email"
                       required
                       id="email"
+                      onChange={handleSignUpEmailChange}
                     />
                     <span className={styles.validation}>
                       Invalid email address
@@ -93,6 +117,7 @@ function PopupWithForm(props) {
                       required
                       minLength="8"
                       id="password"
+                      onChange={handleSignUpPasswordChange}
                     />
                     <span className={styles.validation}>Invalid password</span>
 
@@ -106,6 +131,7 @@ function PopupWithForm(props) {
                       required
                       minLength="2"
                       id="username"
+                      onChange={handleSignUpNameChange}
                     />
                     <span className={styles.validation}>Invalid username</span>
 
