@@ -5950,10 +5950,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:8.5.0", {
-          "packageLocation": "./.yarn/cache/ajv-npm-8.5.0-66afc3cb37-0115531d0f.zip/node_modules/ajv/",
+        ["npm:8.6.0", {
+          "packageLocation": "./.yarn/cache/ajv-npm-8.6.0-74c534c16b-4cc0ca6c60.zip/node_modules/ajv/",
           "packageDependencies": [
-            ["ajv", "npm:8.5.0"],
+            ["ajv", "npm:8.6.0"],
             ["fast-deep-equal", "npm:3.1.3"],
             ["json-schema-traverse", "npm:1.0.0"],
             ["require-from-string", "npm:2.0.2"],
@@ -19728,7 +19728,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/table-npm-6.7.1-7d70e55c6d-053b61fa4e.zip/node_modules/table/",
           "packageDependencies": [
             ["table", "npm:6.7.1"],
-            ["ajv", "npm:8.5.0"],
+            ["ajv", "npm:8.6.0"],
             ["lodash.clonedeep", "npm:4.5.0"],
             ["lodash.truncate", "npm:4.4.2"],
             ["slice-ansi", "npm:4.0.0"],

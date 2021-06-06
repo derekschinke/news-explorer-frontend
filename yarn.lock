@@ -3122,14 +3122,14 @@ __metadata:
   linkType: hard
 
 "ajv@npm:^8.0.1":
-  version: 8.5.0
-  resolution: "ajv@npm:8.5.0"
+  version: 8.6.0
+  resolution: "ajv@npm:8.6.0"
   dependencies:
     fast-deep-equal: ^3.1.1
     json-schema-traverse: ^1.0.0
     require-from-string: ^2.0.2
     uri-js: ^4.2.2
-  checksum: 0115531d0fd8314867d21b4748f3a91f82b464ca92855ac0702bbe9fc6fb6202b032af7f2849da92fd8e23a7ea2ba91cbae3dde64f05a804dd1bd32809ba0f73
+  checksum: 4cc0ca6c60d6a279aa7ade99515868a3d0485b2b920ddbbc6ee6c7100197dedeff61314a577c3258b1abbbbb084a846825ece7504c848ffbe513c9c54e5fc08b
   languageName: node
   linkType: hard
 
