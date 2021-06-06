@@ -2,9 +2,7 @@ import styles from './SavedNews.module.css';
 
 import NewsCardList from '../NewsCardList/NewsCardList';
 
-import { cards } from '../../utils/constants';
-
-function SavedNews() {
+function SavedNews({ cards }) {
   return (
     <main className={styles.block}>
       <div className={styles.items}>

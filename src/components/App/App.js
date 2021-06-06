@@ -20,9 +20,11 @@ function App() {
 
   const [currentUser, setCurrentUser] = useState({});
 
-  const [cards, setCards] = useState([]);
+  const [searchedCards, setSearchedCards] = useState([]);
   const [numberOfCardsShown, setNumberOfCardsShown] = useState(3);
   const [searchTerm, setSearchTerm] = useState('');
+
+  const [savedCards] = useState([]);
 
   const [searchResultsStatus, setSearchResultsStatus] = useState('');
 
@@ -89,7 +91,7 @@ function App() {
           article.date = article.publishedAt;
         });
 
-        setCards(articles);
+        setSearchedCards(articles);
       })
       .catch((err) => {
         console.log(err);
@@ -163,7 +165,7 @@ function App() {
               handleSearchFormSubmit={handleSearchFormSubmit}
             />
             <Main
-              cards={cards}
+              cards={searchedCards}
               searchResultsStatus={searchResultsStatus}
               numberOfCardsShown={numberOfCardsShown}
               handleShowMoreCards={handleShowMoreCards}
@@ -211,7 +213,7 @@ function App() {
             <SavedNewsHeader
               onNavigationButtonClick={handleSignOutButtonClick}
             />
-            <SavedNews />
+            <SavedNews cards={savedCards} />
             <Footer />
           </Route>
 
