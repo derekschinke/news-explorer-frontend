@@ -8,6 +8,9 @@ function PopupWithForm(props) {
   const [signUpPassword, setSignUpPassword] = useState('');
   const [signUpName, setSignUpName] = useState('');
 
+  const [signInEmail, setSignInEmail] = useState('');
+  const [signInPassword, setSignInPassword] = useState('');
+
   function handleSignUpEmailChange(e) {
     setSignUpEmail(e.target.value);
     props.setIsSubmitErrorVisible(false);
@@ -25,6 +28,17 @@ function PopupWithForm(props) {
     props.handleSignUp(signUpEmail, signUpPassword, signUpName);
   }
 
+  function handleSignInEmailChange(e) {
+    setSignInEmail(e.target.value);
+  }
+  function handleSignInPasswordChange(e) {
+    setSignInPassword(e.target.value);
+  }
+  function handleSignInSubmit(e) {
+    e.preventDefault();
+    props.handleSignIn(signInEmail, signInPassword);
+  }
+
   return (
     <div className={styles.block}>
       <div className={styles.container}>
@@ -39,7 +53,11 @@ function PopupWithForm(props) {
               signIn: (
                 <>
                   <h2 className={styles.header}>Sign in</h2>
-                  <form className={styles.form} method="POST">
+                  <form
+                    className={styles.form}
+                    method="POST"
+                    onSubmit={handleSignInSubmit}
+                  >
                     <label className={styles.label} htmlFor="email">
                       Email
                     </label>
@@ -49,6 +67,7 @@ function PopupWithForm(props) {
                       placeholder="Enter email"
                       required
                       id="email"
+                      onChange={handleSignInEmailChange}
                     />
                     <span className={styles.validation}>
                       Invalid email address
@@ -64,6 +83,7 @@ function PopupWithForm(props) {
                       required
                       minLength="8"
                       id="password"
+                      onChange={handleSignInPasswordChange}
                     />
                     <span className={styles.validation}>Invalid password</span>
 

@@ -15,6 +15,8 @@ import mainApi from '../../utils/MainApi';
 function App() {
   const history = useHistory();
 
+  const [token, setToken] = useState(localStorage.getItem('token'));
+
   const [currentUser] = useState({});
   // const [isLoggedIn] = useState(false);
   const [cards, setCards] = useState([]);
@@ -112,6 +114,23 @@ function App() {
       });
   }
 
+  function handleSignIn(email, password) {
+    mainApi
+      .signIn(email, password)
+      .then((res) => {
+        console.log(res);
+        if (res) {
+          setIsSignInPopupOpen(false);
+          setToken(res.token);
+        } else {
+          throw new Error(res.error);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <div className={styles.block}>
@@ -136,6 +155,7 @@ function App() {
                   onCloseButtonClick={closeAllPopups}
                   onRedirectPopupButtonClick={handleRedirectPopupButtonClick}
                   type="signIn"
+                  handleSignIn={handleSignIn}
                 />
                 <RemoveScroll />
               </>
