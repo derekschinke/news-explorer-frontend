@@ -6,19 +6,20 @@ import Footer from '../Footer/Footer';
 import SavedNewsHeader from '../SavedNewsHeader/SavedNewsHeader';
 import SavedNews from '../SavedNews/SavedNews';
 import PopupWithForm from '../PopupWithForm/PopupWithForm';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 import CurrentUserContext from '../../contexts/CurrentUserContext';
 import newsApi from '../../utils/NewsApi';
 import mainApi from '../../utils/MainApi';
+import { isObjectEmpty } from '../../utils/helpers';
 
 function App() {
   const history = useHistory();
 
   const [token, setToken] = useState(localStorage.getItem('token'));
 
-  const [currentUser] = useState({});
-  // const [isLoggedIn] = useState(false);
+  const [currentUser, setCurrentUser] = useState({});
+
   const [cards, setCards] = useState([]);
   const [numberOfCardsShown, setNumberOfCardsShown] = useState(3);
   const [searchTerm, setSearchTerm] = useState('');
@@ -41,7 +42,7 @@ function App() {
     setIsSubmitErrorVisible(false);
   }
 
-  function handleNavigationButtonClick() {
+  function handleSignInButtonClick() {
     setIsSignInPopupOpen(true);
   }
 
@@ -55,7 +56,9 @@ function App() {
     setIsRegistrationCompletedPopupOpen(false);
   }
 
-  function handleSignOut() {
+  function handleSignOutButtonClick() {
+    localStorage.removeItem('token');
+    setCurrentUser({});
     history.push('/');
   }
 
@@ -131,13 +134,30 @@ function App() {
       });
   }
 
+  useEffect(() => {
+    mainApi
+      .getUser(token)
+      .then((user) => {
+        if (user) {
+          setCurrentUser(user);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [token]);
+
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <div className={styles.block}>
         <Switch>
           <Route exact path="/">
             <Header
-              onNavigationButtonClick={handleNavigationButtonClick}
+              onNavigationButtonClick={
+                isObjectEmpty(currentUser)
+                  ? handleSignInButtonClick
+                  : handleSignOutButtonClick
+              }
               searchTerm={searchTerm}
               handleSearchTermChange={handleSearchTermChange}
               handleSearchFormSubmit={handleSearchFormSubmit}
@@ -188,7 +208,9 @@ function App() {
           </Route>
 
           <Route exact path="/saved-news">
-            <SavedNewsHeader onNavigationButtonClick={handleSignOut} />
+            <SavedNewsHeader
+              onNavigationButtonClick={handleSignOutButtonClick}
+            />
             <SavedNews />
             <Footer />
           </Route>

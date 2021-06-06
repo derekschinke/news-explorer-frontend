@@ -19,6 +19,8 @@ function Navigation(props) {
 
   const isLoggedIn = !isObjectEmpty(currentUser);
 
+  console.log(isLoggedIn);
+
   const SignOutIcon = props.isMain ? MainSignOutIcon : SavedNewsSignOutIcon;
 
   function handleMobileNavigationButtonClick() {
