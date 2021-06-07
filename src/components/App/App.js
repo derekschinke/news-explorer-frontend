@@ -12,6 +12,7 @@ import CurrentUserContext from '../../contexts/CurrentUserContext';
 import newsApi from '../../utils/NewsApi';
 import mainApi from '../../utils/MainApi';
 import { isObjectEmpty } from '../../utils/helpers';
+import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 
 function App() {
   const history = useHistory();
@@ -210,11 +211,13 @@ function App() {
           </Route>
 
           <Route exact path="/saved-news">
-            <SavedNewsHeader
-              onNavigationButtonClick={handleSignOutButtonClick}
-            />
-            <SavedNews cards={savedCards} />
-            <Footer />
+            <ProtectedRoute>
+              <SavedNewsHeader
+                onNavigationButtonClick={handleSignOutButtonClick}
+              />
+              <SavedNews cards={savedCards} />
+              <Footer />
+            </ProtectedRoute>
           </Route>
 
           <Redirect from="*" to="/" />

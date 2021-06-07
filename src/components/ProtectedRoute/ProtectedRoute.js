@@ -1,12 +1,15 @@
+import { useContext } from 'react';
 import { Redirect, Route } from 'react-router-dom';
+import CurrentUserContext from '../../contexts/CurrentUserContext';
 import { isObjectEmpty } from '../../utils/helpers';
 
-function ProtectedRoute({ component: Component, ...props }) {
-  const isLoggedIn = !isObjectEmpty(props.currentUser);
+function ProtectedRoute(props) {
+  const currentUser = useContext(CurrentUserContext);
+  const isLoggedIn = !isObjectEmpty(currentUser);
 
   return (
     <Route>
-      {() => (isLoggedIn ? <Component {...props} /> : <Redirect to="/" />)}
+      {() => (isLoggedIn ? <>{props.children}</> : <Redirect to="/" />)}
     </Route>
   );
 }
