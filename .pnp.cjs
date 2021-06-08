@@ -4298,7 +4298,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@jest/console", "npm:26.6.2"],
             ["@jest/types", "npm:26.6.2"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["chalk", "npm:4.1.1"],
             ["jest-message-util", "npm:26.6.2"],
             ["jest-util", "npm:26.6.2"],
@@ -4317,7 +4317,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jest/test-result", "npm:26.6.2"],
             ["@jest/transform", "npm:26.6.2"],
             ["@jest/types", "npm:26.6.2"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["ansi-escapes", "npm:4.3.2"],
             ["chalk", "npm:4.1.1"],
             ["exit", "npm:0.1.2"],
@@ -4351,7 +4351,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jest/environment", "npm:26.6.2"],
             ["@jest/fake-timers", "npm:26.6.2"],
             ["@jest/types", "npm:26.6.2"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["jest-mock", "npm:26.6.2"]
           ],
           "linkType": "HARD",
@@ -4364,7 +4364,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jest/fake-timers", "npm:26.6.2"],
             ["@jest/types", "npm:26.6.2"],
             ["@sinonjs/fake-timers", "npm:6.0.1"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["jest-message-util", "npm:26.6.2"],
             ["jest-mock", "npm:26.6.2"],
             ["jest-util", "npm:26.6.2"]
@@ -4488,7 +4488,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jest/types", "npm:26.6.2"],
             ["@types/istanbul-lib-coverage", "npm:2.0.3"],
             ["@types/istanbul-reports", "npm:3.0.1"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["@types/yargs", "npm:15.0.13"],
             ["chalk", "npm:4.1.1"]
           ],
@@ -5085,7 +5085,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/glob", "npm:7.1.3"],
             ["@types/minimatch", "npm:3.0.4"],
-            ["@types/node", "npm:15.12.1"]
+            ["@types/node", "npm:15.12.2"]
           ],
           "linkType": "HARD",
         }]
@@ -5095,7 +5095,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-graceful-fs-npm-4.1.5-91d62e1050-d076bb61f4.zip/node_modules/@types/graceful-fs/",
           "packageDependencies": [
             ["@types/graceful-fs", "npm:4.1.5"],
-            ["@types/node", "npm:15.12.1"]
+            ["@types/node", "npm:15.12.2"]
           ],
           "linkType": "HARD",
         }]
@@ -5196,10 +5196,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
-        ["npm:15.12.1", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-15.12.1-149da5b459-a8eb7b5bbd.zip/node_modules/@types/node/",
+        ["npm:15.12.2", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-15.12.2-0d3ff66ec0-0dff080f30.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:15.12.1"]
+            ["@types/node", "npm:15.12.2"]
           ],
           "linkType": "HARD",
         }]
@@ -5245,7 +5245,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-resolve-npm-0.0.8-191de904ac-f241bb773a.zip/node_modules/@types/resolve/",
           "packageDependencies": [
             ["@types/resolve", "npm:0.0.8"],
-            ["@types/node", "npm:15.12.1"]
+            ["@types/node", "npm:15.12.2"]
           ],
           "linkType": "HARD",
         }]
@@ -5311,7 +5311,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-webpack-npm-4.41.29-4f2d72fff5-6ab86a5b57.zip/node_modules/@types/webpack/",
           "packageDependencies": [
             ["@types/webpack", "npm:4.41.29"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["@types/tapable", "npm:1.0.7"],
             ["@types/uglify-js", "npm:3.13.0"],
             ["@types/webpack-sources", "npm:2.1.0"],
@@ -5326,7 +5326,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-webpack-sources-npm-2.1.0-09d62290eb-de7fc348b5.zip/node_modules/@types/webpack-sources/",
           "packageDependencies": [
             ["@types/webpack-sources", "npm:2.1.0"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["@types/source-list-map", "npm:0.1.2"],
             ["source-map", "npm:0.7.3"]
           ],
@@ -12721,7 +12721,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jest/test-result", "npm:26.6.2"],
             ["@jest/types", "npm:26.6.2"],
             ["@types/babel__traverse", "npm:7.11.1"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["chalk", "npm:4.1.1"],
             ["co", "npm:4.6.0"],
             ["dedent", "npm:0.7.0"],
@@ -12848,7 +12848,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jest/environment", "npm:26.6.2"],
             ["@jest/fake-timers", "npm:26.6.2"],
             ["@jest/types", "npm:26.6.2"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["jest-mock", "npm:26.6.2"],
             ["jest-util", "npm:26.6.2"],
             ["jsdom", "virtual:defa486869c88441047200a53b3aa18d79743b272095f3ee31b5b7b80b2c93d87f722added867470dcb94104504489a1a89040ea8fd89dffb9cfb1864d4bf54e#npm:16.6.0"]
@@ -12864,7 +12864,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jest/environment", "npm:26.6.2"],
             ["@jest/fake-timers", "npm:26.6.2"],
             ["@jest/types", "npm:26.6.2"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["jest-mock", "npm:26.6.2"],
             ["jest-util", "npm:26.6.2"]
           ],
@@ -12887,7 +12887,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-haste-map", "npm:26.6.2"],
             ["@jest/types", "npm:26.6.2"],
             ["@types/graceful-fs", "npm:4.1.5"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["anymatch", "npm:3.1.2"],
             ["fb-watchman", "npm:2.0.1"],
             ["fsevents", "patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=1cc4b2"],
@@ -12913,7 +12913,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jest/source-map", "npm:26.6.2"],
             ["@jest/test-result", "npm:26.6.2"],
             ["@jest/types", "npm:26.6.2"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["chalk", "npm:4.1.1"],
             ["co", "npm:4.6.0"],
             ["expect", "npm:26.6.2"],
@@ -12978,7 +12978,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["jest-mock", "npm:26.6.2"],
             ["@jest/types", "npm:26.6.2"],
-            ["@types/node", "npm:15.12.1"]
+            ["@types/node", "npm:15.12.2"]
           ],
           "linkType": "HARD",
         }]
@@ -13080,7 +13080,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jest/environment", "npm:26.6.2"],
             ["@jest/test-result", "npm:26.6.2"],
             ["@jest/types", "npm:26.6.2"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["chalk", "npm:4.1.1"],
             ["emittery", "npm:0.7.2"],
             ["exit", "npm:0.1.2"],
@@ -13141,7 +13141,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/jest-serializer-npm-26.6.2-0907990487-dbecfb0d01.zip/node_modules/jest-serializer/",
           "packageDependencies": [
             ["jest-serializer", "npm:26.6.2"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["graceful-fs", "npm:4.2.6"]
           ],
           "linkType": "HARD",
@@ -13178,7 +13178,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["jest-util", "npm:26.6.2"],
             ["@jest/types", "npm:26.6.2"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["chalk", "npm:4.1.1"],
             ["graceful-fs", "npm:4.2.6"],
             ["is-ci", "npm:2.0.0"],
@@ -13238,7 +13238,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-watcher", "npm:26.6.2"],
             ["@jest/test-result", "npm:26.6.2"],
             ["@jest/types", "npm:26.6.2"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["ansi-escapes", "npm:4.3.2"],
             ["chalk", "npm:4.1.1"],
             ["jest-util", "npm:26.6.2"],
@@ -13261,7 +13261,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/jest-worker-npm-26.6.2-46cbcd449f-f9afa3b88e.zip/node_modules/jest-worker/",
           "packageDependencies": [
             ["jest-worker", "npm:26.6.2"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["merge-stream", "npm:2.0.0"],
             ["supports-color", "npm:7.2.0"]
           ],
@@ -18144,7 +18144,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["rollup", "npm:1.32.1"],
             ["@types/estree", "npm:0.0.48"],
-            ["@types/node", "npm:15.12.1"],
+            ["@types/node", "npm:15.12.2"],
             ["acorn", "npm:7.4.1"]
           ],
           "linkType": "HARD",
