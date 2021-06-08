@@ -25,7 +25,7 @@ function App() {
   const [numberOfCardsShown, setNumberOfCardsShown] = useState(3);
   const [searchTerm, setSearchTerm] = useState('');
 
-  const [savedCards] = useState([]);
+  const [savedCards, setSavedCards] = useState([]);
 
   const [searchResultsStatus, setSearchResultsStatus] = useState('');
 
@@ -146,7 +146,9 @@ function App() {
       .postArticle(article, token)
       .then((res) => {
         if (res) {
-          console.log(res);
+          const newSavedCards = savedCards;
+          newSavedCards.push(article);
+          setSavedCards(newSavedCards);
         }
       })
       .catch((err) => {
@@ -160,6 +162,17 @@ function App() {
       .then((user) => {
         if (user) {
           setCurrentUser(user);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+    mainApi
+      .getArticles(token)
+      .then((articles) => {
+        if (articles) {
+          setSavedCards(articles);
         }
       })
       .catch((err) => {
