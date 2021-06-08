@@ -57,10 +57,32 @@ class MainApi {
   async getUser(token) {
     try {
       const res = await fetch(`${this.baseUrl}/users/me`, {
+        method: 'GET',
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${token}`,
         },
+      });
+
+      if (!res.ok) {
+        throw new Error(`Error: ${res.status}`);
+      }
+
+      return res.json();
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  async postArticle(article, token) {
+    try {
+      const res = await fetch(`${this.baseUrl}/articles`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify(article),
       });
 
       if (!res.ok) {
