@@ -8,6 +8,7 @@ function Main({
   searchResultsStatus,
   numberOfCardsShown,
   handleShowMoreCards,
+  handlePostArticle,
 }) {
   return (
     <main>
@@ -29,6 +30,7 @@ function Main({
                 cards={cards}
                 numberOfCardsShown={numberOfCardsShown}
                 handleShowMoreCards={handleShowMoreCards}
+                handlePostArticle={handlePostArticle}
               />
             </>
           ),

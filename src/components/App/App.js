@@ -83,16 +83,21 @@ function App() {
           articles.length === 0 ? 'nothingFound' : 'searchResults'
         );
 
-        articles.forEach((article) => {
-          article.keyword = searchTerm;
-          article.source = article.source.name;
-          article.text = article.description;
-          article.link = article.url;
-          article.image = article.urlToImage;
-          article.date = article.publishedAt;
+        const searchedArticles = articles.map((article) => {
+          const searchedArticle = {};
+
+          searchedArticle.keyword = searchTerm;
+          searchedArticle.title = article.title;
+          searchedArticle.text = article.description;
+          searchedArticle.date = article.publishedAt;
+          searchedArticle.source = article.source.name;
+          searchedArticle.link = article.url;
+          searchedArticle.image = article.urlToImage;
+
+          return searchedArticle;
         });
 
-        setSearchedCards(articles);
+        setSearchedCards(searchedArticles);
       })
       .catch((err) => {
         console.log(err);
@@ -124,12 +129,24 @@ function App() {
     mainApi
       .signIn(email, password)
       .then((res) => {
-        console.log(res);
         if (res) {
           setIsSignInPopupOpen(false);
           setToken(res.token);
         } else {
           throw new Error(res.error);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+  function handlePostArticle(article) {
+    mainApi
+      .postArticle(article, token)
+      .then((res) => {
+        if (res) {
+          console.log(res);
         }
       })
       .catch((err) => {
@@ -170,6 +187,7 @@ function App() {
               searchResultsStatus={searchResultsStatus}
               numberOfCardsShown={numberOfCardsShown}
               handleShowMoreCards={handleShowMoreCards}
+              handlePostArticle={handlePostArticle}
             />
             <Footer />
             {isSignInPopupOpen && (

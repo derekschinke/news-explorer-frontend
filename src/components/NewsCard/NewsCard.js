@@ -6,18 +6,18 @@ import { useContext, useState } from 'react';
 import CurrentUserContext from '../../contexts/CurrentUserContext';
 import { isObjectEmpty } from '../../utils/helpers';
 
-function NewsCard({ card, isMain }) {
+function NewsCard({ card, isMain, handlePostArticle }) {
   const currentUser = useContext(CurrentUserContext);
 
   const isLoggedIn = !isObjectEmpty(currentUser);
 
   const [isBookmarked, setIsBookmarked] = useState(false);
 
-  function handleButtonClick() {
-    if (isMain) {
-      setIsBookmarked(!isBookmarked);
-    }
-  }
+  // function handleButtonClick() {
+  //   if (isMain) {
+  //     setIsBookmarked(!isBookmarked);
+  //   }
+  // }
 
   return (
     <li className={styles.block}>
@@ -44,7 +44,7 @@ function NewsCard({ card, isMain }) {
             })}
             label={isMain ? 'Bookmark' : 'Delete'}
             disabled={isMain && !isLoggedIn}
-            onClick={handleButtonClick}
+            onClick={handlePostArticle}
           ></button>
           {!(isMain && isLoggedIn) && (
             <div

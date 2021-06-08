@@ -3,7 +3,12 @@ import styles from './SearchResults.module.css';
 
 import classnames from 'classnames';
 
-function SearchResults({ cards, numberOfCardsShown, handleShowMoreCards }) {
+function SearchResults({
+  cards,
+  numberOfCardsShown,
+  handleShowMoreCards,
+  handlePostArticle,
+}) {
   return (
     <section className={styles.block}>
       <div className={styles.items}>
@@ -12,6 +17,7 @@ function SearchResults({ cards, numberOfCardsShown, handleShowMoreCards }) {
           isMain={true}
           cards={cards}
           numberOfCardsShown={numberOfCardsShown}
+          handlePostArticle={handlePostArticle}
         />
         <button
           className={classnames(styles.button, 'clickable', {
