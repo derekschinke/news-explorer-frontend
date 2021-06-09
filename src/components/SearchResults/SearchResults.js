@@ -8,6 +8,7 @@ function SearchResults({
   numberOfCardsShown,
   handleShowMoreCards,
   handlePostArticle,
+  handleDeleteArticle,
 }) {
   return (
     <section className={styles.block}>
@@ -18,6 +19,7 @@ function SearchResults({
           cards={cards}
           numberOfCardsShown={numberOfCardsShown}
           handlePostArticle={handlePostArticle}
+          handleDeleteArticle={handleDeleteArticle}
         />
         <button
           className={classnames(styles.button, 'clickable', {

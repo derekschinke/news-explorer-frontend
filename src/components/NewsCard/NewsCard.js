@@ -36,7 +36,9 @@ function NewsCard({ card, isMain, handlePostArticle, handleDeleteArticle }) {
             })}
             label={isMain ? 'Bookmark' : 'Delete'}
             disabled={isMain && !isLoggedIn}
-            onClick={isMain ? handlePostArticle : handleDeleteArticle}
+            onClick={
+              isMain && !card.isSaved ? handlePostArticle : handleDeleteArticle
+            }
           ></button>
           {!(isMain && isLoggedIn) && (
             <div

@@ -228,6 +228,7 @@ function App() {
               numberOfCardsShown={numberOfCardsShown}
               handleShowMoreCards={handleShowMoreCards}
               handlePostArticle={handlePostArticle}
+              handleDeleteArticle={handleDeleteArticle}
             />
             <Footer />
             {isSignInPopupOpen && (
