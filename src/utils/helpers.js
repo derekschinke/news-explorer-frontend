@@ -16,16 +16,16 @@ export function sortKeywords(cards) {
       : 1;
   });
   let keywordsSorted = Object.keys(keywordCounts).sort(
-    (a, b) => keywordCounts[b] - keywordCounts[a]
-  );
-  keywordsSorted = keywordsSorted.map(
-    (word) => word[0].toUpperCase() + word.slice(1)
+    (firstKeyword, secondKeyword) => {
+      return keywordCounts[secondKeyword] - keywordCounts[firstKeyword];
+    }
   );
   return keywordsSorted;
 }
 
 export function buildKeywordString(cards) {
-  const keywords = sortKeywords(cards);
+  let keywords = sortKeywords(cards);
+  keywords = keywords.map((word) => word[0].toUpperCase() + word.slice(1));
   let keywordString;
   if (keywords.length === 1) {
     [keywordString] = keywords;
@@ -40,3 +40,13 @@ export function buildKeywordString(cards) {
   }
   return keywordString;
 }
+
+export const sortCardsByKeywordTotals = (cards) => {
+  const sortedKeywords = sortKeywords(cards);
+  cards.sort(
+    (firstCard, secondCard) =>
+      sortedKeywords.indexOf(firstCard.keyword) -
+      sortedKeywords.indexOf(secondCard.keyword)
+  );
+  return cards;
+};

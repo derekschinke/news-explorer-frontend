@@ -146,7 +146,7 @@ function App() {
       .postArticle(article, token)
       .then((article) => {
         if (article) {
-          const newSavedCards = savedCards;
+          let newSavedCards = savedCards;
           newSavedCards.push(article);
           setSavedCards(newSavedCards);
         }

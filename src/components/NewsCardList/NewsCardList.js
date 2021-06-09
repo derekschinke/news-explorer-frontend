@@ -7,6 +7,7 @@ function NewsCardList({
   numberOfCardsShown,
   handlePostArticle,
 }) {
+  // console.log(cards);
   return (
     <ul className={styles.block}>
       {cards.slice(0, numberOfCardsShown).map((card, index) => (
