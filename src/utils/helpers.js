@@ -28,7 +28,7 @@ export function buildKeywordString(cards) {
   keywords = keywords.map((word) => word[0].toUpperCase() + word.slice(1));
   let keywordString;
   if (keywords.length === 1) {
-    [keywordString] = keywords;
+    keywordString = keywords;
   } else if (keywords.length === 2) {
     keywordString = `${keywords[0]} and ${keywords[1]}`;
   } else if (keywords.length === 3) {
