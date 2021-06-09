@@ -157,6 +157,15 @@ function App() {
       .postArticle(article, token)
       .then((article) => {
         if (article) {
+          let newSearchedCards = searchedCards;
+          newSearchedCards.forEach((newSearchedCard) => {
+            if (newSearchedCard.link === article.link) {
+              newSearchedCard.isSaved = true;
+              newSearchedCard._id = article._id;
+            }
+          });
+          setSearchedCards(newSearchedCards);
+          console.log(searchedCards);
           let newSavedCards = savedCards;
           newSavedCards.push(article);
           setSavedCards(newSavedCards);
