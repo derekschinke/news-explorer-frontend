@@ -21,7 +21,11 @@ function SavedNewsHeader({ onNavigationButtonClick, cards }) {
           </h3>
           <p className={styles.info}>
             {cards.length > 0 && 'By keywords: '}
-            {cards.length > 0 && <b>{`${buildKeywordString(cards)}`}</b>}
+            {cards.length > 0 && (
+              <span className={styles.keywords}>{`${buildKeywordString(
+                cards
+              )}`}</span>
+            )}
           </p>
         </div>
       </section>
