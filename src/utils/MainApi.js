@@ -114,6 +114,26 @@ class MainApi {
       console.log(err);
     }
   }
+
+  async deleteArticle(articleId, token) {
+    try {
+      const res = await fetch(`${this.baseUrl}/articles/${articleId}`, {
+        method: 'Delete',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (!res.ok) {
+        throw new Error(`Error: ${res.status}`);
+      }
+
+      return res.json();
+    } catch (err) {
+      console.log(err);
+    }
+  }
 }
 
 const mainApi = new MainApi({ baseUrl: config.url.MAIN_API_URL });

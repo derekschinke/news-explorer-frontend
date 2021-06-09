@@ -156,6 +156,22 @@ function App() {
       });
   }
 
+  function handleDeleteArticle(article) {
+    mainApi
+      .deleteArticle(article._id, token)
+      .then((res) => {
+        if (res) {
+          const newSavedCards = savedCards.filter(
+            (savedCard) => savedCard._id !== article._id
+          );
+          setSavedCards(newSavedCards);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
   useEffect(() => {
     mainApi
       .getUser(token)
@@ -247,7 +263,10 @@ function App() {
                 onNavigationButtonClick={handleSignOutButtonClick}
                 cards={savedCards}
               />
-              <SavedNews cards={savedCards} />
+              <SavedNews
+                cards={savedCards}
+                handleDeleteArticle={handleDeleteArticle}
+              />
               <Footer />
             </ProtectedRoute>
           </Route>

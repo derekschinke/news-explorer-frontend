@@ -6,8 +6,8 @@ function NewsCardList({
   isMain,
   numberOfCardsShown,
   handlePostArticle,
+  handleDeleteArticle,
 }) {
-  // console.log(cards);
   return (
     <ul className={styles.block}>
       {cards.slice(0, numberOfCardsShown).map((card, index) => (
@@ -17,6 +17,9 @@ function NewsCardList({
           isMain={isMain}
           handlePostArticle={() => {
             handlePostArticle(card);
+          }}
+          handleDeleteArticle={() => {
+            handleDeleteArticle(card);
           }}
         />
       ))}

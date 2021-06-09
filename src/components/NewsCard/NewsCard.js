@@ -6,12 +6,12 @@ import { useContext, useState } from 'react';
 import CurrentUserContext from '../../contexts/CurrentUserContext';
 import { isObjectEmpty } from '../../utils/helpers';
 
-function NewsCard({ card, isMain, handlePostArticle }) {
+function NewsCard({ card, isMain, handlePostArticle, handleDeleteArticle }) {
   const currentUser = useContext(CurrentUserContext);
 
   const isLoggedIn = !isObjectEmpty(currentUser);
 
-  const [isBookmarked, setIsBookmarked] = useState(false);
+  const [isBookmarked] = useState(false);
 
   // function handleButtonClick() {
   //   if (isMain) {
@@ -44,7 +44,7 @@ function NewsCard({ card, isMain, handlePostArticle }) {
             })}
             label={isMain ? 'Bookmark' : 'Delete'}
             disabled={isMain && !isLoggedIn}
-            onClick={handlePostArticle}
+            onClick={isMain ? handlePostArticle : handleDeleteArticle}
           ></button>
           {!(isMain && isLoggedIn) && (
             <div
