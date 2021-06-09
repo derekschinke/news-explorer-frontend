@@ -2,7 +2,7 @@ import styles from './NewsCard.module.css';
 
 import classnames from 'classnames';
 import { parseISO, format } from 'date-fns';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import CurrentUserContext from '../../contexts/CurrentUserContext';
 import { isObjectEmpty } from '../../utils/helpers';
 
@@ -10,14 +10,6 @@ function NewsCard({ card, isMain, handlePostArticle, handleDeleteArticle }) {
   const currentUser = useContext(CurrentUserContext);
 
   const isLoggedIn = !isObjectEmpty(currentUser);
-
-  const [isBookmarked] = useState(false);
-
-  // function handleButtonClick() {
-  //   if (isMain) {
-  //     setIsBookmarked(!isBookmarked);
-  //   }
-  // }
 
   return (
     <li className={styles.block}>
@@ -39,7 +31,7 @@ function NewsCard({ card, isMain, handlePostArticle, handleDeleteArticle }) {
             className={classnames(styles.button, {
               clickable: !(isMain && !isLoggedIn),
               [styles.button_bookmark]: isMain,
-              [styles.button_bookmark_bookmarked]: isMain && isBookmarked,
+              [styles.button_bookmark_bookmarked]: isMain && card.isSaved,
               [styles.button_delete]: !isMain,
             })}
             label={isMain ? 'Bookmark' : 'Delete'}

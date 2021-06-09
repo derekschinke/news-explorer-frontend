@@ -11,7 +11,7 @@ import { RemoveScroll } from 'react-remove-scroll';
 import CurrentUserContext from '../../contexts/CurrentUserContext';
 import newsApi from '../../utils/NewsApi';
 import mainApi from '../../utils/MainApi';
-import { isObjectEmpty } from '../../utils/helpers';
+import { isObjectEmpty, isSearchedArticleSaved } from '../../utils/helpers';
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 
 function App() {
@@ -93,6 +93,17 @@ function App() {
           searchedArticle.source = article.source.name;
           searchedArticle.link = article.url;
           searchedArticle.image = article.urlToImage;
+
+          if (savedCards.length > 0) {
+            const [isSaved, id] = isSearchedArticleSaved(
+              searchedArticle,
+              savedCards
+            );
+            if (isSaved) {
+              searchedArticle.isSaved = true;
+              searchedArticle._id = id;
+            }
+          }
 
           return searchedArticle;
         });

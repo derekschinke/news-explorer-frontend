@@ -50,3 +50,15 @@ export const sortCardsByKeywordTotals = (cards) => {
   );
   return cards;
 };
+
+export function isSearchedArticleSaved(article, savedCards) {
+  let isSaved = false;
+  let id;
+  savedCards.forEach((savedCard) => {
+    if (article.link === savedCard.link) {
+      isSaved = true;
+      id = savedCard._id;
+    }
+  });
+  return [isSaved, id];
+}
