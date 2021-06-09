@@ -86,7 +86,7 @@ function App() {
         const searchedArticles = articles.map((article) => {
           const searchedArticle = {};
 
-          searchedArticle.keyword = searchTerm;
+          searchedArticle.keyword = searchTerm.toLowerCase();
           searchedArticle.title = article.title;
           searchedArticle.text = article.description;
           searchedArticle.date = article.publishedAt;
@@ -144,8 +144,8 @@ function App() {
   function handlePostArticle(article) {
     mainApi
       .postArticle(article, token)
-      .then((res) => {
-        if (res) {
+      .then((article) => {
+        if (article) {
           const newSavedCards = savedCards;
           newSavedCards.push(article);
           setSavedCards(newSavedCards);
@@ -245,6 +245,7 @@ function App() {
             <ProtectedRoute>
               <SavedNewsHeader
                 onNavigationButtonClick={handleSignOutButtonClick}
+                cards={savedCards}
               />
               <SavedNews cards={savedCards} />
               <Footer />
