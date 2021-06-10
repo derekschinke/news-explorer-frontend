@@ -13381,15 +13381,15 @@ fsevents@^1.2.7:
   linkType: hard
 
 "renderkid@npm:^2.0.4":
-  version: 2.0.6
-  resolution: "renderkid@npm:2.0.6"
+  version: 2.0.7
+  resolution: "renderkid@npm:2.0.7"
   dependencies:
     css-select: ^4.1.3
     dom-converter: ^0.2.0
     htmlparser2: ^6.1.0
     lodash: ^4.17.21
-    strip-ansi: ^6.0.0
-  checksum: 9c08242825c3990b10a71c5c238242ac304c45dd03e2379215f3c25600d72d9d37822d62294538087a2e683c032330c2c6f2a89aa2e71ba8a8f582e7f41c0aa6
+    strip-ansi: ^3.0.1
+  checksum: d3d7562531fb8104154d4aa6aa977707783616318014088378a6c5bbc36318ada9289543d380ede707e531b7f5b96229e87d1b8944f675e5ec3686e62692c7c7
   languageName: node
   linkType: hard
 

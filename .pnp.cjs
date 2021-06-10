@@ -16917,7 +16917,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["pretty-error", "npm:2.1.2"],
             ["lodash", "npm:4.17.21"],
-            ["renderkid", "npm:2.0.6"]
+            ["renderkid", "npm:2.0.7"]
           ],
           "linkType": "HARD",
         }]
@@ -17917,15 +17917,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["renderkid", [
-        ["npm:2.0.6", {
-          "packageLocation": "./.yarn/cache/renderkid-npm-2.0.6-97cf1a2b4a-9c08242825.zip/node_modules/renderkid/",
+        ["npm:2.0.7", {
+          "packageLocation": "./.yarn/cache/renderkid-npm-2.0.7-fce7b9d5d1-d3d7562531.zip/node_modules/renderkid/",
           "packageDependencies": [
-            ["renderkid", "npm:2.0.6"],
+            ["renderkid", "npm:2.0.7"],
             ["css-select", "npm:4.1.3"],
             ["dom-converter", "npm:0.2.0"],
             ["htmlparser2", "npm:6.1.0"],
             ["lodash", "npm:4.17.21"],
-            ["strip-ansi", "npm:6.0.0"]
+            ["strip-ansi", "npm:3.0.1"]
           ],
           "linkType": "HARD",
         }]
