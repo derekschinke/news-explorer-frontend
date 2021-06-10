@@ -23,7 +23,9 @@ function App() {
 
   const [searchedCards, setSearchedCards] = useState([]);
   const [numberOfCardsShown, setNumberOfCardsShown] = useState(3);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState(
+    localStorage.getItem('searchTerm')
+  );
 
   const [savedCards, setSavedCards] = useState([]);
 
@@ -222,6 +224,14 @@ function App() {
         console.log(err);
       });
   }, [token]);
+
+  useEffect(() => {
+    localStorage.setItem('searchTerm', searchTerm);
+  }, [searchTerm]);
+
+  useEffect(() => {
+    localStorage.setItem('searchedCards', JSON.stringify(searchedCards));
+  }, [searchedCards]);
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
