@@ -157,15 +157,15 @@ function App() {
       .postArticle(article, token)
       .then((article) => {
         if (article) {
-          let newSearchedCards = searchedCards;
-          newSearchedCards.forEach((newSearchedCard) => {
-            if (newSearchedCard.link === article.link) {
-              newSearchedCard.isSaved = true;
-              newSearchedCard._id = article._id;
+          let newSearchedCards = searchedCards.map((searchedCard) => {
+            if (searchedCard.link === article.link) {
+              searchedCard.isSaved = true;
+              searchedCard._id = article._id;
             }
+            return searchedCard;
           });
           setSearchedCards(newSearchedCards);
-          console.log(searchedCards);
+          console.log(newSearchedCards);
           let newSavedCards = savedCards;
           newSavedCards.push(article);
           setSavedCards(newSavedCards);
