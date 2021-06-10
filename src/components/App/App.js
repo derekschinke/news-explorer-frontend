@@ -165,7 +165,6 @@ function App() {
             return searchedCard;
           });
           setSearchedCards(newSearchedCards);
-          console.log(newSearchedCards);
           let newSavedCards = savedCards;
           newSavedCards.push(article);
           setSavedCards(newSavedCards);
@@ -181,8 +180,16 @@ function App() {
       .deleteArticle(article._id, token)
       .then((res) => {
         if (res) {
-          const newSavedCards = savedCards.filter(
-            (savedCard) => savedCard._id !== article._id
+          let newSearchedCards = searchedCards.map((searchedCard) => {
+            if (searchedCard.link === article.link) {
+              delete searchedCard.isSaved;
+              delete searchedCard._id;
+            }
+            return searchedCard;
+          });
+          setSearchedCards(newSearchedCards);
+          let newSavedCards = savedCards.filter(
+            (savedCard) => savedCard._id === article._id
           );
           setSavedCards(newSavedCards);
         }
