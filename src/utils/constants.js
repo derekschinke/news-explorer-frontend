@@ -19,3 +19,5 @@ export const MILLISECONDS_IN_WEEK = 7 * 24 * 3600 * 1000;
 export const DEFAULT_NEWS_API_PAGE_SIZE = 100;
 
 export const NEWS_API_KEY = '92429841b34f459299c94f716cd7477c';
+
+export const CARD_NUMBER_INCREMENT = 3;

@@ -13,6 +13,7 @@ import newsApi from '../../utils/NewsApi';
 import mainApi from '../../utils/MainApi';
 import { isObjectEmpty, isSearchedArticleSaved } from '../../utils/helpers';
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
+import { CARD_NUMBER_INCREMENT } from '../../utils/constants';
 
 function App() {
   const history = useHistory();
@@ -127,7 +128,7 @@ function App() {
   }
 
   function handleShowMoreCards() {
-    setNumberOfCardsShown(numberOfCardsShown + 3);
+    setNumberOfCardsShown(numberOfCardsShown + CARD_NUMBER_INCREMENT);
   }
 
   function handleSignUp(email, password, name) {
