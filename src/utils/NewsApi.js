@@ -14,16 +14,12 @@ class NewsApi {
       const res = await fetch(
         `${this.baseUrl}/v2/everything?` +
           `q=${request}` +
+          `&apiKey=${this.apiKey}` +
           `&from=${this.from.toISOString()}` +
           `&to=${this.to.toISOString()}` +
           `&pageSize=${this.pageSize.toString()}` +
           `&language=en` +
-          `&sortBy=relevancy`,
-        {
-          headers: {
-            'X-Api-Key': this.apiKey,
-          },
-        }
+          `&sortBy=relevancy`
       );
 
       if (!res.ok) {
