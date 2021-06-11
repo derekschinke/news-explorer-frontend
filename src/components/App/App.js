@@ -23,9 +23,7 @@ function App() {
 
   const [searchedCards, setSearchedCards] = useState([]);
   const [numberOfCardsShown, setNumberOfCardsShown] = useState(3);
-  const [searchTerm, setSearchTerm] = useState(
-    localStorage.getItem('searchTerm')
-  );
+  const [searchTerm, setSearchTerm] = useState('');
 
   const [savedCards, setSavedCards] = useState([]);
 
@@ -39,6 +37,12 @@ function App() {
   ] = useState(false);
 
   const [isSubmitErrorVisible, setIsSubmitErrorVisible] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.getItem('searchedCards')) {
+      setSearchedCards(JSON.parse(localStorage.getItem('searchedCards')));
+    }
+  }, []);
 
   function closeAllPopups() {
     setIsSignInPopupOpen(false);
@@ -111,6 +115,7 @@ function App() {
         });
 
         setSearchedCards(searchedArticles);
+        localStorage.setItem('searchedCards', JSON.stringify(searchedArticles));
       })
       .catch((err) => {
         console.log(err);
@@ -170,6 +175,10 @@ function App() {
           let newSavedCards = savedCards;
           newSavedCards.push(article);
           setSavedCards(newSavedCards);
+          localStorage.setItem(
+            'searchedCards',
+            JSON.stringify(newSearchedCards)
+          );
         }
       })
       .catch((err) => {
@@ -178,6 +187,7 @@ function App() {
   }
 
   function handleDeleteArticle(article) {
+    const articleId = article._id;
     mainApi
       .deleteArticle(article._id, token)
       .then((res) => {
@@ -191,9 +201,13 @@ function App() {
           });
           setSearchedCards(newSearchedCards);
           let newSavedCards = savedCards.filter(
-            (savedCard) => savedCard._id === article._id
+            (savedCard) => savedCard._id !== articleId
           );
           setSavedCards(newSavedCards);
+          localStorage.setItem(
+            'searchedCards',
+            JSON.stringify(newSearchedCards)
+          );
         }
       })
       .catch((err) => {
@@ -224,14 +238,6 @@ function App() {
         console.log(err);
       });
   }, [token]);
-
-  useEffect(() => {
-    localStorage.setItem('searchTerm', searchTerm);
-  }, [searchTerm]);
-
-  useEffect(() => {
-    localStorage.setItem('searchedCards', JSON.stringify(searchedCards));
-  }, [searchedCards]);
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
