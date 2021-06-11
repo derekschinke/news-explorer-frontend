@@ -36,7 +36,7 @@ class NewsApi {
 
 const newsApi = new NewsApi({
   baseUrl: config.url.NEWS_API_URL,
-  apiKey: '92429841b34f459299c94f716cd7477c',
+  apiKey: process.env.REACT_APP_NEWS_API_KEY,
   from: new Date(Date.now() - 7 * 24 * 3600 * 1000),
   to: new Date(),
   pageSize: 100,
