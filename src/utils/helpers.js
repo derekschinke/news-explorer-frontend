@@ -15,7 +15,7 @@ export function sortKeywords(cards) {
       ? keywordCounts[card.keyword] + 1
       : 1;
   });
-  let keywordsSorted = Object.keys(keywordCounts).sort(
+  const keywordsSorted = Object.keys(keywordCounts).sort(
     (firstKeyword, secondKeyword) => {
       return keywordCounts[secondKeyword] - keywordCounts[firstKeyword];
     }

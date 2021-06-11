@@ -169,7 +169,7 @@ function App() {
       .postArticle(article, token)
       .then((article) => {
         if (article) {
-          let newSearchedCards = searchedCards.map((searchedCard) => {
+          const newSearchedCards = searchedCards.map((searchedCard) => {
             if (searchedCard.link === article.link) {
               searchedCard.isSaved = true;
               searchedCard._id = article._id;
@@ -177,7 +177,7 @@ function App() {
             return searchedCard;
           });
           setSearchedCards(newSearchedCards);
-          let newSavedCards = savedCards;
+          const newSavedCards = savedCards;
           newSavedCards.push(article);
           setSavedCards(newSavedCards);
           localStorage.setItem(
@@ -197,7 +197,7 @@ function App() {
       .deleteArticle(article._id, token)
       .then((res) => {
         if (res) {
-          let newSearchedCards = searchedCards.map((searchedCard) => {
+          const newSearchedCards = searchedCards.map((searchedCard) => {
             if (searchedCard.link === article.link) {
               delete searchedCard.isSaved;
               delete searchedCard._id;
@@ -205,7 +205,7 @@ function App() {
             return searchedCard;
           });
           setSearchedCards(newSearchedCards);
-          let newSavedCards = savedCards.filter(
+          const newSavedCards = savedCards.filter(
             (savedCard) => savedCard._id !== articleId
           );
           setSavedCards(newSavedCards);
