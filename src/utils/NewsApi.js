@@ -1,4 +1,8 @@
-import config from './constants';
+import config, {
+  DEFAULT_NEWS_API_PAGE_SIZE,
+  MILLISECONDS_IN_WEEK,
+  NEWS_API_KEY,
+} from './constants';
 
 class NewsApi {
   constructor(options) {
@@ -36,10 +40,10 @@ class NewsApi {
 
 const newsApi = new NewsApi({
   baseUrl: config.url.NEWS_API_URL,
-  apiKey: '92429841b34f459299c94f716cd7477c',
-  from: new Date(Date.now() - 7 * 24 * 3600 * 1000),
+  apiKey: NEWS_API_KEY,
+  from: new Date(Date.now() - MILLISECONDS_IN_WEEK),
   to: new Date(),
-  pageSize: 100,
+  pageSize: DEFAULT_NEWS_API_PAGE_SIZE,
 });
 
 export default newsApi;
