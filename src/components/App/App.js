@@ -73,6 +73,14 @@ function App() {
   function handleSignOutButtonClick() {
     localStorage.removeItem('token');
     setCurrentUser({});
+    const newSearchedCards = searchedCards.map((searchedCard) => {
+      const newSearchedCard = searchedCard;
+      delete newSearchedCard.isSaved;
+      delete newSearchedCard._id;
+      return newSearchedCard;
+    });
+    setSearchedCards(newSearchedCards);
+    localStorage.setItem('searchedCards', JSON.stringify(newSearchedCards));
     history.push('/');
   }
 
