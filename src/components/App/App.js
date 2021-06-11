@@ -41,6 +41,7 @@ function App() {
   useEffect(() => {
     if (localStorage.getItem('searchedCards')) {
       setSearchedCards(JSON.parse(localStorage.getItem('searchedCards')));
+      setSearchResultsStatus('searchResults');
     }
   }, []);
 
