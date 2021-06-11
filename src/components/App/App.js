@@ -39,6 +39,9 @@ function App() {
   const [isSubmitErrorVisible, setIsSubmitErrorVisible] = useState(false);
 
   useEffect(() => {
+    if (localStorage.getItem('searchTerm')) {
+      setSearchTerm(localStorage.getItem('searchTerm'));
+    }
     if (localStorage.getItem('searchedCards')) {
       setSearchedCards(JSON.parse(localStorage.getItem('searchedCards')));
       setSearchResultsStatus('searchResults');
@@ -82,7 +85,7 @@ function App() {
     setSearchResultsStatus('preloader');
 
     setNumberOfCardsShown(3);
-
+    localStorage.setItem('searchTerm', searchTerm);
     newsApi
       .getArticles(searchTerm)
       .then((articles) => {
