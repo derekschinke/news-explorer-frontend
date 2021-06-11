@@ -2274,9 +2274,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^5.13.0":
-  version: 5.13.0
-  resolution: "@testing-library/jest-dom@npm:5.13.0"
+"@testing-library/jest-dom@npm:^5.14.0":
+  version: 5.14.0
+  resolution: "@testing-library/jest-dom@npm:5.14.0"
   dependencies:
     "@babel/runtime": ^7.9.2
     "@types/testing-library__jest-dom": ^5.9.1
@@ -2284,9 +2284,10 @@ __metadata:
     chalk: ^3.0.0
     css: ^3.0.0
     css.escape: ^1.5.1
+    dom-accessibility-api: ^0.5.6
     lodash: ^4.17.15
     redent: ^3.0.0
-  checksum: 962e47cc7e9fa6cca8a38697bb6b407962c391ed8437b819bc0361674eae6aa8d6e3d829e14ba3624b00353b4ebd4398d47e809ffd33a062c0d7d17c7728dc3a
+  checksum: a6c47b0331fb3b44780da92f201a92c619f0374a58a3ba893b7611695827aa6bd542f42d27ec05133222cfd2f98440896de5a3915d75900cf520c839cd4e97b1
   languageName: node
   linkType: hard
 
@@ -2513,9 +2514,9 @@ __metadata:
   linkType: hard
 
 "@types/prettier@npm:^2.0.0":
-  version: 2.2.3
-  resolution: "@types/prettier@npm:2.2.3"
-  checksum: 78f1d731f9db92467596d3e2116efc402343a72ee69fa6444368317a2caf7d21ffe7d748637656ebef97ab65087867375089e743f0b9a378557cf979e5a9ac29
+  version: 2.3.0
+  resolution: "@types/prettier@npm:2.3.0"
+  checksum: 8dd9b5263fd91001d72ca4e2ff89fb0d1ba23a450bd723b4478eb651755a2f1151af14ab90c4f7dadba607142757b340c1d7271ae56806563c76719d3321ec20
   languageName: node
   linkType: hard
 
@@ -3036,11 +3037,11 @@ __metadata:
   linkType: hard
 
 "acorn@npm:^8.2.4":
-  version: 8.3.0
-  resolution: "acorn@npm:8.3.0"
+  version: 8.4.0
+  resolution: "acorn@npm:8.4.0"
   bin:
     acorn: bin/acorn
-  checksum: 9217542382451ea95902c650e0d03c661abaf39c41f3c797347b61f2950b0f03c5f77ef93b9f702dc8112907cf40812e3cb5f1e62b3054f017ebeb07ed267587
+  checksum: 9ccc11b2b3e3bdb8801ac23a0da38c0f2996445f63aacde0f5022effa550f18fdf9fea77e85c33f00386a277cce4dfdbcb2f3dbb8af29a6d3a707c78af1d5e90
   languageName: node
   linkType: hard
 
@@ -10602,7 +10603,7 @@ fsevents@^1.2.7:
   dependencies:
     "@csstools/normalize.css": ^11.0.1
     "@testing-library/dom": ^7.31.2
-    "@testing-library/jest-dom": ^5.13.0
+    "@testing-library/jest-dom": ^5.14.0
     "@testing-library/react": ^11.2.7
     "@testing-library/user-event": ^13.1.9
     "@typescript-eslint/eslint-plugin": ^4.26.1
@@ -12489,24 +12490,24 @@ fsevents@^1.2.7:
   linkType: hard
 
 "postcss@npm:^7, postcss@npm:^7.0.0, postcss@npm:^7.0.1, postcss@npm:^7.0.14, postcss@npm:^7.0.17, postcss@npm:^7.0.2, postcss@npm:^7.0.21, postcss@npm:^7.0.26, postcss@npm:^7.0.27, postcss@npm:^7.0.32, postcss@npm:^7.0.35, postcss@npm:^7.0.5, postcss@npm:^7.0.6":
-  version: 7.0.35
-  resolution: "postcss@npm:7.0.35"
+  version: 7.0.36
+  resolution: "postcss@npm:7.0.36"
   dependencies:
     chalk: ^2.4.2
     source-map: ^0.6.1
     supports-color: ^6.1.0
-  checksum: 6b197769057f38b9d4d8778c7e3b8b4a56c0c2c3ac8edf7552b06ac964e1a3601567fa2c5335a54fba103492305b0fc1347ce786fd72e30903a22f09f86525ae
+  checksum: 4cfc0989b9ad5d0e8971af80d87f9c5beac5c84cb89ff22ad69852edf73c0a2fa348e7e0a135b5897bf893edad0fe86c428769050431ad9b532f072ff530828d
   languageName: node
   linkType: hard
 
 "postcss@npm:^8.1.0":
-  version: 8.3.1
-  resolution: "postcss@npm:8.3.1"
+  version: 8.3.2
+  resolution: "postcss@npm:8.3.2"
   dependencies:
     colorette: ^1.2.2
     nanoid: ^3.1.23
     source-map-js: ^0.6.2
-  checksum: 710ccb3f1a7b2f107a431c1c1dac2eec29cf29aef55c326bef8504f1c35b832811e87b47157e8320e4b5bba81e66a81fc3cfaaa4bec1af0812ceefebcd0f8c90
+  checksum: 639170fd696c45238407f996c49a828dd57bf0d5b5b4aa4ef98ed568d1df52bdd8c1ad94784fa15da66ff2184f0d9debd2d08f2b037ff0886426687b21b8a292
   languageName: node
   linkType: hard
 
