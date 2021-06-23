@@ -10,6 +10,7 @@ function Main({
   handleShowMoreCards,
   handlePostArticle,
   handleDeleteArticle,
+  handleSignUpButtonClick,
 }) {
   return (
     <main>
@@ -33,6 +34,7 @@ function Main({
                 handleShowMoreCards={handleShowMoreCards}
                 handlePostArticle={handlePostArticle}
                 handleDeleteArticle={handleDeleteArticle}
+                handleSignUpButtonClick={handleSignUpButtonClick}
               />
             </>
           ),

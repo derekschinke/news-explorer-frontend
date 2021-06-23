@@ -7,6 +7,7 @@ function NewsCardList({
   numberOfCardsShown,
   handlePostArticle,
   handleDeleteArticle,
+  handleSignUpButtonClick,
 }) {
   return (
     <ul className={styles.block}>
@@ -21,6 +22,7 @@ function NewsCardList({
           handleDeleteArticle={() => {
             handleDeleteArticle(card);
           }}
+          handleSignUpButtonClick={handleSignUpButtonClick}
         />
       ))}
     </ul>

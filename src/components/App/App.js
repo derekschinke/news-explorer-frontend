@@ -60,6 +60,10 @@ function App() {
     setIsSignInPopupOpen(true);
   }
 
+  function handleSignUpButtonClick() {
+    setIsSignUpPopupOpen(true);
+  }
+
   function handleRedirectPopupButtonClick() {
     setIsSignInPopupOpen(!isSignInPopupOpen);
     setIsSignUpPopupOpen(!isSignUpPopupOpen);
@@ -274,6 +278,7 @@ function App() {
               handleShowMoreCards={handleShowMoreCards}
               handlePostArticle={handlePostArticle}
               handleDeleteArticle={handleDeleteArticle}
+              handleSignUpButtonClick={handleSignUpButtonClick}
             />
             <Footer />
             {isSignInPopupOpen && (
