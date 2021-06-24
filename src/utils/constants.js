@@ -8,7 +8,7 @@ const prod = {
 const dev = {
   url: {
     NEWS_API_URL: 'https://newsapi.org',
-    MAIN_API_URL: 'https://whispering-falls-05433.herokuapp.com',
+    MAIN_API_URL: 'http://localhost:3001',
   },
 };
 

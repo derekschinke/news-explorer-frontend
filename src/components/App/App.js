@@ -39,16 +39,6 @@ function App() {
 
   const [isSubmitErrorVisible, setIsSubmitErrorVisible] = useState(false);
 
-  useEffect(() => {
-    if (localStorage.getItem('searchTerm')) {
-      setSearchTerm(localStorage.getItem('searchTerm'));
-    }
-    if (localStorage.getItem('searchedCards')) {
-      setSearchedCards(JSON.parse(localStorage.getItem('searchedCards')));
-      setSearchResultsStatus('searchResults');
-    }
-  }, []);
-
   function closeAllPopups() {
     setIsSignInPopupOpen(false);
     setIsSignUpPopupOpen(false);
@@ -84,7 +74,6 @@ function App() {
       return newSearchedCard;
     });
     setSearchedCards(newSearchedCards);
-    localStorage.setItem('searchedCards', JSON.stringify(newSearchedCards));
     history.push('/');
   }
 
@@ -98,7 +87,6 @@ function App() {
     setSearchResultsStatus('preloader');
 
     setNumberOfCardsShown(3);
-    localStorage.setItem('searchTerm', searchTerm);
     newsApi
       .getArticles(searchTerm)
       .then((articles) => {
@@ -132,7 +120,6 @@ function App() {
         });
 
         setSearchedCards(searchedArticles);
-        localStorage.setItem('searchedCards', JSON.stringify(searchedArticles));
       })
       .catch((err) => {
         console.log(err);
@@ -192,10 +179,6 @@ function App() {
           const newSavedCards = savedCards;
           newSavedCards.push(article);
           setSavedCards(newSavedCards);
-          localStorage.setItem(
-            'searchedCards',
-            JSON.stringify(newSearchedCards)
-          );
         }
       })
       .catch((err) => {
@@ -221,10 +204,6 @@ function App() {
             (savedCard) => savedCard._id !== articleId
           );
           setSavedCards(newSavedCards);
-          localStorage.setItem(
-            'searchedCards',
-            JSON.stringify(newSearchedCards)
-          );
         }
       })
       .catch((err) => {
@@ -249,11 +228,26 @@ function App() {
       .then((articles) => {
         if (articles) {
           setSavedCards(articles);
+
+          const newSearchedCards = searchedCards.map((searchedCard) => {
+            const [isSaved, id] = isSearchedArticleSaved(
+              searchedCard,
+              articles
+            );
+            if (isSaved) {
+              searchedCard.isSaved = true;
+              searchedCard._id = id;
+            }
+            return searchedCard;
+          });
+
+          setSearchedCards(newSearchedCards);
         }
       })
       .catch((err) => {
         console.log(err);
       });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]);
 
   return (
