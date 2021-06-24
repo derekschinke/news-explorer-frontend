@@ -1,14 +1,16 @@
 import styles from './SavedNews.module.css';
 
 import NewsCardList from '../NewsCardList/NewsCardList';
+import { sortCardsByKeywordTotals } from '../../utils/helpers';
 
-import { cards } from '../../utils/constants';
-
-function SavedNews() {
+function SavedNews({ cards, handleDeleteArticle }) {
   return (
     <main className={styles.block}>
       <div className={styles.items}>
-        <NewsCardList cards={cards} />
+        <NewsCardList
+          cards={sortCardsByKeywordTotals(cards)}
+          handleDeleteArticle={handleDeleteArticle}
+        />
       </div>
     </main>
   );

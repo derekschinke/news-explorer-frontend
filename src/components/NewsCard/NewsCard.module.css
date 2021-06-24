@@ -116,7 +116,7 @@
 }
 
 .title {
-  height: 60px;
+  height: 62px;
   font-family: 'Roboto Slab', serif;
   font-style: normal;
   font-weight: 400;
@@ -139,7 +139,7 @@
   font-size: 16px;
   line-height: 22px;
   color: #1a1b22;
-  padding-top: 16px;
+  padding-top: 14px;
   margin: 0;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -208,7 +208,7 @@
   }
 
   .title {
-    height: 72px;
+    height: 74px;
     font-size: 22px;
     line-height: 24px;
     -webkit-line-clamp: 3;
@@ -216,7 +216,7 @@
 
   .text {
     height: 88px;
-    padding-top: 10px;
+    padding-top: 8px;
     -webkit-line-clamp: 4;
   }
 

@@ -1,8 +1,44 @@
 import styles from './PopupWithForm.module.css';
 
 import classnames from 'classnames';
+import { useState } from 'react';
 
 function PopupWithForm(props) {
+  const [signUpEmail, setSignUpEmail] = useState('');
+  const [signUpPassword, setSignUpPassword] = useState('');
+  const [signUpName, setSignUpName] = useState('');
+
+  const [signInEmail, setSignInEmail] = useState('');
+  const [signInPassword, setSignInPassword] = useState('');
+
+  function handleSignUpEmailChange(e) {
+    setSignUpEmail(e.target.value);
+    props.setIsSubmitErrorVisible(false);
+  }
+  function handleSignUpPasswordChange(e) {
+    setSignUpPassword(e.target.value);
+    props.setIsSubmitErrorVisible(false);
+  }
+  function handleSignUpNameChange(e) {
+    setSignUpName(e.target.value);
+    props.setIsSubmitErrorVisible(false);
+  }
+  function handleSignUpSubmit(e) {
+    e.preventDefault();
+    props.handleSignUp(signUpEmail, signUpPassword, signUpName);
+  }
+
+  function handleSignInEmailChange(e) {
+    setSignInEmail(e.target.value);
+  }
+  function handleSignInPasswordChange(e) {
+    setSignInPassword(e.target.value);
+  }
+  function handleSignInSubmit(e) {
+    e.preventDefault();
+    props.handleSignIn(signInEmail, signInPassword);
+  }
+
   return (
     <div className={styles.block}>
       <div className={styles.container}>
@@ -17,7 +53,11 @@ function PopupWithForm(props) {
               signIn: (
                 <>
                   <h2 className={styles.header}>Sign in</h2>
-                  <form className={styles.form} method="POST">
+                  <form
+                    className={styles.form}
+                    method="POST"
+                    onSubmit={handleSignInSubmit}
+                  >
                     <label className={styles.label} htmlFor="email">
                       Email
                     </label>
@@ -27,6 +67,7 @@ function PopupWithForm(props) {
                       placeholder="Enter email"
                       required
                       id="email"
+                      onChange={handleSignInEmailChange}
                     />
                     <span className={styles.validation}>
                       Invalid email address
@@ -42,6 +83,7 @@ function PopupWithForm(props) {
                       required
                       minLength="8"
                       id="password"
+                      onChange={handleSignInPasswordChange}
                     />
                     <span className={styles.validation}>Invalid password</span>
 
@@ -68,7 +110,11 @@ function PopupWithForm(props) {
               signUp: (
                 <>
                   <h2 className={styles.header}>Sign up</h2>
-                  <form className={styles.form} method="POST">
+                  <form
+                    className={styles.form}
+                    method="POST"
+                    onSubmit={handleSignUpSubmit}
+                  >
                     <label className={styles.label} htmlFor="email">
                       Email
                     </label>
@@ -78,6 +124,7 @@ function PopupWithForm(props) {
                       placeholder="Enter email"
                       required
                       id="email"
+                      onChange={handleSignUpEmailChange}
                     />
                     <span className={styles.validation}>
                       Invalid email address
@@ -93,6 +140,7 @@ function PopupWithForm(props) {
                       required
                       minLength="8"
                       id="password"
+                      onChange={handleSignUpPasswordChange}
                     />
                     <span className={styles.validation}>Invalid password</span>
 
@@ -106,9 +154,18 @@ function PopupWithForm(props) {
                       required
                       minLength="2"
                       id="username"
+                      onChange={handleSignUpNameChange}
                     />
                     <span className={styles.validation}>Invalid username</span>
 
+                    <span
+                      className={classnames(styles.submitError, {
+                        [styles.submitError_visible]:
+                          props.isSubmitErrorVisible,
+                      })}
+                    >
+                      This email is not available
+                    </span>
                     <input
                       className={styles.submitButton}
                       type="submit"

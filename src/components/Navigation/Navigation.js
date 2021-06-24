@@ -9,12 +9,15 @@ import { RemoveScroll } from 'react-remove-scroll';
 
 import { ReactComponent as MainSignOutIcon } from '../../images/buttons/signout/main.svg';
 import { ReactComponent as SavedNewsSignOutIcon } from '../../images/buttons/signout/savedNews.svg';
-import IsLoggedInContext from '../../contexts/IsLoggedInContext';
+import CurrentUserContext from '../../contexts/CurrentUserContext';
+import { isObjectEmpty } from '../../utils/helpers';
 
 function Navigation(props) {
   const [isMobileNavigationOpen, setIsMobileNavigationOpen] = useState(false);
 
-  const isLoggedIn = useContext(IsLoggedInContext);
+  const currentUser = useContext(CurrentUserContext);
+
+  const isLoggedIn = !isObjectEmpty(currentUser);
 
   const SignOutIcon = props.isMain ? MainSignOutIcon : SavedNewsSignOutIcon;
 
@@ -89,7 +92,7 @@ function Navigation(props) {
               label={!isLoggedIn ? 'Sign in' : 'Sign out'}
               onClick={props.onNavigationButtonClick}
             >
-              {!isLoggedIn ? 'Sign in' : 'Elise'}
+              {!isLoggedIn ? 'Sign in' : currentUser.name}
               {isLoggedIn && <SignOutIcon className={styles.buttonIcon} />}
             </button>
           </div>
