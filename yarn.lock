@@ -3058,11 +3058,11 @@ __metadata:
   linkType: hard
 
 "acorn@npm:^8.2.4":
-  version: 8.4.0
-  resolution: "acorn@npm:8.4.0"
+  version: 8.4.1
+  resolution: "acorn@npm:8.4.1"
   bin:
     acorn: bin/acorn
-  checksum: 9ccc11b2b3e3bdb8801ac23a0da38c0f2996445f63aacde0f5022effa550f18fdf9fea77e85c33f00386a277cce4dfdbcb2f3dbb8af29a6d3a707c78af1d5e90
+  checksum: 0a8fd264349285aa36194b26a5a9d70c3641e78ad459ec44b9a9a5738e0ce6d86ec120ca2c0f04477165cee912fdeb158f62d6582697185c82278bdbf71187f8
   languageName: node
   linkType: hard
 
@@ -5498,9 +5498,9 @@ __metadata:
   linkType: hard
 
 "decimal.js@npm:^10.2.1":
-  version: 10.3.0
-  resolution: "decimal.js@npm:10.3.0"
-  checksum: 660d6b9cb16fcc6d0338f2fdd20db50441ee08db63610f5abe8ea61b3a8cf8b04edfda802259add5774f1fab7f480ebd02a017ac31229ed81f62e8a7259107c9
+  version: 10.3.1
+  resolution: "decimal.js@npm:10.3.1"
+  checksum: 0351ac9f05fe050f23227aa6a4573bee2d58fa7378fcf28d969a8c789525032effb488a90320fd3fe86a66e17b4bc507d811b15eada5b7f0e7ec5d2af4c24a59
   languageName: node
   linkType: hard
 
@@ -5935,9 +5935,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.564, electron-to-chromium@npm:^1.3.723":
-  version: 1.3.756
-  resolution: "electron-to-chromium@npm:1.3.756"
-  checksum: f50a3de3df177c8fdcc6b80f38a48cb6e3326a13d96b4ea73c55e378882dddc3c57657a33d1cc30c460a1ee06dc6504015539115a13e5719e9ae6cd0ba6535a1
+  version: 1.3.758
+  resolution: "electron-to-chromium@npm:1.3.758"
+  checksum: 2fec13dcdd1b24a2314d309566bd08c7f0ce383787e64ea43c14a7fc2a11c8a76fdb9a56ce7a1da6137e1ef46365f999d10c656f2fb6b9ff792ea3ae808ebb86
   languageName: node
   linkType: hard
 

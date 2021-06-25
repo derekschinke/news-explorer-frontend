@@ -5855,10 +5855,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:8.4.0", {
-          "packageLocation": "./.yarn/cache/acorn-npm-8.4.0-7923a905e2-9ccc11b2b3.zip/node_modules/acorn/",
+        ["npm:8.4.1", {
+          "packageLocation": "./.yarn/cache/acorn-npm-8.4.1-129effd29a-0a8fd26434.zip/node_modules/acorn/",
           "packageDependencies": [
-            ["acorn", "npm:8.4.0"]
+            ["acorn", "npm:8.4.1"]
           ],
           "linkType": "HARD",
         }]
@@ -7239,7 +7239,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["browserslist", "npm:4.14.2"],
             ["caniuse-lite", "npm:1.0.30001239"],
-            ["electron-to-chromium", "npm:1.3.756"],
+            ["electron-to-chromium", "npm:1.3.758"],
             ["escalade", "npm:3.1.1"],
             ["node-releases", "npm:1.1.73"]
           ],
@@ -7251,7 +7251,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["browserslist", "npm:4.16.6"],
             ["caniuse-lite", "npm:1.0.30001239"],
             ["colorette", "npm:1.2.2"],
-            ["electron-to-chromium", "npm:1.3.756"],
+            ["electron-to-chromium", "npm:1.3.758"],
             ["escalade", "npm:3.1.1"],
             ["node-releases", "npm:1.1.73"]
           ],
@@ -8830,10 +8830,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["decimal.js", [
-        ["npm:10.3.0", {
-          "packageLocation": "./.yarn/cache/decimal.js-npm-10.3.0-bbc1ff330f-660d6b9cb1.zip/node_modules/decimal.js/",
+        ["npm:10.3.1", {
+          "packageLocation": "./.yarn/cache/decimal.js-npm-10.3.1-797c736b6c-0351ac9f05.zip/node_modules/decimal.js/",
           "packageDependencies": [
-            ["decimal.js", "npm:10.3.0"]
+            ["decimal.js", "npm:10.3.1"]
           ],
           "linkType": "HARD",
         }]
@@ -9319,10 +9319,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["electron-to-chromium", [
-        ["npm:1.3.756", {
-          "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.3.756-c23308ac30-f50a3de3df.zip/node_modules/electron-to-chromium/",
+        ["npm:1.3.758", {
+          "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.3.758-6e5a09b9f7-2fec13dcdd.zip/node_modules/electron-to-chromium/",
           "packageDependencies": [
-            ["electron-to-chromium", "npm:1.3.756"]
+            ["electron-to-chromium", "npm:1.3.758"]
           ],
           "linkType": "HARD",
         }]
@@ -13395,13 +13395,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jsdom", "virtual:defa486869c88441047200a53b3aa18d79743b272095f3ee31b5b7b80b2c93d87f722added867470dcb94104504489a1a89040ea8fd89dffb9cfb1864d4bf54e#npm:16.6.0"],
             ["@types/canvas", null],
             ["abab", "npm:2.0.5"],
-            ["acorn", "npm:8.4.0"],
+            ["acorn", "npm:8.4.1"],
             ["acorn-globals", "npm:6.0.0"],
             ["canvas", null],
             ["cssom", "npm:0.4.4"],
             ["cssstyle", "npm:2.3.0"],
             ["data-urls", "npm:2.0.0"],
-            ["decimal.js", "npm:10.3.0"],
+            ["decimal.js", "npm:10.3.1"],
             ["domexception", "npm:2.0.1"],
             ["escodegen", "npm:2.0.0"],
             ["form-data", "npm:3.0.1"],
