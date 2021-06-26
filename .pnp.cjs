@@ -60,7 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hamburger-react", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:2.4.1"],
             ["husky", "npm:6.0.0"],
             ["lint-staged", "npm:11.0.0"],
-            ["prettier", "npm:2.3.1"],
+            ["prettier", "npm:2.3.2"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:17.0.2"],
             ["react-remove-scroll", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:2.4.2"],
@@ -6456,7 +6456,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["autoprefixer", "npm:9.8.6"],
             ["browserslist", "npm:4.16.6"],
-            ["caniuse-lite", "npm:1.0.30001239"],
+            ["caniuse-lite", "npm:1.0.30001240"],
             ["colorette", "npm:1.2.2"],
             ["normalize-range", "npm:0.1.2"],
             ["num2fraction", "npm:1.2.2"],
@@ -7238,8 +7238,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/browserslist-npm-4.14.2-7fd5fe4d30-44b5d7a444.zip/node_modules/browserslist/",
           "packageDependencies": [
             ["browserslist", "npm:4.14.2"],
-            ["caniuse-lite", "npm:1.0.30001239"],
-            ["electron-to-chromium", "npm:1.3.758"],
+            ["caniuse-lite", "npm:1.0.30001240"],
+            ["electron-to-chromium", "npm:1.3.759"],
             ["escalade", "npm:3.1.1"],
             ["node-releases", "npm:1.1.73"]
           ],
@@ -7249,9 +7249,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/browserslist-npm-4.16.6-a20cef1ca7-3dffc86892.zip/node_modules/browserslist/",
           "packageDependencies": [
             ["browserslist", "npm:4.16.6"],
-            ["caniuse-lite", "npm:1.0.30001239"],
+            ["caniuse-lite", "npm:1.0.30001240"],
             ["colorette", "npm:1.2.2"],
-            ["electron-to-chromium", "npm:1.3.758"],
+            ["electron-to-chromium", "npm:1.3.759"],
             ["escalade", "npm:3.1.1"],
             ["node-releases", "npm:1.1.73"]
           ],
@@ -7508,7 +7508,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["caniuse-api", "npm:3.0.0"],
             ["browserslist", "npm:4.16.6"],
-            ["caniuse-lite", "npm:1.0.30001239"],
+            ["caniuse-lite", "npm:1.0.30001240"],
             ["lodash.memoize", "npm:4.1.2"],
             ["lodash.uniq", "npm:4.5.0"]
           ],
@@ -7516,10 +7516,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["caniuse-lite", [
-        ["npm:1.0.30001239", {
-          "packageLocation": "./.yarn/cache/caniuse-lite-npm-1.0.30001239-a441a76d4f-f1fbd95a97.zip/node_modules/caniuse-lite/",
+        ["npm:1.0.30001240", {
+          "packageLocation": "./.yarn/cache/caniuse-lite-npm-1.0.30001240-014e418755-94322e3e9f.zip/node_modules/caniuse-lite/",
           "packageDependencies": [
-            ["caniuse-lite", "npm:1.0.30001239"]
+            ["caniuse-lite", "npm:1.0.30001240"]
           ],
           "linkType": "HARD",
         }]
@@ -8724,7 +8724,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["data-urls", "npm:2.0.0"],
             ["abab", "npm:2.0.5"],
             ["whatwg-mimetype", "npm:2.3.0"],
-            ["whatwg-url", "npm:8.6.0"]
+            ["whatwg-url", "npm:8.7.0"]
           ],
           "linkType": "HARD",
         }]
@@ -9319,10 +9319,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["electron-to-chromium", [
-        ["npm:1.3.758", {
-          "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.3.758-6e5a09b9f7-2fec13dcdd.zip/node_modules/electron-to-chromium/",
+        ["npm:1.3.759", {
+          "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.3.759-f3c4fd272c-f7d35bd2a8.zip/node_modules/electron-to-chromium/",
           "packageDependencies": [
-            ["electron-to-chromium", "npm:1.3.758"]
+            ["electron-to-chromium", "npm:1.3.759"]
           ],
           "linkType": "HARD",
         }]
@@ -9925,7 +9925,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prettier", null],
             ["eslint", "npm:7.29.0"],
             ["eslint-config-prettier", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:8.3.0"],
-            ["prettier", "npm:2.3.1"],
+            ["prettier", "npm:2.3.2"],
             ["prettier-linter-helpers", "npm:1.0.0"]
           ],
           "packagePeers": [
@@ -13419,7 +13419,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["webidl-conversions", "npm:6.1.0"],
             ["whatwg-encoding", "npm:1.0.5"],
             ["whatwg-mimetype", "npm:2.3.0"],
-            ["whatwg-url", "npm:8.6.0"],
+            ["whatwg-url", "npm:8.7.0"],
             ["ws", "virtual:5d97c1964f47c97510019e8e1ca12c073edbd7f16b511e7ceee55b6129c48784db6a804ce3b47d654660f50f8f4d1ab075b879abda7a62ddc6511583371ef9b5#npm:7.5.0"],
             ["xml-name-validator", "npm:3.0.0"]
           ],
@@ -14768,7 +14768,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hamburger-react", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:2.4.1"],
             ["husky", "npm:6.0.0"],
             ["lint-staged", "npm:11.0.0"],
-            ["prettier", "npm:2.3.1"],
+            ["prettier", "npm:2.3.2"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:17.0.2"],
             ["react-remove-scroll", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:2.4.2"],
@@ -16612,7 +16612,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss-preset-env", "npm:6.7.0"],
             ["autoprefixer", "npm:9.8.6"],
             ["browserslist", "npm:4.16.6"],
-            ["caniuse-lite", "npm:1.0.30001239"],
+            ["caniuse-lite", "npm:1.0.30001240"],
             ["css-blank-pseudo", "npm:0.1.4"],
             ["css-has-pseudo", "npm:0.10.0"],
             ["css-prefers-color-scheme", "npm:3.1.1"],
@@ -16909,10 +16909,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["prettier", [
-        ["npm:2.3.1", {
-          "packageLocation": "./.yarn/cache/prettier-npm-2.3.1-f8593fac45-3b37731ff7.zip/node_modules/prettier/",
+        ["npm:2.3.2", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.3.2-4467ec48dc-17ce5784ac.zip/node_modules/prettier/",
           "packageDependencies": [
-            ["prettier", "npm:2.3.1"]
+            ["prettier", "npm:2.3.2"]
           ],
           "linkType": "HARD",
         }]
@@ -19716,7 +19716,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["stylelint-prettier", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:1.2.0"],
             ["@types/prettier", null],
             ["@types/stylelint", null],
-            ["prettier", "npm:2.3.1"],
+            ["prettier", "npm:2.3.2"],
             ["prettier-linter-helpers", "npm:1.0.0"],
             ["stylelint", "npm:13.13.1"]
           ],
@@ -21235,10 +21235,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["whatwg-url", [
-        ["npm:8.6.0", {
-          "packageLocation": "./.yarn/cache/whatwg-url-npm-8.6.0-bbe77a5425-0149bee9b6.zip/node_modules/whatwg-url/",
+        ["npm:8.7.0", {
+          "packageLocation": "./.yarn/cache/whatwg-url-npm-8.7.0-67af66db8f-a87abcc6ce.zip/node_modules/whatwg-url/",
           "packageDependencies": [
-            ["whatwg-url", "npm:8.6.0"],
+            ["whatwg-url", "npm:8.7.0"],
             ["lodash", "npm:4.17.21"],
             ["tr46", "npm:2.1.0"],
             ["webidl-conversions", "npm:6.1.0"]
