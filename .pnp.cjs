@@ -9530,7 +9530,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["has", "npm:1.0.3"],
             ["has-symbols", "npm:1.0.2"],
             ["internal-slot", "npm:1.0.3"],
-            ["is-callable", "npm:1.2.3"],
+            ["is-callable", "npm:1.2.4"],
             ["is-negative-zero", "npm:2.0.1"],
             ["is-regex", "npm:1.1.4"],
             ["is-string", "npm:1.0.7"],
@@ -9549,7 +9549,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/es-to-primitive-npm-1.2.1-b7a7eac6c5-4ead6671a2.zip/node_modules/es-to-primitive/",
           "packageDependencies": [
             ["es-to-primitive", "npm:1.2.1"],
-            ["is-callable", "npm:1.2.3"],
+            ["is-callable", "npm:1.2.4"],
             ["is-date-object", "npm:1.0.5"],
             ["is-symbol", "npm:1.0.4"]
           ],
@@ -12177,10 +12177,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["is-bigint", [
-        ["npm:1.0.2", {
-          "packageLocation": "./.yarn/cache/is-bigint-npm-1.0.2-db0dde4bd4-5268edbde8.zip/node_modules/is-bigint/",
+        ["npm:1.0.3", {
+          "packageLocation": "./.yarn/cache/is-bigint-npm-1.0.3-fad085c654-d52ab4fa64.zip/node_modules/is-bigint/",
           "packageDependencies": [
-            ["is-bigint", "npm:1.0.2"]
+            ["is-bigint", "npm:1.0.3"]
           ],
           "linkType": "HARD",
         }]
@@ -12231,10 +12231,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["is-callable", [
-        ["npm:1.2.3", {
-          "packageLocation": "./.yarn/cache/is-callable-npm-1.2.3-2a68c9d549-084a732afd.zip/node_modules/is-callable/",
+        ["npm:1.2.4", {
+          "packageLocation": "./.yarn/cache/is-callable-npm-1.2.4-03fc17459c-1a28d57dc4.zip/node_modules/is-callable/",
           "packageDependencies": [
-            ["is-callable", "npm:1.2.3"]
+            ["is-callable", "npm:1.2.4"]
           ],
           "linkType": "HARD",
         }]
@@ -21295,7 +21295,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/which-boxed-primitive-npm-1.0.2-e214f9ae5a-53ce774c73.zip/node_modules/which-boxed-primitive/",
           "packageDependencies": [
             ["which-boxed-primitive", "npm:1.0.2"],
-            ["is-bigint", "npm:1.0.2"],
+            ["is-bigint", "npm:1.0.3"],
             ["is-boolean-object", "npm:1.1.2"],
             ["is-number-object", "npm:1.0.6"],
             ["is-string", "npm:1.0.7"],
