@@ -26,7 +26,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^3.10.2",
     "hamburger-react": "^2.4.1",
-    "lint-staged": "^11.2.3",
+    "lint-staged": "^11.2.4",
     "prettier": "^2.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -35,7 +35,7 @@
     "react-scripts": "4.0.3",
     "source-map-explorer": "^2.5.2",
     "stylelint": "^13.13.1",
-    "stylelint-config-css-modules": "^2.2.0",
+    "stylelint-config-css-modules": "^2.3.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-prettier": "^1.2.0",
@@ -78,7 +78,7 @@
     ]
   },
   "devDependencies": {
-    "husky": "^7.0.2"
+    "husky": "^7.0.4"
   },
-  "packageManager": "yarn@3.0.2"
+  "packageManager": "yarn@3.1.0"
 }
