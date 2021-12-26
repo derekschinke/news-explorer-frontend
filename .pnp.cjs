@@ -8778,10 +8778,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:4.2.0", {
-          "packageLocation": "./.yarn/cache/css-select-npm-4.2.0-629420a8af-3847b251ca.zip/node_modules/css-select/",
+        ["npm:4.2.1", {
+          "packageLocation": "./.yarn/cache/css-select-npm-4.2.1-29b3e94383-6617193ec7.zip/node_modules/css-select/",
           "packageDependencies": [
-            ["css-select", "npm:4.2.0"],
+            ["css-select", "npm:4.2.1"],
             ["boolbase", "npm:1.0.0"],
             ["css-what", "npm:5.1.0"],
             ["domhandler", "npm:4.3.0"],
@@ -17041,7 +17041,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/renderkid-npm-3.0.0-acb028643f-77162b62d6.zip/node_modules/renderkid/",
           "packageDependencies": [
             ["renderkid", "npm:3.0.0"],
-            ["css-select", "npm:4.2.0"],
+            ["css-select", "npm:4.2.1"],
             ["dom-converter", "npm:0.2.0"],
             ["htmlparser2", "npm:6.1.0"],
             ["lodash", "npm:4.17.21"],
@@ -18511,7 +18511,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["svgo", "npm:2.8.0"],
             ["@trysound/sax", "npm:0.2.0"],
             ["commander", "npm:7.2.0"],
-            ["css-select", "npm:4.2.0"],
+            ["css-select", "npm:4.2.1"],
             ["css-tree", "npm:1.1.3"],
             ["csso", "npm:4.2.0"],
             ["picocolors", "npm:1.0.0"],
