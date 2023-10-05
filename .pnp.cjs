@@ -62,7 +62,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hamburger-react", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:2.4.1"],\
             ["husky", "npm:7.0.4"],\
             ["lint-staged", "npm:12.3.7"],\
-            ["postcss", "npm:8.4.12"],\
+            ["postcss", "npm:8.4.31"],\
             ["prettier", "npm:2.6.1"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:17.0.2"],\
@@ -7855,6 +7855,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fraction.js", "npm:4.2.0"],\
             ["normalize-range", "npm:0.1.2"],\
             ["picocolors", "npm:1.0.0"],\
+            ["postcss", "npm:8.4.31"],\
+            ["postcss-value-parser", "npm:4.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/postcss",\
+            "postcss"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:abf8b25647f141bfb102365c1c7ab02ae9794481a5b3cc89db96be6172859435a34f6754add958c8221f3b2f3719ba35a6f13001ccaef8e4c2198da8a9dfcd3c#npm:10.4.4", {\
+          "packageLocation": "./.yarn/__virtual__/autoprefixer-virtual-4dd08ce124/0/cache/autoprefixer-npm-10.4.4-19c80502dc-bd42e23d71.zip/node_modules/autoprefixer/",\
+          "packageDependencies": [\
+            ["autoprefixer", "virtual:abf8b25647f141bfb102365c1c7ab02ae9794481a5b3cc89db96be6172859435a34f6754add958c8221f3b2f3719ba35a6f13001ccaef8e4c2198da8a9dfcd3c#npm:10.4.4"],\
+            ["@types/postcss", null],\
+            ["browserslist", "npm:4.20.2"],\
+            ["caniuse-lite", "npm:1.0.30001320"],\
+            ["fraction.js", "npm:4.2.0"],\
+            ["normalize-range", "npm:0.1.2"],\
+            ["picocolors", "npm:1.0.0"],\
             ["postcss", "npm:8.4.12"],\
             ["postcss-value-parser", "npm:4.2.0"]\
           ],\
@@ -14481,6 +14500,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nanoid", "npm:3.3.1"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:3.3.6", {\
+          "packageLocation": "./.yarn/cache/nanoid-npm-3.3.6-e6d6ae7e71-7d0eda6570.zip/node_modules/nanoid/",\
+          "packageDependencies": [\
+            ["nanoid", "npm:3.3.6"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["natural-compare", [\
@@ -14544,7 +14570,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hamburger-react", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:2.4.1"],\
             ["husky", "npm:7.0.4"],\
             ["lint-staged", "npm:12.3.7"],\
-            ["postcss", "npm:8.4.12"],\
+            ["postcss", "npm:8.4.31"],\
             ["prettier", "npm:2.6.1"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:17.0.2"],\
@@ -15283,6 +15309,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["postcss", "npm:8.4.12"],\
             ["nanoid", "npm:3.3.1"],\
+            ["picocolors", "npm:1.0.0"],\
+            ["source-map-js", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:8.4.31", {\
+          "packageLocation": "./.yarn/cache/postcss-npm-8.4.31-385051a82b-1d8611341b.zip/node_modules/postcss/",\
+          "packageDependencies": [\
+            ["postcss", "npm:8.4.31"],\
+            ["nanoid", "npm:3.3.6"],\
             ["picocolors", "npm:1.0.0"],\
             ["source-map-js", "npm:1.0.2"]\
           ],\
@@ -16682,7 +16718,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@csstools/postcss-oklab-function", "virtual:abf8b25647f141bfb102365c1c7ab02ae9794481a5b3cc89db96be6172859435a34f6754add958c8221f3b2f3719ba35a6f13001ccaef8e4c2198da8a9dfcd3c#npm:1.0.2"],\
             ["@csstools/postcss-progressive-custom-properties", "virtual:abf8b25647f141bfb102365c1c7ab02ae9794481a5b3cc89db96be6172859435a34f6754add958c8221f3b2f3719ba35a6f13001ccaef8e4c2198da8a9dfcd3c#npm:1.3.0"],\
             ["@types/postcss", null],\
-            ["autoprefixer", "virtual:2b8a803e9384f0872a1aa700c3234d65403e09eb01e703cd346540f4a44f559940eaeb3a333bd5338ecf36306749613d82e09b225207f811535d122159a9c0aa#npm:10.4.4"],\
+            ["autoprefixer", "virtual:abf8b25647f141bfb102365c1c7ab02ae9794481a5b3cc89db96be6172859435a34f6754add958c8221f3b2f3719ba35a6f13001ccaef8e4c2198da8a9dfcd3c#npm:10.4.4"],\
             ["browserslist", "npm:4.20.2"],\
             ["css-blank-pseudo", "virtual:abf8b25647f141bfb102365c1c7ab02ae9794481a5b3cc89db96be6172859435a34f6754add958c8221f3b2f3719ba35a6f13001ccaef8e4c2198da8a9dfcd3c#npm:3.0.3"],\
             ["css-has-pseudo", "virtual:abf8b25647f141bfb102365c1c7ab02ae9794481a5b3cc89db96be6172859435a34f6754add958c8221f3b2f3719ba35a6f13001ccaef8e4c2198da8a9dfcd3c#npm:3.0.4"],\
